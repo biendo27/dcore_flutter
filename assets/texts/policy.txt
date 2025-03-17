@@ -1,0 +1,209 @@
+Privacy Policy
+
+This website is owned and operated by QuickChat LLC (collectively “Company”, “Website”, “QuickChat”, “we” “us,” “our”). The company owns and hosts the mobile application bearing the name “QuickChat ” (the application). This Data Policy describes practices for handling User information collected in connection with the services rendered by this Website.
+
+QuickChat LLC and their affiliates, referred to as ("we", "us", "our") are committed to protecting and respecting User privacy and aim at providing you with the information, options and choices necessary for you to control how we use your information. This Privacy Policy describes how the Website collects and uses personal information to provide services operated by or on behalf of the Website. This policy applies to Users of our website ("Website" or "Site") or mobile application ("App").
+
+Please note that when using the Application, this Privacy Policy should be read in conjunction with our Terms and Conditions of use. By accessing the Application, you acknowledge that the Privacy Policy and the Terms of Use govern your use of our Application and/or website.
+
+The controller of your personal information is QuickChat . The Company may provide products and services through its affiliated companies. The affiliate acts as a Data Controller with respect to personal information processed, used, and stored as a part of services and activities conducted by the QuickChat affiliate. Certain services and activities may be conducted by several QuickChat affiliates.
+
+Privacy and personal data protection principles vary from one country to another. When you access or visit a third-party website or application, you are subject to the privacy policy of that website or application. Please read the third party’s privacy policy to determine the privacy practices that apply to information or data maintained by the website or application.
+
+This policy sets out:
+
+1. Information collected
+
+2. Usage of information
+
+3. Promotional updates and communications
+
+4. Information sharing
+
+5. Storage of Information
+
+6. Processing of payments
+
+7. Protection of Information, including minor’s information
+
+8. Duration of Information storage
+
+9. Rights of information providers
+
+10. Changes to this policy
+
+11. Contact us
+
+Collection of Information
+
+The following information may be collected or received
+
+Direct sharing of personal information. Information containing names and addresses which are shared while subscribing to services by the User.
+
+Automatically collecting information each time the Site and/or App is visited and used by the User. This includes technical information, information about User visit, and User location data.
+
+Information being collected automatically by the Website: Internet protocol (IP) address, browser type, mobile device identifier, Internet service provider, operating system, pages that have been visited before and after using the Website, the date and time of visit, information about the links clicked and pages viewed within the Website, and other standard server log information may be collected automatically by visiting the Website. The website uses cookies, pixel tags, local shared objects, and similar technologies to automatically collect this information. By using the website, you consent to the Website's use of cookies and similar technologies.
+
+Location data: Information relating to User real time location might be collected to fulfil certain aspects of our services or to enable 3rd Party Partners to fulfil their obligations. This is done solely to provide location services where requested or agreed to in order to deliver content and services that are dependent on knowing where you are, in order to meet service-related requirements. Please note that we only collect your live location on the Site/App if specifically allowed in your setting that such real time location be shared as “always collect” for your location. If such a setting is not selected then we will not collect your live location unless you are accessing the Site/App or availing our services. This information is collected in combination with an identifier associated with your device to enable us to recognise your mobile browser or device when you return to the Site/App. You may turn off location access using your device or not provide us your location, however, please note that without the ability to collect your location we might not be able to provide you the certain services.
+
+Device information: The devices used (mobile phones, computers, tablets, etc.) to access Website services such as the hardware models, operation system information, software information and version, file names, language preferences, IP address cookie information, advertising identifiers, browser version, device settings, and mobile network information. The Website may recognise Users devices to provide the User with personalised experiences and advertising across the services available.
+
+User profile: If you are a visitor to the Application, creating a user profile is optional. If you register for a user account with the Application, we may collect certain information such as your e-mail address, username and password. You can also use your Facebook account to register with us. Note, however, that we do not collect information from Facebook.
+
+Phone Number: We will collect your phone number for personal identification, and we will not misuse or share your information with anyone.
+
+User content: We will collect any user content you create, share, or post to the Application, which may include information contained in your user account, as well as photos or other image files and associated metadata. Please note that other users of the Application may be able to download and extract any images shared publicly on the Application. Furthermore, the collected user content may also be used by the company for marketing/advertising purposes and to provide the User with promotional updates, in-application messages and/or push messages about products and/or services. You should avoid uploading images with embedded location data. Do not include financial account numbers, social security numbers or any other sensitive or confidential personal information in your content submissions on the Application/Website
+
+Financial Data: We utilizes Apple and Google to process all financial transactions and QuickChat is not provided with any personal data related to your transaction.
+
+Cookies: Cookies are small files which, when placed on your device, enable the Platform to provide certain features and functionality. We and our service providers use cookies to automatically collect information, measure and analyse which pages you click on and how you use the application, enhance your experience using the application, improve our services (refer 1.1.1 and 1.1.2 above). Cookies may include information such as your login or registration identification, user preferences, time spent on a website and pages visited. We may also use third-party tracking technology to record similar information regarding you and your activity on the Application. Google Analytics may collect your IP address, data related to the device/browser, or other information about your use of the Application and may do so using cookies. Google Analytics’ data practices are governed by the Google Privacy Policy, as it may be amended from time to time. By using the Application, you consent to our use of Cookies.
+
+Additionally, we allow our service providers (including analytics vendors and advertising networks) to collect information about your online activities through cookies. These third parties may use this information to display advertisements on our application and elsewhere online tailored to your interests, preferences, and characteristics. We are not responsible for the privacy practices of these third parties, and the information practices of these third parties are not covered by this Privacy Policy. Some devices may offer a “Do Not Track” feature. The Application does not respond to “Do Not Track” signals.
+
+We may also collect information that you submit when you contact the customer support, or otherwise submit information to the Company, including email address, and other information submitted during your use of the Application.
+
+Information received from other sources.
+
+If there is use of any of the other websites or apps we operate or other services provided by us.
+
+From third parties through whom the User is able to access or register for the services (e.g. where you are able to log in with a Google or Facebook account).
+
+From third parties that that are closely worked with.In case Website receives or collects any such data as abovementioned, the User will be informed when such data is being collected and if such data is intended to be shared internally and/or combined with data automatically collected on this site. The purpose of such usage shall also be intimated to the User.
+
+The website works closely with third parties (including but not limited to, business partners, sub-contractors in technical, payment and delivery services, advertising networks, analytics providers, and search information providers). User will be notified when and if the Website receives information about the User from such third parties and the purposes for which website intends to use that information.
+
+The User may be given the option to access or register for any and all services through the use of a user name and password (or any other identifier) for certain services provided by third parties (each, an “integrated service”), such as through the use of your Google account, accounts with payment systems or wallet providers, or otherwise have the option to authorize an integrated service to provide personal data to the Website. By authorizing the Website to connect with an integrated service, User authorizes us to access and store User’s personal data that the integrated service makes available to the Website (including but not limited to name, email address(es), date of birth, gender, current city and profile picture URL), and to use and disclose it in accordance with this policy. Please review the terms of service, terms of use and privacy policies of each integrated service carefully before using their services and integrating with our services. Please check your privacy settings on each integrated device to understand what personal data has been integrated with our services.
+
+Depending on the nature of dealings with User and/or the services provided, the Website may collect other types of personal data from third parties, including:
+
+personal data relating to any complaints you make or are made about you, including recording of any calls in that regard;
+
+personal data collected and held via financial or payment systems about the payment mechanism or method that you might use (including credit card details) and the payments you may make for our services or any services procured or booked using Website services;
+
+personal data collected by third-party marketing, survey and advertising service providers;
+
+personal data provided to any partners through which User creates or accesses their account for the services, such as employee information provided to companies engaging in our corporate or other services, payment providers, social media services, on-demand media or services integrated with our services, or other websites (such as search engines) with which our services have been integrated;
+
+personal data which is accessible from User use of online sites or applications in which the Website has an interest (such as messages for the purposes of issuing and receiving one-time passwords and other device verification) and device-related or device-generated personal data. The latter might include User device details, device IDs, your location, network connections, network access and communication and session data. Location data may also be collected or derived from IP addresses, mobile numbers and network information.
+
+Usage of Information
+
+Information collected by this Website will help informing the design and implementation of Website. The Website may also use information provided by the User to operate and improve the functionality of the website. Apart from this, information collected/provided will be used to take steps in order to enter into any contract or carry out service obligations arising from any contract entered into between User and us;
+
+Administering User account within the site;
+
+Verification of any financial transactions being carried out in relation to payments made through the site and/or the App.
+
+Providing information about available goods and services which interests Users for modifying:
+
+2.2.1. Manner of presentation of the Contents from the Site in the most effective way.
+
+2.2.2. Provide information, products and services that are requested from us.
+
+Information collected by User from use of Website Services: Website will use information for their legitimate interests, where considered to not be overriding User rights:
+
+To administer the Services and for internal operations, including troubleshooting, data analysis, testing, research, statistical and survey purposes.
+
+To keep the Services safe and secure.
+
+For measuring or understanding the effectiveness of advertising we serve to you and others, and to deliver relevant advertising to you.
+
+To improve the Services to ensure that content is presented in the most effective manner for you and for your computer.
+
+To allow you to participate in interactive features of our service, when you choose to do so.User Information received from other sources: Website will combine such information with information given by the User and information collected about User for their legitimate interests (where considered that these are not overridden by User rights). Such information along with the combined information shall be used for the purposes as mentioned above.
+
+Promotional updates and communications
+
+Website will share promotional updates and communications with User where applicable. Where permitted in accordance with the company’s legitimate interest, website will use User personal information for marketing analysis and to provide the User with promotional update communications by email, telephone, text messages, in-application messages and/or push messages about new products and/or services. Website may also share user personal information with third-party social media and other partner platforms in order to provide you with promotional update communications.
+
+Sharing of Information
+
+We may share your information with certain third parties as set forth below:
+
+Authorized third-party vendors and service providers. The information shared on this website may be shared with third-party vendors and service providers who support this website, such as by providing technical infrastructure services, business analytics, and data processing who process User personal data on behalf of the website and in accordance with the applicable Data Protection Laws. This includes in supporting the services offered through the site and/or the App for: data hosting services, providing fulfilment services, distributing and communication being sent, supporting or updating marketing lists, facilitating feedback on services and providing IT support services from time to time.
+
+Partners. The information may also be shared with the entities that make up the Service Providers (“Partners”).
+
+Any member of the group, which mean and include subsidiaries, ultimate holding company and its subsidiaries, who support the processing of personal data under this policy.
+
+Legal and safety: Disclosure of information to respond to subpoenas, court orders, legal process, law enforcement requests, legal claims or government inquiries, detect fraud, and to protect and defend the rights, interests, safety, and security of the website, it’s affiliates, owner, users, or the public at large. Apart from this, if bound under any additional duty to disclose or share User personal data in order to comply with legal obligations or in compulsion of law.
+
+Business transfers: Sharing of information in connection with a substantial corporate transaction, such as the sale of a website, a merger, consolidation, asset sale, or in the unlikely event of bankruptcy that may have already been entered into or will enter into future agreements.
+
+With your consent: Sharing of information for any other purposes disclosed to you at the time we collect the information and pursuant to your consent for the furtherance of any service being rendered on the website. For instance, if you request for services as a customer, then we will share only such personal information to facilitate and complete the services.
+
+Any access to third-party services, such as Facebook, Google, or Twitter etc, is done through the Website to share information about your experience on the Website with others; these services are outside the control of QuickChat LLC. These third-party services may be able to collect information about you, including information about your activity on the Website, and they may notify your connections on the third-party services about your use of the Website, in accordance with their respective privacy policies.
+
+User Information may also be shared with carefully selected partners who may be specifically of interest to the User to fulfil their requirements. These companies may contact the User by post, email, telephone or fax for marketing or promotional purposes.
+
+Legal obligations for processing Information
+
+Website relies on a variety of legal bases to process data, including:
+
+as necessary to fulfil site Terms;
+
+consistent with User consent, which the User can revoke at any time;
+
+as necessary to comply with legal obligations;
+
+to protect Users vital interests, or those of others;
+
+as necessary in the public interest; and
+
+as necessary for Website (or others’) legitimate interests, including any interests in providing an innovative personalized, safe and profitable service to User and/or it’s partners, unless those interests are overridden by User interests or fundamental rights or freedoms that require protection of personal data.
+
+Consent to these terms may be withdrawn at any time. Such withdrawal of consent will not affect the lawfulness of processing based on consent before its withdrawal. However, once withdrawn, the company/website/application will not be able to provide you with all or certain of the services.
+
+Under applicable laws, User has the:
+
+Right to access, rectify, port, and erase the information collected by the website, which you can exercise by contacting [stripchatsupportbio@gmail.com]
+
+Right to restrict and object to certain processing of User information.
+
+Right to withdraw consent- where the processing of User personal information by Website is based on consent, User has the right to withdraw without detriment at any time.
+
+Right to object to and restrict certain processing of data which includes- the right to object to processing of their data for direct marketing, which you can exercise by contacting [stripchatsupportbio@gmail.com]
+
+Right to object to processing of their data where QuickChat LLC is performing a task in the public interest or pursuing their own legitimate interests or those of a third party, and
+
+Right to opt out at any time from allowing further access to User personal information and apply to delete the personal information stored with Website.
+
+User may delete their information at any time by contacting [stripchatsupportbio@gmail.com]. All information collected by the Website such as information from cookies and information collected with consent under this Policy shall be deleted.
+
+Storage of Information
+
+Data Storage: User acknowledges and agrees that all information, content and data entered into the website and/or application will be securely stored by the Website at designated data centres using AWS (Amazon Web Services) in accordance with and all other applicable laws. We shall use physical and technical security measures to protect User Data, including, but not limited to, encrypted data connections to designated data centres, encrypted data storage, firewalls, and electronic surveillance of designated data centres.
+
+Security
+
+We maintain security standards and procedures designed to prevent unauthorized access to your data by anyone, including our staff. We use commercially reasonable means such as (but not limited to) data encryption, firewalls and server authentication to protect the security of your personal information. The Company and our staff and any third parties hired to provide support services will be required to observe our privacy standards and to allow us to audit them for compliance. However, no information security defences are impenetrable, and we cannot guarantee the security of our applications, servers or databases, nor can we guarantee that information you supply will not be intercepted while being transmitted to us over the Internet.
+
+Children's Privacy
+
+We do not knowingly collect personal information from children under the age of 18, and in the event that we learn that a child under the age of 18 has provided information on the Application, we will delete that information as soon as possible.
+
+Payments
+
+Payment details provided by the User will be encrypted using secure sockets layer (SSL) technology before they are submitted to the Website over the internet. Payments made on the Website/App are made through Website payment gateway providers. User will be providing credit or debit card information directly to Website payment gateway providers, who operate secure servers to process payment details, encrypting User credit/debit card information and authorising payment(s). Information which you supply to Website payment service providers is not within Website control and is subject to the respective providers’ own privacy policy and terms and conditions.
+
+Security Disclosure: The security of User Personal Information is important to us, however User understands that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.
+
+Data Retention
+
+The Website shall retain the personal data for as long as user has an account on the Website in order to meet contractual obligations to the User;
+
+As long as the personal information is needed to provide the services and operate the business;for a period of 3 (three) months after termination of services or closure of account by User in order to identify any issues and is we are subject to or are required to resolve any legal proceedings, contractual or other similar obligations. The information can be retained for other legal or regulatory requirements (e.g., mandatory data retention laws, government orders to preserve data relevant to an investigation, or data that must be retained for the purposes of litigation or disputes).
+
+We may also retain information beyond this time for research purposes and to help us develop and improve our services with prior permission and intimation.
+
+The website generally retains information until it is no longer necessary to serve the purposes for which it was collected. Following criteria laid down in Clause 5 shall be applied differently depending on case-by-case determination on components like the nature of the data, why it is collected and processed and relevant legal or operational retention needs.
+
+Data Transfers
+
+Standard contract clauses are used as approved as per applicable laws of the territory of service, for data transfers from one country to another.
+
+Changes to the policy
+
+Any changes made to this policy in future will be posted on this page and, in relation to any substantive changes, the User shall be notified by e-mail. We encourage you to periodically review this policy for other latest information on our privacy practices.
+
+This policy was last updated on [2023-03-25].

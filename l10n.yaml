@@ -1,0 +1,25 @@
+arb-dir: assets/arb
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+output-class: AppLocalizations
+output-dir: lib/config/l10n
+synthetic-package: false
+format: true
+nullable-getter: false
+untranslated-messages-file: logs/untranslated_messages.json
+# use-escaping: false
+# gen-inputs-and-outputs-list: true
+# required-resource-attributes:
+#   - name
+#   - description
+#   - type
+#   - placeholders
+# project-dir: .
+# use-deferred-loading: false
+# header-file: null
+# header: 
+# preferred-supported-locales: en
+
+# To generate the arb files
+# flutter pub run intl_translation:extract_to_arb --output-dir=assets/arb lib/config/l10n/app_localizations.dart
+# or flutter gen-l10n --arb-dir=assets/arb --output-dir=lib/config/l10n --output-class=AppLocalizations # --output-localization-file=app_localizations.dart --template-arb-file=app_en.arb

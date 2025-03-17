@@ -1,0 +1,10 @@
+export 'data/datasources/apis/apis.dart';
+export 'data/datasources/sockets/sockets.dart';
+export 'data/models/models.dart';
+export 'data/repositories/repositories.dart';
+export 'domain/entities/entities.dart';
+export 'domain/repositories/repositories.dart';
+export 'domain/usecases/usecases.dart';
+export 'presentation/blocs/blocs.dart';
+export 'presentation/pages/pages.dart';
+export 'presentation/widgets/widgets.dart';

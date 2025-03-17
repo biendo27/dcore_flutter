@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="main_stg.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <option name="buildFlavor" value="stg"/>
+    <option name="filePath" value="$PROJECT_DIR$/lib/main_stg.dart"/>
+    <option name="additionalArgs" value="--dart-define-from-file=.env/.env.stg"/>
+    <method v="2"/>
+  </configuration>
+</component>

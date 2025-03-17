@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "300235172909",
+    "project_id": "dcore-prod",
+    "storage_bucket": "dcore-prod.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300235172909:android:72eb33f997a8d228b85ca4",
+        "android_client_info": {
+          "package_name": "flutter.base.dcore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHJ7fP4jkj5LfrXkbh1B8pav-1uKS3Bto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
