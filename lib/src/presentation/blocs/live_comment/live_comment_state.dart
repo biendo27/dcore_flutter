@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class LiveCommentState with _$LiveCommentState {
+abstract class LiveCommentState with _$LiveCommentState {
   const factory LiveCommentState({
     @Default(false) bool isLoading,
     @Default(Live()) Live currentLive,

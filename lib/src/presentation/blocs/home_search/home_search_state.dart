@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class HomeSearchState with _$HomeSearchState {
+abstract class HomeSearchState with _$HomeSearchState {
   const factory HomeSearchState({
     @Default(false) bool isLoading,
     @Default('') String keyword,

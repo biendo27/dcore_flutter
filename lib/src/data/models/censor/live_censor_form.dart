@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class LiveCensorForm with _$LiveCensorForm {
+abstract class LiveCensorForm with _$LiveCensorForm {
   const factory LiveCensorForm({
     @Default('') String categoryName,
     @Default([]) List<Censor> data,
@@ -11,7 +11,7 @@ class LiveCensorForm with _$LiveCensorForm {
 }
 
 @freezed
-class LiveCensorResultForm with _$LiveCensorResultForm {
+abstract class LiveCensorResultForm with _$LiveCensorResultForm {
   const factory LiveCensorResultForm({
     @Default('') String categoryName,
     @Default([]) List<CensorResult> data,
@@ -28,4 +28,3 @@ extension LiveCensorFormX on LiveCensorForm {
     );
   }
 }
-

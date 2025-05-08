@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class SearchState with _$SearchState {
+abstract class SearchState with _$SearchState {
   const factory SearchState({
     @Default(false) bool isLoading,
     @Default([]) List<SearchKeyword> keywords,
@@ -10,4 +10,4 @@ class SearchState with _$SearchState {
   }) = _SearchState;
 
   factory SearchState.initial() => const SearchState();
-} 
+}

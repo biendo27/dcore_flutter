@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class LiveViewerSocketData with _$LiveViewerSocketData {
+abstract class LiveViewerSocketData with _$LiveViewerSocketData {
   const factory LiveViewerSocketData({
     @Default([]) List<AppUser> users,
     @Default('') String channel,

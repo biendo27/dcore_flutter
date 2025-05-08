@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class DeliveryAddressState with _$DeliveryAddressState {
+abstract class DeliveryAddressState with _$DeliveryAddressState {
   const factory DeliveryAddressState({
     @Default(false) bool isLoading,
     @Default([]) List<UserBillingAddress> addresses,
@@ -25,11 +25,7 @@ extension DeliveryAddressStateExtension on DeliveryAddressState {
   bool get hasSelectedDistrict => selectedDistrict != null;
   bool get hasSelectedWard => selectedWard != null;
 
-  bool get isValidLocation => 
-    hasSelectedNation && 
-    hasSelectedCity && 
-    hasSelectedDistrict && 
-    hasSelectedWard;
+  bool get isValidLocation => hasSelectedNation && hasSelectedCity && hasSelectedDistrict && hasSelectedWard;
 
   String get nationText => selectedNation?.name ?? '';
   String get cityText => selectedCity?.name ?? '';
@@ -38,9 +34,7 @@ extension DeliveryAddressStateExtension on DeliveryAddressState {
 
   String get fullAddressText {
     if (!isValidLocation) return '';
-    return [wardText, districtText, cityText, nationText]
-        .where((text) => text.isNotEmpty)
-        .join(', ');
+    return [wardText, districtText, cityText, nationText].where((text) => text.isNotEmpty).join(', ');
   }
 
   UserBillingAddress get defaultAddress => addresses.firstWhere((address) => address.isDefault, orElse: () => UserBillingAddress());

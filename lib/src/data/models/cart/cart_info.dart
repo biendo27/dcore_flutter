@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class ShopCartInfo with _$ShopCartInfo {
+abstract class ShopCartInfo with _$ShopCartInfo {
   const factory ShopCartInfo({
     @Default(0) int totalQuantity,
     @Default(Store()) Store store,
@@ -30,4 +30,3 @@ extension ShopCartInfoExtension on ShopCartInfo {
     );
   }
 }
-

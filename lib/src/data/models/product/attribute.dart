@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Attribute with _$Attribute {
+abstract class Attribute with _$Attribute {
   const factory Attribute({
     @Default(0) int id,
     @Default('') String name,
@@ -10,4 +10,3 @@ class Attribute with _$Attribute {
 
   factory Attribute.fromJson(Map<String, dynamic> json) => _$AttributeFromJson(json);
 }
-

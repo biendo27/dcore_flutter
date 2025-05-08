@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class AppUser with _$AppUser {
+abstract class AppUser with _$AppUser {
   const factory AppUser({
     @Default(0) int id,
     @Default(0) int roleId,

@@ -60,7 +60,9 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
           BlocBuilder<ProductCubit, ProductState>(
             builder: (context, state) {
               return GestureDetector(
-                onTap: () => Share.share(state.currentProductDetail.product.link),
+                onTap: () => SharePlus.instance.share(ShareParams(
+                  text: state.currentProductDetail.product.link,
+                )),
                 child: SvgPicture.asset(AppAsset.svg.shareBold, width: 24.w, height: 24.h),
               );
             },

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Ward with _$Ward {
+abstract class Ward with _$Ward {
   const factory Ward({
     @Default(0) int id,
     @Default('') String name,
@@ -10,4 +10,3 @@ class Ward with _$Ward {
 
   factory Ward.fromJson(Map<String, dynamic> json) => _$WardFromJson(json);
 }
-

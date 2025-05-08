@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class OrderActionState with _$OrderActionState {
+abstract class OrderActionState with _$OrderActionState {
   const factory OrderActionState({
     @Default(false) bool isLoading,
     @Default(UserOrder()) UserOrder currentOrder,

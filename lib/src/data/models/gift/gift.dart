@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Gift with _$Gift {
+abstract class Gift with _$Gift {
   const factory Gift({
     @Default(0) int id,
     @Default('') String name,
@@ -15,7 +15,7 @@ class Gift with _$Gift {
 }
 
 @freezed
-class GiftDataResponse with _$GiftDataResponse {
+abstract class GiftDataResponse with _$GiftDataResponse {
   const factory GiftDataResponse({
     @Default([]) List<Gift> gifts,
     @Default(0) int userTotalCoin,
@@ -25,7 +25,7 @@ class GiftDataResponse with _$GiftDataResponse {
 }
 
 @freezed
-class GiveGiftResponse with _$GiveGiftResponse {
+abstract class GiveGiftResponse with _$GiveGiftResponse {
   const factory GiveGiftResponse({
     @Default(Gift()) Gift gift,
     @Default(Transaction()) Transaction transaction,
@@ -42,7 +42,7 @@ enum GiftType {
 }
 
 @freezed
-class LiveGiftSocketData with _$LiveGiftSocketData {
+abstract class LiveGiftSocketData with _$LiveGiftSocketData {
   const factory LiveGiftSocketData({
     @Default(Gift()) Gift gift,
     @Default(Live()) Live live,

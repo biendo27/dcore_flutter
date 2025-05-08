@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class CommissionRepository with _$CommissionRepository {
+abstract class CommissionRepository with _$CommissionRepository {
   const factory CommissionRepository({
     @Default(0) int totalCommission,
     @Default(TransactionCommission()) TransactionCommission transactions,
@@ -11,7 +11,7 @@ class CommissionRepository with _$CommissionRepository {
 }
 
 @freezed
-class TransactionCommission with _$TransactionCommission {
+abstract class TransactionCommission with _$TransactionCommission {
   const factory TransactionCommission({
     @Default(0) int currentPage,
     @Default([]) List<TransactionCommissionData> data,
@@ -21,7 +21,7 @@ class TransactionCommission with _$TransactionCommission {
 }
 
 @freezed
-class TransactionCommissionData with _$TransactionCommissionData {
+abstract class TransactionCommissionData with _$TransactionCommissionData {
   const factory TransactionCommissionData({
     @Default(0) int id,
     @Default(TransactionCommissionDataProduct()) TransactionCommissionDataProduct product,
@@ -38,7 +38,7 @@ class TransactionCommissionData with _$TransactionCommissionData {
 }
 
 @freezed
-class TransactionCommissionDataProduct with _$TransactionCommissionDataProduct {
+abstract class TransactionCommissionDataProduct with _$TransactionCommissionDataProduct {
   const factory TransactionCommissionDataProduct({
     @Default(0) int id,
     @Default(ProductAffiliate()) ProductAffiliate product,

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class OrderCancelInfo with _$OrderCancelInfo {
+abstract class OrderCancelInfo with _$OrderCancelInfo {
   const factory OrderCancelInfo({
     @Default([]) List<OrderProduct> orderProducts,
     @Default(0) int totalRefundAmount,
@@ -13,7 +13,7 @@ class OrderCancelInfo with _$OrderCancelInfo {
 }
 
 @freezed
-class OrderCancelCategory with _$OrderCancelCategory {
+abstract class OrderCancelCategory with _$OrderCancelCategory {
   const factory OrderCancelCategory({
     @Default(0) int id,
     @Default('') String name,

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class HomeAffiliateRepository with _$HomeAffiliateRepository {
+abstract class HomeAffiliateRepository with _$HomeAffiliateRepository {
   const factory HomeAffiliateRepository({
     @Default(0) int totalOrderSuccess,
     @Default(0) int totalOrder,
@@ -13,7 +13,7 @@ class HomeAffiliateRepository with _$HomeAffiliateRepository {
 }
 
 @freezed
-class ProductListHome with _$ProductListHome {
+abstract class ProductListHome with _$ProductListHome {
   const factory ProductListHome({
     @Default(0) int currentPage,
     @Default([]) List<ProductData> data,
@@ -23,7 +23,7 @@ class ProductListHome with _$ProductListHome {
 }
 
 @freezed
-class ProductData with _$ProductData {
+abstract class ProductData with _$ProductData {
   const factory ProductData({
     @Default(AppUser()) AppUser user,
     @Default(ProductAffiliate()) ProductAffiliate product,

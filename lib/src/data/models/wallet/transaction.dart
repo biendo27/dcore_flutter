@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Transaction with _$Transaction {
+abstract class Transaction with _$Transaction {
   const factory Transaction({
     @Default(0) int id,
     @Default('') String code,

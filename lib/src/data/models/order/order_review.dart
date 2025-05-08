@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class OrderReview with _$OrderReview {
+abstract class OrderReview with _$OrderReview {
   const factory OrderReview({
     @Default(0) int id,
   }) = _OrderReview;

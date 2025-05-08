@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class AppNotification with _$AppNotification {
+abstract class AppNotification with _$AppNotification {
   const factory AppNotification({
     @Default(NotificationType.likePost) NotificationType type,
     @Default(0) int liveId,
@@ -25,7 +25,7 @@ class AppNotification with _$AppNotification {
 }
 
 @freezed
-class AppNotificationList with _$AppNotificationList {
+abstract class AppNotificationList with _$AppNotificationList {
   const factory AppNotificationList({
     @Default(AppNotification()) AppNotification newFollower,
     @Default(AppNotification()) AppNotification activity,

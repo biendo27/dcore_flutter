@@ -1,0 +1,97 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+description: Example of a well-crafted rule for repository implementation pattern
+---
+
+# Repository Implementation Pattern
+
+## Overview
+This rule demonstrates the repository pattern implementation in Flutter DCore, following the clean architecture principles.
+
+## Pattern Structure
+Repositories in DCore follow this implementation hierarchy:
+1. Domain layer defines repository interfaces
+2. Data layer implements these interfaces
+3. Presentation layer consumes repositories via dependency injection
+
+## Implementation Example
+
+### Repository Interface (Domain Layer)
+```dart
+// Define abstract repository interface in domain layer
+abstract class UserRepository {
+  Future<Either<Failure, User>> getUser(String userId);
+  Future<Either<Failure, List<User>>> getAllUsers();
+  Future<Either<Failure, void>> updateUser(User user);
+}
+```
+
+### Repository Implementation (Data Layer)
+```dart
+// Implement the interface in data layer
+class UserRepositoryImpl implements UserRepository {
+  final UserRemoteDataSource remoteDataSource;
+  final UserLocalDataSource localDataSource;
+  final NetworkInfo networkInfo;
+
+  UserRepositoryImpl({
+    required this.remoteDataSource,
+    required this.localDataSource,
+    required this.networkInfo,
+  });
+
+  @override
+  Future<Either<Failure, User>> getUser(String userId) async {
+    if (await networkInfo.isConnected) {
+      try {
+        final remoteUser = await remoteDataSource.getUser(userId);
+        localDataSource.cacheUser(remoteUser);
+        return Right(remoteUser.toEntity());
+      } on ServerException {
+        return Left(ServerFailure());
+      }
+    } else {
+      try {
+        final localUser = await localDataSource.getLastUser();
+        return Right(localUser.toEntity());
+      } on CacheException {
+        return Left(CacheFailure());
+      }
+    }
+  }
+  
+  // Other method implementations...
+}
+```
+
+### Usage in Presentation Layer
+```dart
+// Use the repository in a presentation component via dependency injection
+class UserViewModel extends BaseViewModel {
+  final GetUserUseCase getUserUseCase;
+  
+  UserViewModel({required this.getUserUseCase});
+  
+  Future<void> loadUser(String userId) async {
+    setLoading(true);
+    
+    final result = await getUserUseCase(UserId(userId));
+    
+    result.fold(
+      (failure) => setError(failure),
+      (user) => setData(user),
+    );
+    
+    setLoading(false);
+  }
+}
+```
+
+## Related Patterns
+- Use Case pattern for implementing business logic
+- Data Sources pattern for data access abstraction
+- Entity-Model separation for domain vs. data representation
+

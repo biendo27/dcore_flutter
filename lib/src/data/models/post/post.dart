@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Post with _$Post {
+abstract class Post with _$Post {
   const factory Post({
     @Default(0) int id,
     @Default('') String description,
@@ -34,7 +34,7 @@ class Post with _$Post {
 }
 
 @freezed
-class PostParam with _$PostParam {
+abstract class PostParam with _$PostParam {
   const factory PostParam({
     @Default(0) int soundId,
     @Default('') String description,

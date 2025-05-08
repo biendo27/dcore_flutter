@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class HashtagState with _$HashtagState {
+abstract class HashtagState with _$HashtagState {
   const factory HashtagState({
     @Default(false) bool isLoading,
     @Default(BasePageBreak<HashTag>()) BasePageBreak<HashTag> hashtags,
@@ -9,4 +9,4 @@ class HashtagState with _$HashtagState {
   }) = _HashtagState;
 
   factory HashtagState.initial() => HashtagState();
-} 
+}

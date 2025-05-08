@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class UsageTerm with _$UsageTerm {
+abstract class UsageTerm with _$UsageTerm {
   const factory UsageTerm({
     @Default(VoucherData()) VoucherData voucher,
     @Default('') String term,
@@ -11,7 +11,7 @@ class UsageTerm with _$UsageTerm {
 }
 
 @freezed
-class VoucherData with _$VoucherData {
+abstract class VoucherData with _$VoucherData {
   const factory VoucherData({
     @Default([]) List<String> detail,
     @Default(null) DateTime? expiredAt,

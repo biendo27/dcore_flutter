@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class ProfilePreviewState with _$ProfilePreviewState {
+abstract class ProfilePreviewState with _$ProfilePreviewState {
   const factory ProfilePreviewState({
     @Default(false) bool isLoading,
     @Default(AppUser()) AppUser user,

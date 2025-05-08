@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class StoreFlashSale with _$StoreFlashSale {
+abstract class StoreFlashSale with _$StoreFlashSale {
   const factory StoreFlashSale({
     @Default(0) int id,
     @Default([]) List<String> images,

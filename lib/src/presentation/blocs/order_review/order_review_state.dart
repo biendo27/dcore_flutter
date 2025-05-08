@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class OrderReviewState with _$OrderReviewState {
+abstract class OrderReviewState with _$OrderReviewState {
   const factory OrderReviewState({
     @Default(false) bool isLoading,
     @Default(BasePageBreak<ProductReview>()) BasePageBreak<ProductReview> userReviews,

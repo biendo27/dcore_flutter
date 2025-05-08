@@ -1,6 +1,7 @@
 part of '../blocs.dart';
+
 @freezed
-class CommentState with _$CommentState {
+abstract class CommentState with _$CommentState {
   const factory CommentState({
     @Default(false) bool isLoading,
     @Default(false) bool isLoadingReply,

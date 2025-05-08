@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class ProductState with _$ProductState {
+abstract class ProductState with _$ProductState {
   const factory ProductState({
     @Default(false) bool isLoading,
     @Default([]) List<Product> products,

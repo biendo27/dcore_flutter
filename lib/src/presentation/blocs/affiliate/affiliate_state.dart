@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class AffiliateState with _$AffiliateState {
+abstract class AffiliateState with _$AffiliateState {
   const factory AffiliateState({
     @Default(false) bool isLoading,
     @Default(0) int totalOrderSuccess,

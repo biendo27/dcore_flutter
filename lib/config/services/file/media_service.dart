@@ -297,21 +297,21 @@ class _VideoService {
     LogDev.one("Executing FFmpeg command:\n$ffmpegCommand");
 
     // Step 3: Execute the FFmpeg command using FFmpegKit
-    final session = await FFmpegKit.execute(ffmpegCommand);
-    final returnCode = await session.getReturnCode();
-    // Step 4: Check results
-    if (ReturnCode.isSuccess(returnCode)) {
-      // SUCCESS
-      LogDev.one('FFmpeg: merging was successful. Output: $outputPath');
-    } else if (ReturnCode.isCancel(returnCode)) {
-      // CANCEL
-      LogDev.one('FFmpeg operation was cancelled.');
-    } else {
-      // ERROR
-      LogDev.one('FFmpeg execution failed with rc=${returnCode?.getValue()}');
-      final logs = await session.getAllLogsAsString();
-      LogDev.one('FFmpeg error logs: $logs');
-    }
+    // final session = await FFmpegKit.execute(ffmpegCommand);
+    // final returnCode = await session.getReturnCode();
+    // // Step 4: Check results
+    // if (ReturnCode.isSuccess(returnCode)) {
+    //   // SUCCESS
+    //   LogDev.one('FFmpeg: merging was successful. Output: $outputPath');
+    // } else if (ReturnCode.isCancel(returnCode)) {
+    //   // CANCEL
+    //   LogDev.one('FFmpeg operation was cancelled.');
+    // } else {
+    //   // ERROR
+    //   LogDev.one('FFmpeg execution failed with rc=${returnCode?.getValue()}');
+    //   final logs = await session.getAllLogsAsString();
+    //   LogDev.one('FFmpeg error logs: $logs');
+    // }
 
     return outputPath;
   }

@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class RankState with _$RankState {
+abstract class RankState with _$RankState {
   const factory RankState({
     @Default(false) bool isLoading,
     @Default(RankConfig()) RankConfig rank,

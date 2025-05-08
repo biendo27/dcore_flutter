@@ -186,13 +186,13 @@ class VideoCompressor {
   Future<String?> compressVideo(String inputPath, String outputPath, double networkSpeedMbps) async {
     try {
       // Dựa trên tốc độ mạng, tính toán giá trị CRF
-      int crf = min(28, max(18, (28 - (networkSpeedMbps / 5)).round()));
+      // int crf = min(28, max(18, (28 - (networkSpeedMbps / 5)).round()));
 
       // Lệnh FFmpeg để nén video
-      String command = '-i $inputPath -vcodec libx264 -crf $crf $outputPath';
+      // String command = '-i $inputPath -vcodec libx264 -crf $crf $outputPath';
 
       // Thực thi lệnh FFmpeg
-      await FFmpegKit.execute(command);
+      // await FFmpegKit.execute(command);
 
       debugPrint("Nén video thành công: $outputPath");
       return outputPath;

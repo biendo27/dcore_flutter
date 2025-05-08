@@ -24,8 +24,6 @@ import 'package:photo_view/photo_view.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 import 'package:video_player/video_player.dart';
 
-// import 'package:cached_video_player_plus/cached_video_player_plus.dart';
-
 //* Import all files here
 import '../../config/routes/routes.dart';
 import '../../config/services/services.dart';

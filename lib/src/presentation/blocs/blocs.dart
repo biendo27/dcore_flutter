@@ -24,8 +24,6 @@ import 'package:video_compress/video_compress.dart';
 import 'package:video_player/video_player.dart';
 // import 'package:zalo_flutter/zalo_flutter.dart';
 
-// import 'package:cached_video_player_plus/cached_video_player_plus.dart';
-
 //* Import all local files here
 import '../../../config/di/di.dart';
 import '../../../config/routes/routes.dart';

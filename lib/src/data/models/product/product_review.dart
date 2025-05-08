@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class ProductReview with _$ProductReview {
+abstract class ProductReview with _$ProductReview {
   const factory ProductReview({
     @Default(AppUser()) AppUser user,
     @Default(0) double rating,

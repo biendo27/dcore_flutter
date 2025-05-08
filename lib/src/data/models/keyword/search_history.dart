@@ -1,12 +1,11 @@
 part of '../models.dart';
 
 @freezed
-class SearchHistory with _$SearchHistory {
+abstract class SearchHistory with _$SearchHistory {
   const factory SearchHistory({
     @Default([]) List<SearchKeyword> histories,
     @Default([]) List<Product> products,
   }) = _SearchHistory;
 
-  factory SearchHistory.fromJson(Map<String, dynamic> json) =>
-      _$SearchHistoryFromJson(json);
+  factory SearchHistory.fromJson(Map<String, dynamic> json) => _$SearchHistoryFromJson(json);
 }

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class OrderOverviewParam with _$OrderOverviewParam {
+abstract class OrderOverviewParam with _$OrderOverviewParam {
   const factory OrderOverviewParam({
     @Default(0) int billingAddressId,
     @Default([]) List<StoreParam> stores,
@@ -14,7 +14,7 @@ class OrderOverviewParam with _$OrderOverviewParam {
 }
 
 @freezed
-class StoreParam with _$StoreParam {
+abstract class StoreParam with _$StoreParam {
   const factory StoreParam({
     @Default(0) int storeId,
     @Default('') String note,
@@ -27,7 +27,7 @@ class StoreParam with _$StoreParam {
 }
 
 @freezed
-class ProductParam with _$ProductParam {
+abstract class ProductParam with _$ProductParam {
   const factory ProductParam({
     @Default(0) int productId,
     @Default(0) int quantity,
@@ -50,4 +50,3 @@ extension ProductParamExtension on ProductParam {
 extension StoreParamExtension on StoreParam {
   // StoreParam fromStore(Store store) => copyWith(items: store.items.map((e) => e.toParam()).toList());
 }
-

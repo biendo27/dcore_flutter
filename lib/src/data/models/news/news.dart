@@ -1,9 +1,9 @@
 part of '../models.dart';
 
 @freezed
-class AppNews with _$AppNews {
+abstract class AppNews with _$AppNews {
   const factory AppNews({
-    @Default(0)  int id,
+    @Default(0) int id,
     @Default('') String title,
     @Default('') String content,
     @Default([]) List<String> images,

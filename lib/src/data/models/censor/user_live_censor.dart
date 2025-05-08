@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class UserLiveCensor with _$UserLiveCensor {
+abstract class UserLiveCensor with _$UserLiveCensor {
   const factory UserLiveCensor({
     @Default(0) int id,
     @Default(Live()) Live live,

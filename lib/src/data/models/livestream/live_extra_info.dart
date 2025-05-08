@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class LiveExtraInfo with _$LiveExtraInfo {
+abstract class LiveExtraInfo with _$LiveExtraInfo {
   const factory LiveExtraInfo({
     @Default('') String term,
     @Default(Comment()) Comment pinned,

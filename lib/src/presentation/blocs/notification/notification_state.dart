@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class NotificationState with _$NotificationState {
+abstract class NotificationState with _$NotificationState {
   const factory NotificationState({
     @Default(false) bool isLoading,
     @Default(AppNotificationList()) AppNotificationList notificationList,

@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class ConfigState with _$ConfigState {
+abstract class ConfigState with _$ConfigState {
   const factory ConfigState({
     @Default([]) List<AppIntro> splash,
     @Default(Contact()) Contact contact,

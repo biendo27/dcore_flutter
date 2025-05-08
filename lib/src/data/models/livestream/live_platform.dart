@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class LivePlatform with _$LivePlatform {
+abstract class LivePlatform with _$LivePlatform {
   const factory LivePlatform({
     @Default(0) int id,
     @Default('') String name,

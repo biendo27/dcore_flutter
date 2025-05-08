@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class OrderState with _$OrderState {
+abstract class OrderState with _$OrderState {
   const factory OrderState({
     @Default(false) bool isLoading,
     @Default(UserOrder()) UserOrder order,
@@ -11,6 +11,6 @@ class OrderState with _$OrderState {
     @Default(BasePageBreak<Voucher>()) BasePageBreak<Voucher> orderVouchers,
     @Default(Voucher()) Voucher orderVoucherResult,
   }) = _OrderState;
-  
+
   factory OrderState.initial() => OrderState();
 }

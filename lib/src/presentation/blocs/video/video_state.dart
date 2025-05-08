@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class VideoState with _$VideoState {
+abstract class VideoState with _$VideoState {
   const factory VideoState({
     @Default(false) bool isLoading,
     @Default(false) bool isUpdateController,

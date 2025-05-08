@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class PriceRangeFilter with _$PriceRangeFilter {
+abstract class PriceRangeFilter with _$PriceRangeFilter {
   const factory PriceRangeFilter({
     @Default('') String name,
     @Default(0) int from,

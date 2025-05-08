@@ -1,0 +1,51 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+description: Best practices for creating effective Cursor Rules
+---
+
+# Cursor Rule Best Practices
+
+## Core Principles
+- Keep rules **focused**, **actionable**, and **scoped**
+- Prioritize concise content (aim for under 500 lines)
+- Split large concepts into multiple composable rules
+- Include concrete examples or file references when helpful
+
+## Structure Guidelines
+- Use clear sections with hierarchical headings
+- Start with a clear description of the rule's purpose
+- Include code examples when demonstrating patterns
+- Reference actual project files using `[filename](mdc:filename)` syntax
+
+## Content Guidelines
+- Avoid vague guidance - be specific and concrete
+- Write in the style of a clear internal document
+- Focus on information that helps with practical tasks
+- Reuse rules when you find yourself repeating prompts in chat
+
+## Example Rule Structure
+```
+# Component Architecture
+
+## Core Principles
+- List key architectural principles
+
+## Implementation Pattern
+- Show pattern with code example
+
+## Related Files
+- [example.dart](mdc:lib/example.dart) - Example implementation
+```
+
+## When to Create New Rules
+- When encountering repetitive explanations or guidance
+- For complex architectural patterns that need clarity
+- To document project-specific conventions
+- For complex workflows that are performed regularly
+
+Remember that good rules help the AI assistant understand your codebase's organization, patterns, and conventions, resulting in more accurate and helpful assistance.
+
+

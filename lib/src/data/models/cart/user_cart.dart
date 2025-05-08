@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class UserCart with _$UserCart {
+abstract class UserCart with _$UserCart {
   const factory UserCart({
     @Default(0) int totalMoney,
     @Default(0) int totalQuantity,
@@ -14,4 +14,3 @@ class UserCart with _$UserCart {
 extension UserCartX on UserCart {
   int get allProductLength => details.fold(0, (oldSum, d) => oldSum + d.products.length);
 }
-

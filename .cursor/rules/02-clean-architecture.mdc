@@ -1,0 +1,44 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+description: Explanation of Clean Architecture implementation in Flutter DCore
+---
+
+# Clean Architecture Implementation
+
+Flutter DCore follows the Clean Architecture pattern to ensure separation of concerns and maintainability.
+
+## Layers
+
+### Data Layer
+- Located in [lib/src/data/](mdc:lib/src/data)
+- Implements repository interfaces from the domain layer
+- Contains data models, remote/local data sources, and API clients
+- Handles data serialization/deserialization and storage
+
+### Domain Layer
+- Located in [lib/src/domain/](mdc:lib/src/domain)
+- Contains business logic and rules
+- Defines entities (business objects)
+- Specifies repository interfaces
+- Implements use cases (application-specific business rules)
+
+### Presentation Layer
+- Located in [lib/src/presentation/](mdc:lib/src/presentation)
+- Contains UI components, screens, and widgets
+- Implements state management for the UI
+- Communicates with domain layer through use cases
+
+## Dependency Flow
+- Dependencies flow from outer layers (presentation, data) to inner layers (domain)
+- The domain layer has no dependencies on other layers
+- The presentation layer depends on the domain layer but not on the data layer
+- The data layer implements interfaces defined in the domain layer
+
+## Benefits
+- Testability - Each layer can be tested in isolation
+- Maintainability - Changes in one layer don't affect others
+- Scalability - New features can be added without disrupting existing code
+

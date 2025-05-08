@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class LiveViewerState with _$LiveViewerState {
+abstract class LiveViewerState with _$LiveViewerState {
   const factory LiveViewerState({
     @Default(false) bool isLoading,
     @Default([]) List<AppUser> viewers,

@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class LiveCensorState with _$LiveCensorState {
+abstract class LiveCensorState with _$LiveCensorState {
   const factory LiveCensorState({
     @Default(false) bool isLoading,
     @Default([]) List<LiveCensorForm> censorForms,

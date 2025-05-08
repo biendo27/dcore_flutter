@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class ProductService with _$ProductService {
+abstract class ProductService with _$ProductService {
   const factory ProductService({
     @Default('') String easyPayment,
     @Default('') String cancelOrdersEasily,

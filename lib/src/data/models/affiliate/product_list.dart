@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class ProductList with _$ProductList {
+abstract class ProductList with _$ProductList {
   const factory ProductList({
     @Default(0) int currentPage,
     @Default([]) List<ProductAffiliate> data,
@@ -11,7 +11,7 @@ class ProductList with _$ProductList {
 }
 
 @freezed
-class ProductAffiliate with _$ProductAffiliate {
+abstract class ProductAffiliate with _$ProductAffiliate {
   const factory ProductAffiliate({
     @Default(0) int id,
     @Default('') String thumbnail,
@@ -47,7 +47,7 @@ class ProductAffiliate with _$ProductAffiliate {
 }
 
 @freezed
-class ProductCategoryAffiliate with _$ProductCategoryAffiliate {
+abstract class ProductCategoryAffiliate with _$ProductCategoryAffiliate {
   const factory ProductCategoryAffiliate({
     @Default(0) int id,
     @Default('') String name,
@@ -59,7 +59,7 @@ class ProductCategoryAffiliate with _$ProductCategoryAffiliate {
 }
 
 @freezed
-class ProductBrandAffiliate with _$ProductBrandAffiliate {
+abstract class ProductBrandAffiliate with _$ProductBrandAffiliate {
   const factory ProductBrandAffiliate({
     @Default(0) int id,
     @Default('') String name,

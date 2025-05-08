@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class LiveSettingState with _$LiveSettingState {
+abstract class LiveSettingState with _$LiveSettingState {
   const factory LiveSettingState({
     @Default(false) bool isLoading,
     @Default(LiveRole.host) LiveRole liveRole,

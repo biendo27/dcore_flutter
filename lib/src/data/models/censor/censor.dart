@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Censor with _$Censor {
+abstract class Censor with _$Censor {
   const factory Censor({
     @Default(0) int id,
     @Default('') String name,
@@ -13,14 +13,13 @@ class Censor with _$Censor {
 }
 
 @freezed
-class CensorResult with _$CensorResult {
+abstract class CensorResult with _$CensorResult {
   const factory CensorResult({
     @Default(0) int value,
     @Default(Censor()) Censor censor,
   }) = _CensorResult;
 
-  factory CensorResult.fromJson(Map<String, dynamic> json) =>
-      _$CensorResultFromJson(json);
+  factory CensorResult.fromJson(Map<String, dynamic> json) => _$CensorResultFromJson(json);
 }
 
 extension CensorX on Censor {

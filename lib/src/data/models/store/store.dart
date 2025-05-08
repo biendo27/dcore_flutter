@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Store with _$Store {
+abstract class Store with _$Store {
   const factory Store({
     @Default(0) int id,
     @Default('') String name,
@@ -20,4 +20,3 @@ extension StoreX on Store {
     return OrderOverviewStoreInfo(infor: this, items: products);
   }
 }
-

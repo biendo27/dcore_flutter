@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class CreatePostState with _$CreatePostState {
+abstract class CreatePostState with _$CreatePostState {
   const factory CreatePostState({
     @Default(false) bool isLoading,
     @Default('') String videoPath,

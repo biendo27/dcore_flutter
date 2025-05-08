@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class LivestreamSetting with _$LivestreamSetting {
+abstract class LivestreamSetting with _$LivestreamSetting {
   const factory LivestreamSetting({
     @Default('') String appId,
     @Default('') String appCertificate,
@@ -10,5 +10,3 @@ class LivestreamSetting with _$LivestreamSetting {
 
   factory LivestreamSetting.fromJson(Map<String, dynamic> json) => _$LivestreamSettingFromJson(json);
 }
-
-

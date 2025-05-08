@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class AppSystemNotification with _$AppSystemNotification {
+abstract class AppSystemNotification with _$AppSystemNotification {
   const factory AppSystemNotification({
     @Default(NotificationType.likePost) NotificationType type,
     @Default(0) int newsId,

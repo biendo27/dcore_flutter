@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class LiveMission with _$LiveMission {
+abstract class LiveMission with _$LiveMission {
   const factory LiveMission({
     @Default(0) int id,
     @Default(Mission()) Mission mission,
@@ -21,7 +21,7 @@ class LiveMission with _$LiveMission {
 }
 
 @freezed
-class Mission with _$Mission {
+abstract class Mission with _$Mission {
   const factory Mission({
     @Default(0) int id,
     @Default('') String name,

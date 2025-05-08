@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class ModerationRequest with _$ModerationRequest {
+abstract class ModerationRequest with _$ModerationRequest {
   const factory ModerationRequest({
     @Default('') String id,
     @Default(0) double timestamp,

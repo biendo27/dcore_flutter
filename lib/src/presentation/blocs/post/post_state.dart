@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class PostState with _$PostState {
+abstract class PostState with _$PostState {
   const factory PostState({
     @Default(false) bool isLoading,
     @Default([]) List<Post> posts,

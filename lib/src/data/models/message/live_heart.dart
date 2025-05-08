@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class LiveHeartSocketData with _$LiveHeartSocketData {
+abstract class LiveHeartSocketData with _$LiveHeartSocketData {
   const factory LiveHeartSocketData({
     @Default(0) int count,
     @Default(Live()) Live live,

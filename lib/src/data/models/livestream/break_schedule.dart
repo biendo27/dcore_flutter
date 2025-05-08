@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class BreakSchedule with _$BreakSchedule {
+abstract class BreakSchedule with _$BreakSchedule {
   const factory BreakSchedule({
     @Default(0) int id,
     @Default(0) int userId,
@@ -31,4 +31,3 @@ enum BreakScheduleStatus {
     };
   }
 }
-

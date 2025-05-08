@@ -80,9 +80,11 @@ mixin StorageService {
       await file.writeAsBytes(imageBytes);
 
       // Share the file
-      await Share.shareXFiles(
-        [XFile(file.path)],
-        text: 'Share QR Code',
+      await SharePlus.instance.share(
+        ShareParams(
+          text: 'Share QR Code',
+          files: [XFile(file.path)],
+        ),
       );
     } catch (e) {
       rethrow;
@@ -109,9 +111,11 @@ mixin StorageService {
   }) async {
     try {
       // Share the file directly since we already have the path
-      await Share.shareXFiles(
-        [XFile(videoPath)],
-        text: 'Share Video',
+      await SharePlus.instance.share(
+        ShareParams(
+          text: 'Share Video',
+          files: [XFile(videoPath)],
+        ),
       );
     } catch (e) {
       rethrow;

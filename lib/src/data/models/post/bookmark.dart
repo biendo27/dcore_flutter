@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 // @freezed
-// class Bookmark with _$Bookmark {
+// abstract class Bookmark with _$Bookmark {
 //   const factory Bookmark({
 //     @Default(0) int id,
 //   }) = _Bookmark;

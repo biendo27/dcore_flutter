@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class RefundBankingState with _$RefundBankingState {
+abstract class RefundBankingState with _$RefundBankingState {
   const factory RefundBankingState({
     @Default(false) bool isLoading,
     @Default(RefundBanking()) RefundBanking refundBanking,

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class ModerationResponse with _$ModerationResponse {
+abstract class ModerationResponse with _$ModerationResponse {
   const factory ModerationResponse({
     @Default('') String status,
     @Default(ModerationRequest()) ModerationRequest request,

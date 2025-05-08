@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class LiveRequest with _$LiveRequest {
+abstract class LiveRequest with _$LiveRequest {
   const factory LiveRequest({
     @Default(0) int id,
     @Default(null) DateTime? startAt,

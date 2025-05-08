@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class CartState with _$CartState {
+abstract class CartState with _$CartState {
   const factory CartState({
     @Default(false) bool isLoading,
     @Default(UserCart()) UserCart userCart,

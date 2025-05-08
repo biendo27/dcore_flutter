@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class SoundState with _$SoundState {
+abstract class SoundState with _$SoundState {
   const factory SoundState({
     @Default(false) bool isLoading,
     @Default(false) bool isPlaying,

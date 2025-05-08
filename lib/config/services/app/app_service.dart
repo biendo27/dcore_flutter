@@ -45,6 +45,7 @@ mixin AppService {
       },
       (error, stack) {
         LogDev.error('runZonedGuarded: $error \r\n $stack');
+        AppDI.source.get<AppTrackingService>(instanceName: DIKey.noOpTrackingService).trackError(error, stackTrace: stack);
       },
     );
   }

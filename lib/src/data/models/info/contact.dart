@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Contact with _$Contact {
+abstract class Contact with _$Contact {
   const factory Contact({
     @Default('') String company,
     @Default('') String address,

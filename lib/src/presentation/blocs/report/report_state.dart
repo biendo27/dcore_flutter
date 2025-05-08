@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class ReportState with _$ReportState {
+abstract class ReportState with _$ReportState {
   const factory ReportState({
     @Default(false) bool isLoading,
     @Default([]) List<Report> reports,

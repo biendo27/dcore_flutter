@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class ProductFilterState with _$ProductFilterState {
+abstract class ProductFilterState with _$ProductFilterState {
   const factory ProductFilterState({
     @Default(false) bool isLoading,
     @Default(SortType.asc) SortType sortType,

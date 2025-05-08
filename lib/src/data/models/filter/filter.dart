@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Filter with _$Filter {
+abstract class Filter with _$Filter {
   const factory Filter({
     @Default([]) List<RatingFilter> rating,
     @Default([]) List<StoreCategory> category,
@@ -14,9 +14,9 @@ class Filter with _$Filter {
 
 enum SortOption {
   @JsonValue('related')
-  related,    
+  related,
   @JsonValue('newest')
-  newest,     
+  newest,
   @JsonValue('best_selling')
   bestSelling,
   @JsonValue('price')

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class UserBillingAddress with _$UserBillingAddress {
+abstract class UserBillingAddress with _$UserBillingAddress {
   const factory UserBillingAddress({
     @Default(0) int id,
     @Default('') String name,

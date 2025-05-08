@@ -130,7 +130,7 @@ class ShareBody extends StatelessWidget {
               icon: Icons.share,
               label: 'Chia sẻ',
               onTap: () {
-                Share.shareUri(Uri.parse(post.video));
+                SharePlus.instance.share(ShareParams(uri: Uri.parse(post.video)));
                 DNavigator.back();
               },
             ),

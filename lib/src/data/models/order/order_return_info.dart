@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class OrderReturnInfo with _$OrderReturnInfo {
+abstract class OrderReturnInfo with _$OrderReturnInfo {
   const factory OrderReturnInfo({
     @Default([]) List<OrderProduct> orderProducts,
     @Default(0) int totalRefundAmount,
@@ -12,7 +12,7 @@ class OrderReturnInfo with _$OrderReturnInfo {
 }
 
 @freezed
-class OrderReturnCategory with _$OrderReturnCategory {
+abstract class OrderReturnCategory with _$OrderReturnCategory {
   const factory OrderReturnCategory({
     @Default(0) int id,
     @Default('') String name,

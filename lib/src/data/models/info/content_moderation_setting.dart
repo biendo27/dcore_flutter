@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class ContentModerationSetting with _$ContentModerationSetting {
+abstract class ContentModerationSetting with _$ContentModerationSetting {
   const factory ContentModerationSetting({
     @Default(0) int apiUser,
     @Default('') String apiSecret,

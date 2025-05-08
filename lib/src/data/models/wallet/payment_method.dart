@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class PaymentMethod with _$PaymentMethod {
+abstract class PaymentMethod with _$PaymentMethod {
   const factory PaymentMethod({
     @Default(0) int id,
     @Default('') String name,

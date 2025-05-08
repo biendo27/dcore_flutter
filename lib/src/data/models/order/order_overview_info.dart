@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class OrderOverviewInfo with _$OrderOverviewInfo {
+abstract class OrderOverviewInfo with _$OrderOverviewInfo {
   const factory OrderOverviewInfo({
     @Default(UserBillingAddress()) UserBillingAddress billingAddress,
     @Default([]) List<OrderOverviewStoreInfo> stores,
@@ -24,7 +24,7 @@ class OrderOverviewInfo with _$OrderOverviewInfo {
 }
 
 @freezed
-class OrderOverviewStoreInfo with _$OrderOverviewStoreInfo {
+abstract class OrderOverviewStoreInfo with _$OrderOverviewStoreInfo {
   const factory OrderOverviewStoreInfo({
     @Default(0) int totalMoney,
     @Default(0) int totalQuantity,

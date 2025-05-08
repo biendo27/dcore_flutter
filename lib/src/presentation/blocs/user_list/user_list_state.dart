@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class UserListState with _$UserListState {
+abstract class UserListState with _$UserListState {
   const factory UserListState({
     @Default(false) bool isLoading,
     @Default(0) int pageIndex,

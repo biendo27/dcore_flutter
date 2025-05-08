@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class AffiliateRequest with _$AffiliateRequest {
+abstract class AffiliateRequest with _$AffiliateRequest {
   const factory AffiliateRequest({
     @Default(0) int id,
     @Default('') String name,

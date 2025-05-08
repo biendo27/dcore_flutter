@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class MediaFilter with _$MediaFilter {
+abstract class MediaFilter with _$MediaFilter {
   const factory MediaFilter({
     @Default(0) int id,
     @Default('') String name,

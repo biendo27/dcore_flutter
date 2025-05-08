@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class CameraState with _$CameraState {
+abstract class CameraState with _$CameraState {
   const factory CameraState({
     @Default(FlashMode.off) FlashMode flashMode,
     @Default(CameraLensDirection.back) CameraLensDirection lensDirection,
@@ -20,6 +20,4 @@ class CameraState with _$CameraState {
 
 enum CameraMode { photo, video }
 
-extension CameraStateX on CameraState {
-  
-}
+extension CameraStateX on CameraState {}

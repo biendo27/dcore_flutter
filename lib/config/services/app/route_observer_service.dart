@@ -66,10 +66,12 @@ abstract class BaseRouterObserver extends NavigatorObserver {
 
   void onPushRoute(Route<dynamic> route) {
     AppConfig.context?.read<PageCubit>().addNavigationHistory(route.settings.name ?? '');
+    // AppDI.source.get<AppTrackingService>(instanceName: DIKey.noOpTrackingService).trackScreenView(route.settings.name ?? '');
   }
 
   void onReplaceRoute(Route<dynamic>? newRoute, Route<dynamic>? oldRoute) {
     AppConfig.context?.read<PageCubit>().replaceNavigationHistory(newRoute?.settings.name ?? '', oldRoute?.settings.name ?? '');
+    // AppDI.source.get<AppTrackingService>(instanceName: DIKey.noOpTrackingService).trackScreenView(newRoute?.settings.name ?? '');
   }
 
   void onRemoveRoute(Route<dynamic>? route) {

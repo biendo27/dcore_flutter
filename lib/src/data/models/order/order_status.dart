@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class OrderStatus with _$OrderStatus {
+abstract class OrderStatus with _$OrderStatus {
   const factory OrderStatus({
     @Default('') String name,
     @Default(UserOrderStatusType.pending) UserOrderStatusType code,
@@ -11,7 +11,7 @@ class OrderStatus with _$OrderStatus {
 }
 
 @freezed
-class OrderDeliveryStatus with _$OrderDeliveryStatus {
+abstract class OrderDeliveryStatus with _$OrderDeliveryStatus {
   const factory OrderDeliveryStatus({
     @Default('') String status,
     @Default('') String description,

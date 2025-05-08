@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Product with _$Product {
+abstract class Product with _$Product {
   const factory Product({
     @Default(0) int id,
     @Default('') String thumbnail,
@@ -33,7 +33,7 @@ class Product with _$Product {
 }
 
 @freezed
-class ProductDetail with _$ProductDetail {
+abstract class ProductDetail with _$ProductDetail {
   const factory ProductDetail({
     @Default(Product()) Product product,
     @Default([]) List<Voucher> vouchers,

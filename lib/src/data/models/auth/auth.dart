@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Auth with _$Auth {
+abstract class Auth with _$Auth {
   const factory Auth({
     @Default('') String accessToken,
     @Default(AppUser()) AppUser user,

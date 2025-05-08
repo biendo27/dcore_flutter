@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class AffiliateInfo with _$AffiliateInfo {
+abstract class AffiliateInfo with _$AffiliateInfo {
   const factory AffiliateInfo({
     @Default(0) int id,
     @Default("") String name,

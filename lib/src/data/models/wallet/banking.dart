@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Banking with _$Banking {
+abstract class Banking with _$Banking {
   const factory Banking({
     @Default(0) int transactionId,
     @Default('') String qr,

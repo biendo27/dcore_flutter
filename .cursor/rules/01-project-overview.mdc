@@ -1,0 +1,33 @@
+﻿---
+description: 
+globs: 
+alwaysApply: true
+---
+
+---
+---
+description: Overview of Flutter DCore project structure and organization
+---
+
+# Flutter DCore - Project Overview
+
+Flutter DCore is a core package that follows Clean Architecture principles. It serves as a foundation for Flutter applications.
+
+## Main Entry Points
+- [lib/main.dart](mdc:lib/main.dart) - Main application entry point
+- [lib/dcore.dart](mdc:lib/dcore.dart) - Core package export file
+- [lib/main_dev.dart](mdc:lib/main_dev.dart), [lib/main_stg.dart](mdc:lib/main_stg.dart), [lib/main_prod.dart](mdc:lib/main_prod.dart) - Environment-specific entry points
+
+## Project Structure
+- [lib/src/](mdc:lib/src) - Features implementation following Clean Architecture layers:
+  - [lib/src/data/](mdc:lib/src/data) - Data layer (repositories implementations, models, data sources)
+  - [lib/src/domain/](mdc:lib/src/domain) - Domain layer (entities, use cases, repository interfaces)
+  - [lib/src/presentation/](mdc:lib/src/presentation) - Presentation layer (UI components, screens, view models)
+- [lib/core/](mdc:lib/core) - Core utilities, base classes, and shared functionality
+- [lib/config/](mdc:lib/config) - Application configuration settings
+
+## Configuration
+- [pubspec.yaml](mdc:pubspec.yaml) - Dependencies and package configuration
+- [flavorizr.yaml](mdc:flavorizr.yaml) - Environment flavors configuration
+- [analysis_options.yaml](mdc:analysis_options.yaml) - Dart analysis rules
+

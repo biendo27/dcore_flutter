@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Report with _$Report {
+abstract class Report with _$Report {
   const factory Report({
     @Default(0) int id,
     @Default('') String name,
@@ -13,7 +13,7 @@ class Report with _$Report {
 }
 
 @freezed
-class ReportResult with _$ReportResult {
+abstract class ReportResult with _$ReportResult {
   const factory ReportResult({
     @Default(0) int id,
     @Default(0) int typeId,
@@ -45,4 +45,3 @@ enum ReportStatus {
   @JsonValue('approved')
   approved,
 }
-

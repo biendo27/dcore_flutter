@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class LiveState with _$LiveState {
+abstract class LiveState with _$LiveState {
   const factory LiveState({
     @Default(false) bool isLoading,
     @Default(BasePageBreak<Live>()) BasePageBreak<Live> liveList,

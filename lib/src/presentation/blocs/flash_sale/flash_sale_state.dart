@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class FlashSaleState with _$FlashSaleState {
+abstract class FlashSaleState with _$FlashSaleState {
   const factory FlashSaleState({
     @Default(false) bool isLoading,
     @Default(StoreFlashSale()) StoreFlashSale currentFlashSale,

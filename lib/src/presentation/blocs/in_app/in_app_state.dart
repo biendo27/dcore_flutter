@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class InAppState with _$InAppState {
+abstract class InAppState with _$InAppState {
   const factory InAppState({
     @Default(false) bool isAvailable,
     @Default(false) bool isLoading,

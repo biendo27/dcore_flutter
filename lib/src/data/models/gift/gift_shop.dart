@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Awards with _$Awards {
+abstract class Awards with _$Awards {
   const factory Awards({
     @Default('') String typeAward,
     @Default('') String type,
@@ -13,4 +13,3 @@ class Awards with _$Awards {
 
   factory Awards.fromJson(Map<String, dynamic> json) => _$AwardsFromJson(json);
 }
-

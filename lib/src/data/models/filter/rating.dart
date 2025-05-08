@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class RatingFilter with _$RatingFilter {
+abstract class RatingFilter with _$RatingFilter {
   const factory RatingFilter({
     @Default(0) int value,
     @Default('') String name,

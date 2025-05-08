@@ -51,8 +51,8 @@ class LiveSocketCubit extends Cubit<LiveSocketState> with CubitActionMixin<LiveS
         data,
         (json) => LiveCommentSocketData.fromJson(json as Map<String, dynamic>),
       );
-      AppConfig.context?.read<LiveCommentCubit>().addComment(commentData.data.message);
-      Live live = commentData.data.live;
+      AppConfig.context?.read<LiveCommentCubit>().addComment(commentData.data!.message);
+      Live live = commentData.data!.live;
       if (live.id != 0) AppConfig.context?.read<LiveCubit>().setCurrentLive(live);
     });
   }
@@ -63,8 +63,8 @@ class LiveSocketCubit extends Cubit<LiveSocketState> with CubitActionMixin<LiveS
         data,
         (json) => LiveGiftSocketData.fromJson(json as Map<String, dynamic>),
       );
-      AppConfig.context?.read<LiveGiftCubit>().addGift(giftData.data.gift);
-      Live live = giftData.data.live;
+      AppConfig.context?.read<LiveGiftCubit>().addGift(giftData.data!.gift);
+      Live live = giftData.data!.live;
       if (live.id != 0) AppConfig.context?.read<LiveCubit>().setCurrentLive(live);
     });
   }
@@ -75,7 +75,7 @@ class LiveSocketCubit extends Cubit<LiveSocketState> with CubitActionMixin<LiveS
         data,
         (json) => LiveCommentSocketData.fromJson(json as Map<String, dynamic>),
       );
-      AppConfig.context?.read<LiveCommentCubit>().addComment(userData.data.message);
+      AppConfig.context?.read<LiveCommentCubit>().addComment(userData.data!.message);
     });
   }
 
@@ -85,7 +85,7 @@ class LiveSocketCubit extends Cubit<LiveSocketState> with CubitActionMixin<LiveS
         data,
         (json) => LiveCommentSocketData.fromJson(json as Map<String, dynamic>),
       );
-      AppConfig.context?.read<LiveCommentCubit>().addComment(userData.data.message);
+      AppConfig.context?.read<LiveCommentCubit>().addComment(userData.data!.message);
     });
   }
 
@@ -97,8 +97,8 @@ class LiveSocketCubit extends Cubit<LiveSocketState> with CubitActionMixin<LiveS
       );
       AppConfig.context
         ?..read<LiveHeartCubit>().addHeart()
-        ..read<LiveCubit>().setLiveHeartCount(heartData.data.count);
-      Live live = heartData.data.live;
+        ..read<LiveCubit>().setLiveHeartCount(heartData.data!.count);
+      Live live = heartData.data!.live;
       if (live.id != 0) AppConfig.context?.read<LiveCubit>().setCurrentLive(live);
     });
   }
@@ -109,8 +109,8 @@ class LiveSocketCubit extends Cubit<LiveSocketState> with CubitActionMixin<LiveS
         data,
         (json) => LiveViewerSocketData.fromJson(json as Map<String, dynamic>),
       );
-      AppConfig.context?.read<LiveCubit>().setLiveViewCount(viewerData.data.users.length);
-      AppConfig.context?.read<LiveViewerCubit>().updateViewers(viewerData.data.users);
+      AppConfig.context?.read<LiveCubit>().setLiveViewCount(viewerData.data!.users.length);
+      AppConfig.context?.read<LiveViewerCubit>().updateViewers(viewerData.data!.users);
       // AppConfig.context?.read<LiveViewerCubit>().addViewer(viewerData.data.viewer);
     });
   }
@@ -121,7 +121,7 @@ class LiveSocketCubit extends Cubit<LiveSocketState> with CubitActionMixin<LiveS
         data,
         (json) => LiveCommentSocketData.fromJson(json as Map<String, dynamic>),
       );
-      AppConfig.context?.read<LiveCommentCubit>().setPinComment(commentData.data.message);
+      AppConfig.context?.read<LiveCommentCubit>().setPinComment(commentData.data!.message);
     });
   }
 
@@ -131,7 +131,7 @@ class LiveSocketCubit extends Cubit<LiveSocketState> with CubitActionMixin<LiveS
         data,
         (json) => LiveOrderSocketData.fromJson(json as Map<String, dynamic>),
       );
-      Live live = orderData.data.live;
+      Live live = orderData.data!.live;
       if (live.id != 0) AppConfig.context?.read<LiveCubit>().setCurrentLive(live);
     });
   }
@@ -142,22 +142,22 @@ class LiveSocketCubit extends Cubit<LiveSocketState> with CubitActionMixin<LiveS
         data,
         (json) => LiveSocketData.fromJson(json as Map<String, dynamic>),
       );
-      AppConfig.context?.read<LiveCubit>().setCurrentLive(liveData.data.live);
+      AppConfig.context?.read<LiveCubit>().setCurrentLive(liveData.data!.live);
     });
   }
 
   void listenNewUserReceiveGift() {
     _socketLive.addListener(LiveSocketListenerEvent.newUserReceiveGift(state.roomId), (data) {
       BaseSocketResponse<LiveSocketUserReceiveGift> receiptData = BaseSocketResponse<LiveSocketUserReceiveGift>.fromJson(data, (json) => LiveSocketUserReceiveGift.fromJson(json as Map<String, dynamic>));
-      AppConfig.context?.read<LiveMissionCubit>().setGiftRecipient(receiptData.data.user);
-      AppConfig.context?.read<LiveCubit>().setCurrentLive(receiptData.data.live);
+      AppConfig.context?.read<LiveMissionCubit>().setGiftRecipient(receiptData.data!.user);
+      AppConfig.context?.read<LiveCubit>().setCurrentLive(receiptData.data!.live);
     });
   }
 
   void listenNewSettingGift() {
     _socketLive.addListener(LiveSocketListenerEvent.newSettingGift(state.roomId), (data) {
       BaseSocketResponse<LiveSocketData> liveData = BaseSocketResponse<LiveSocketData>.fromJson(data, (json) => LiveSocketData.fromJson(json as Map<String, dynamic>));
-      AppConfig.context?.read<LiveCubit>().setCurrentLive(liveData.data.live);
+      AppConfig.context?.read<LiveCubit>().setCurrentLive(liveData.data!.live);
     });
   }
 }

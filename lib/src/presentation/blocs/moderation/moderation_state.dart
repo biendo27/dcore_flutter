@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class ModerationState with _$ModerationState {
+abstract class ModerationState with _$ModerationState {
   const factory ModerationState({
     @Default(false) bool isLoading,
     @Default(false) bool isVideoSafe,
@@ -10,4 +10,4 @@ class ModerationState with _$ModerationState {
   }) = _ModerationState;
 
   factory ModerationState.initial() => const ModerationState();
-} 
+}

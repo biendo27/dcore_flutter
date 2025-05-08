@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Nation with _$Nation {
+abstract class Nation with _$Nation {
   const factory Nation({
     @Default(0) int id,
     @Default('') String name,
@@ -10,4 +10,3 @@ class Nation with _$Nation {
 
   factory Nation.fromJson(Map<String, dynamic> json) => _$NationFromJson(json);
 }
-

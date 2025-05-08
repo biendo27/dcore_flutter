@@ -1,16 +1,14 @@
 part of '../models.dart';
 
 @freezed
-class PushNotificationResponse with _$PushNotificationResponse {
-  const factory PushNotificationResponse({
-    @Default(PushNotification()) PushNotification fields
-  }) = _PushNotificationResponse;
+abstract class PushNotificationResponse with _$PushNotificationResponse {
+  const factory PushNotificationResponse({@Default(PushNotification()) PushNotification fields}) = _PushNotificationResponse;
 
   factory PushNotificationResponse.fromJson(Map<String, dynamic> json) => _$PushNotificationResponseFromJson(json);
 }
 
 @freezed
-class PushNotification with _$PushNotification {
+abstract class PushNotification with _$PushNotification {
   const factory PushNotification({
     @Default('') String? token,
     @Default(NotificationData()) NotificationData? notification,
@@ -21,7 +19,7 @@ class PushNotification with _$PushNotification {
 }
 
 @freezed
-class NotificationData with _$NotificationData {
+abstract class NotificationData with _$NotificationData {
   const factory NotificationData({
     @Default('') String? title,
     @Default('') String? body,

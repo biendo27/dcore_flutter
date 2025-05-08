@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class ShippingMethod with _$ShippingMethod {
+abstract class ShippingMethod with _$ShippingMethod {
   const factory ShippingMethod({
     @Default(0) int id,
     @Default('') String name,
@@ -15,7 +15,7 @@ class ShippingMethod with _$ShippingMethod {
 }
 
 @freezed
-class EstimatedTime with _$EstimatedTime {
+abstract class EstimatedTime with _$EstimatedTime {
   const factory EstimatedTime({
     @Default(null) DateTime? from,
     @Default(null) DateTime? to,

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Wallet with _$Wallet {
+abstract class Wallet with _$Wallet {
   const factory Wallet({
     @Default(0) int wallet,
     @Default(Transactions()) Transactions transactions,

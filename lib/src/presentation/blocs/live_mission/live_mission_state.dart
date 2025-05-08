@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class LiveMissionState with _$LiveMissionState {
+abstract class LiveMissionState with _$LiveMissionState {
   const factory LiveMissionState({
     @Default(false) bool isLoading,
     @Default(Live()) Live currentLive,
@@ -11,4 +11,3 @@ class LiveMissionState with _$LiveMissionState {
 
   factory LiveMissionState.initial() => LiveMissionState();
 }
-

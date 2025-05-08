@@ -1,0 +1,170 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+description: Error Handling and Response Patterns in Flutter DCore
+---
+
+# Error Handling and Response Patterns
+
+Flutter DCore implements a structured approach to error handling and API responses using standardized types and patterns.
+
+## Core Components
+
+### Base Response Classes
+- Located in [lib/core/responses/responses.dart](mdc:lib/core/responses/responses.dart)
+- Uses Freezed for immutable data structures
+- Provides consistent response formatting across the application
+
+### Response Types
+- [lib/core/responses/base_response.dart](mdc:lib/core/responses/base_response.dart) - Generic wrapper for API responses
+  - `BaseResponse<T>` - For single object responses
+  - `BaseResponseList<T>` - For list/collection responses
+- [lib/core/responses/base_socket_response.dart](mdc:lib/core/responses/base_socket_response.dart) - For WebSocket communication
+- [lib/core/responses/base_page_break.dart](mdc:lib/core/responses/base_page_break.dart) - For paginated responses
+
+## Implementation Example
+
+### Response Models
+```dart
+// Base response wrapper for single objects
+@Freezed(genericArgumentFactories: true)
+sealed class BaseResponse<T> with _$BaseResponse<T> {
+  const factory BaseResponse({
+    @Default(false) bool status,
+    @Default('') String message,
+    @Default(0) int code,
+    T? data,
+  }) = _BaseResponseData;
+
+  factory BaseResponse.fromJson(
+    Map<String, dynamic> json, 
+    T Function(Object?) fromJsonT
+  ) => _$BaseResponseFromJson(json, fromJsonT);
+}
+
+// Base response wrapper for lists
+@Freezed(genericArgumentFactories: true)
+sealed class BaseResponseList<T> with _$BaseResponseList<T> {
+  const factory BaseResponseList({
+    @Default(false) bool status,
+    @Default('') String message,
+    @Default(0) int code,
+    @Default([]) List<T> data,
+  }) = _BaseResponseListData;
+
+  factory BaseResponseList.fromJson(
+    Map<String, dynamic> json, 
+    T Function(Object?) fromJsonT
+  ) => _$BaseResponseListFromJson(json, fromJsonT);
+}
+```
+
+### Error Handling in Repositories
+```dart
+// Repository implementation with error handling
+class UserRepositoryImpl implements UserRepository {
+  final UserRemoteDataSource remoteDataSource;
+  
+  UserRepositoryImpl(this.remoteDataSource);
+  
+  @override
+  Future<Either<Failure, User>> getUser(String userId) async {
+    try {
+      final response = await remoteDataSource.getUser(userId);
+      
+      if (response.status) {
+        return Right(response.data!);
+      } else {
+        return Left(ServerFailure(
+          message: response.message,
+          code: response.code
+        ));
+      }
+    } on DioException catch (e) {
+      return Left(_handleDioError(e));
+    } on Exception {
+      return Left(UnexpectedFailure());
+    }
+  }
+  
+  Failure _handleDioError(DioException error) {
+    switch (error.type) {
+      case DioExceptionType.connectionTimeout:
+        return ConnectionFailure();
+      case DioExceptionType.receiveTimeout:
+        return TimeoutFailure();
+      default:
+        return ServerFailure(
+          message: error.message ?? 'Server error',
+          code: error.response?.statusCode ?? 500
+        );
+    }
+  }
+}
+```
+
+### Usage in ViewModel/Presenter
+```dart
+// ViewModel using Either pattern for error handling
+class UserViewModel extends BaseViewModel {
+  final GetUserUseCase getUserUseCase;
+  
+  UserViewModel(this.getUserUseCase);
+  
+  Future<void> loadUser(String userId) async {
+    setLoading(true);
+    
+    final result = await getUserUseCase(UserId(userId));
+    
+    result.fold(
+      (failure) => _handleFailure(failure),
+      (user) => _setUserData(user),
+    );
+    
+    setLoading(false);
+  }
+  
+  void _handleFailure(Failure failure) {
+    switch (failure.runtimeType) {
+      case ConnectionFailure:
+        setError('No internet connection. Please check your network.');
+      case ServerFailure:
+        final serverFailure = failure as ServerFailure;
+        setError(serverFailure.message);
+      default:
+        setError('An unexpected error occurred.');
+    }
+  }
+  
+  void _setUserData(User user) {
+    // Handle successful data
+  }
+}
+```
+
+## Error Types and Hierarchy
+- Abstract `Failure` base class
+- Specialized failure types:
+  - `ServerFailure` - API/Backend errors
+  - `CacheFailure` - Local storage errors
+  - `NetworkFailure` - Connection issues
+  - `ValidationFailure` - Input validation errors
+  - `UnexpectedFailure` - Fallback for unhandled errors
+
+## UI Error Presentation
+- Consistent error display patterns
+- Contextual error messages based on failure type
+- Retry mechanisms for recoverable errors
+- Error logging and analytics integration
+
+## Related Components
+- [lib/core/base/base_viewmodel.dart](mdc:lib/core/base/base_viewmodel.dart) - ViewModel error state handling
+- [lib/core/helpers/error_helper.dart](mdc:lib/core/helpers/error_helper.dart) - Error helper utilities
+
+## Related Rules
+- [02-clean-architecture.mdc](mdc:.cursor/rules/02-clean-architecture.mdc) - Architecture integration
+- [06-repository-pattern.mdc](mdc:.cursor/rules/06-repository-pattern.mdc) - Repository error handling
+- [07-state-management.mdc](mdc:.cursor/rules/07-state-management.mdc) - State management error handling
+

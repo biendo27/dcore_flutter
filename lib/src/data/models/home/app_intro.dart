@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class AppIntro with _$AppIntro {
+abstract class AppIntro with _$AppIntro {
   const factory AppIntro({
     @Default(0) int id,
     @Default('') String title,

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class RefundBanking with _$RefundBanking {
+abstract class RefundBanking with _$RefundBanking {
   const factory RefundBanking({
     @Default(0) int id,
     @Default(UserBank()) UserBank bank,
@@ -14,7 +14,7 @@ class RefundBanking with _$RefundBanking {
 }
 
 @freezed
-class UserBank with _$UserBank {
+abstract class UserBank with _$UserBank {
   const factory UserBank({
     @Default(0) int id,
     @Default('') String name,

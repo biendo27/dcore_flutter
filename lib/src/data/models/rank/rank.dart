@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Rank with _$Rank {
+abstract class Rank with _$Rank {
   const factory Rank({
     @Default(0) int id,
     @Default('') String image,

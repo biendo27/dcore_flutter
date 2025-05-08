@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class ModerationError with _$ModerationError {
+abstract class ModerationError with _$ModerationError {
   const factory ModerationError({
     @Default('') String type,
     @Default(0) int code,

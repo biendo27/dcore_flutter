@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Sound with _$Sound {
+abstract class Sound with _$Sound {
   const factory Sound({
     @Default(0) int id,
     @Default('') String audio,

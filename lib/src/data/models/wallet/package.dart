@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class PackageResponse with _$PackageResponse {
+abstract class PackageResponse with _$PackageResponse {
   const factory PackageResponse({
     @Default(false) bool firstDeposit,
     @Default([]) List<Package> packages,
@@ -10,7 +10,7 @@ class PackageResponse with _$PackageResponse {
 }
 
 @freezed
-class Package with _$Package {
+abstract class Package with _$Package {
   const factory Package({
     @Default(0) int id,
     @Default('') String inAppId,

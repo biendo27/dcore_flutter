@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Voucher with _$Voucher {
+abstract class Voucher with _$Voucher {
   const factory Voucher({
     @Default(0) int id,
     @Default(0) int voucherId,

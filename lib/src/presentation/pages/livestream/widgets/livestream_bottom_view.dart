@@ -168,15 +168,11 @@ class _LivestreamBottomViewState extends State<LivestreamBottomView> {
       frameRate: selectedConfig.frameRate > 30 ? 30 : selectedConfig.frameRate, // Cap FPS at 30
       bitrate: adjustedBitrate,
       degradationPreference: DegradationPreference.maintainBalanced,
-      mirrorMode: isMirrorModeEnabled
-          ? VideoMirrorModeType.videoMirrorModeEnabled
-          : VideoMirrorModeType.videoMirrorModeDisabled,
+      mirrorMode: isMirrorModeEnabled ? VideoMirrorModeType.videoMirrorModeEnabled : VideoMirrorModeType.videoMirrorModeDisabled,
     ));
     engine.setLocalRenderMode(
       renderMode: RenderModeType.renderModeFit,
-      mirrorMode: isMirrorModeEnabled
-          ? VideoMirrorModeType.videoMirrorModeEnabled
-          : VideoMirrorModeType.videoMirrorModeDisabled,
+      mirrorMode: isMirrorModeEnabled ? VideoMirrorModeType.videoMirrorModeEnabled : VideoMirrorModeType.videoMirrorModeDisabled,
     );
 
     // Enable adaptive bitrate
@@ -408,9 +404,12 @@ class _LivestreamBottomViewState extends State<LivestreamBottomView> {
 
   void shareLiveLink() {
     Live currentLive = context.read<LiveCubit>().state.currentLive;
-    String url =
-        "https://venusshop.top/Livestream?roomId=${currentLive.roomId}&liveId=${currentLive.id}&hostId=${currentLive.user.id}";
-    Share.share(url);
+    String url = "https://venusshop.top/Livestream?roomId=${currentLive.roomId}&liveId=${currentLive.id}&hostId=${currentLive.user.id}";
+    SharePlus.instance.share(
+      ShareParams(
+        text: url,
+      ),
+    );
   }
 
   void _openShopTap(BuildContext context) {

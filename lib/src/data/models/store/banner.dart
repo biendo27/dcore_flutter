@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class StoreBanner with _$StoreBanner {
+abstract class StoreBanner with _$StoreBanner {
   const factory StoreBanner({
     @Default(0) int id,
     @Default('') String image,

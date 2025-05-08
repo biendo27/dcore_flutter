@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class StoreCategory with _$StoreCategory {
+abstract class StoreCategory with _$StoreCategory {
   const factory StoreCategory({
     @Default(0) int id,
     @Default('') String name,

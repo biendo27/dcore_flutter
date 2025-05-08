@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class ServicePromotionFilter with _$ServicePromotionFilter {
+abstract class ServicePromotionFilter with _$ServicePromotionFilter {
   const factory ServicePromotionFilter({
     @Default(0) int key,
     @Default('') String name,

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Event with _$Event {
+abstract class Event with _$Event {
   const factory Event({
     @Default(0) int id,
     @Default('') String name,

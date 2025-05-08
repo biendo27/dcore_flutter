@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class LiveSchedule with _$LiveSchedule {
+abstract class LiveSchedule with _$LiveSchedule {
   const factory LiveSchedule({
     @Default('') String date,
     @Default([]) List<Live> details,
@@ -11,7 +11,7 @@ class LiveSchedule with _$LiveSchedule {
 }
 
 @freezed
-class LiveScheduleResponse with _$LiveScheduleResponse {
+abstract class LiveScheduleResponse with _$LiveScheduleResponse {
   const factory LiveScheduleResponse({
     @Default(Live()) Live nearestLive,
     @Default(BasePageBreak<LiveSchedule>()) BasePageBreak<LiveSchedule> lives,

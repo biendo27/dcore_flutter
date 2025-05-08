@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class RankConfig with _$RankConfig {
+abstract class RankConfig with _$RankConfig {
   const factory RankConfig({
     @Default(Rank()) Rank rank,
     @Default([]) List<Rank> ranks,
@@ -9,4 +9,3 @@ class RankConfig with _$RankConfig {
 
   factory RankConfig.fromJson(Map<String, dynamic> json) => _$RankConfigFromJson(json);
 }
-

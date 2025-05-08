@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class LiveSocketState with _$LiveSocketState {
+abstract class LiveSocketState with _$LiveSocketState {
   const factory LiveSocketState({
     @Default(false) bool isLoading,
     @Default(SocketLiveStatus.none) SocketLiveStatus status,

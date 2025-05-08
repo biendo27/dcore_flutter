@@ -1,7 +1,7 @@
 part of 'responses.dart';
 
-@Freezed(genericArgumentFactories: true)
 @JsonSerializable(createFactory: false)
+@Freezed(genericArgumentFactories: true)
 sealed class BasePageBreak<T> with _$BasePageBreak<T> {
   const factory BasePageBreak({
     @Default(0) int currentPage,

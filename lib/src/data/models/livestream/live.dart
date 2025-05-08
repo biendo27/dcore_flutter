@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Live with _$Live {
+abstract class Live with _$Live {
   const factory Live({
     @Default(0) int id,
     @Default('') String roomId,
@@ -40,7 +40,7 @@ class Live with _$Live {
 }
 
 @freezed
-class LiveSocketData with _$LiveSocketData {
+abstract class LiveSocketData with _$LiveSocketData {
   const factory LiveSocketData({
     @Default(Live()) Live live,
     @Default('') String channel,
@@ -51,7 +51,7 @@ class LiveSocketData with _$LiveSocketData {
 }
 
 @freezed
-class LiveSocketUserReceiveGift with _$LiveSocketUserReceiveGift {
+abstract class LiveSocketUserReceiveGift with _$LiveSocketUserReceiveGift {
   const factory LiveSocketUserReceiveGift({
     @Default(Live()) Live live,
     @Default(AppUser()) AppUser user,

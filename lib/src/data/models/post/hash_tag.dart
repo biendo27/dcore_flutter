@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class HashTag with _$HashTag {
+abstract class HashTag with _$HashTag {
   const factory HashTag({
     @Default(0) int id,
     @Default('') String name,

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Comment with _$Comment {
+abstract class Comment with _$Comment {
   const factory Comment({
     @Default(0) int id,
     @Default(0) int replyId,
@@ -23,7 +23,7 @@ class Comment with _$Comment {
 }
 
 @freezed
-class LiveCommentSocketData with _$LiveCommentSocketData {
+abstract class LiveCommentSocketData with _$LiveCommentSocketData {
   const factory LiveCommentSocketData({
     @Default(Comment()) Comment message,
     @Default(Live()) Live live,

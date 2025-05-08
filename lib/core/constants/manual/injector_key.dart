@@ -40,4 +40,11 @@ mixin DIKey {
 
   //* Socket Services
   static const String socketLive = 'socketLive';
+
+  //* Tracking Services
+  static const String trackingService = 'trackingService';
+  static const String firebaseAnalyticsService = 'firebaseAnalyticsService';
+  static const String sentryTrackingService = 'sentryTrackingService';
+  static const String noOpTrackingService = 'noOpTrackingService';
+  static const String compositeTrackingService = 'compositeTrackingService';
 }

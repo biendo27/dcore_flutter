@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class UserState with _$UserState {
+abstract class UserState with _$UserState {
   const factory UserState({
     @Default(false) bool isLoading,
     @Default('') String accessToken,

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class Transactions with _$Transactions {
+abstract class Transactions with _$Transactions {
   const factory Transactions({
     @Default(1) int currentPage,
     @Default(0) int total,

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class AppFile with _$AppFile {
+abstract class AppFile with _$AppFile {
   const factory AppFile({
     @Default('') String url,
     @Default('') String fileName,

@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class OrderProduct with _$OrderProduct {
+abstract class OrderProduct with _$OrderProduct {
   const factory OrderProduct({
     @Default(0) int id,
     @Default(Product()) Product product,
@@ -23,4 +23,3 @@ extension OrderProductX on OrderProduct {
         variant: variant,
       );
 }
-

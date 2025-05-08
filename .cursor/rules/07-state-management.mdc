@@ -1,0 +1,135 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+description: State management approach in Flutter DCore
+---
+
+# State Management
+
+## Pattern Overview
+Flutter DCore uses a structured approach to state management with clear separation between UI and business logic.
+
+## Base Components
+
+### ViewModel
+```dart
+// Base ViewModel provides common state management functionality
+abstract class BaseViewModel extends ChangeNotifier {
+  ViewState _state = ViewState.initial;
+  String? _errorMessage;
+  
+  ViewState get state => _state;
+  String? get errorMessage => _errorMessage;
+  bool get isLoading => _state == ViewState.loading;
+  bool get hasError => _state == ViewState.error;
+  
+  void setLoading(bool loading) {
+    _state = loading ? ViewState.loading : ViewState.idle;
+    notifyListeners();
+  }
+  
+  void setError(String message) {
+    _state = ViewState.error;
+    _errorMessage = message;
+    notifyListeners();
+  }
+}
+```
+
+### ViewState Enum
+```dart
+enum ViewState {
+  initial,
+  idle,
+  loading,
+  error,
+  success,
+}
+```
+
+## Implementation Example
+
+### Feature-specific ViewModel
+```dart
+class ProductViewModel extends BaseViewModel {
+  final GetProductsUseCase getProductsUseCase;
+  List<Product> _products = [];
+  
+  List<Product> get products => _products;
+  
+  ProductViewModel({required this.getProductsUseCase});
+  
+  Future<void> loadProducts() async {
+    setLoading(true);
+    
+    final result = await getProductsUseCase(NoParams());
+    
+    result.fold(
+      (failure) => setError(_mapFailureToMessage(failure)),
+      (productsList) {
+        _products = productsList;
+        setLoading(false);
+      },
+    );
+  }
+  
+  String _mapFailureToMessage(Failure failure) {
+    // Map domain failures to user-friendly messages
+    switch (failure.runtimeType) {
+      case ServerFailure:
+        return 'Server error occurred';
+      case CacheFailure:
+        return 'Cache error occurred';
+      default:
+        return 'Unexpected error';
+    }
+  }
+}
+```
+
+### UI Consumption
+```dart
+class ProductListScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider(
+      create: (context) => sl<ProductViewModel>()..loadProducts(),
+      child: _ProductListContent(),
+    );
+  }
+}
+
+class _ProductListContent extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final viewModel = Provider.of<ProductViewModel>(context);
+    
+    return Scaffold(
+      appBar: AppBar(title: Text('Products')),
+      body: viewModel.isLoading
+          ? Center(child: CircularProgressIndicator())
+          : viewModel.hasError
+              ? Center(child: Text(viewModel.errorMessage ?? 'Error'))
+              : ListView.builder(
+                  itemCount: viewModel.products.length,
+                  itemBuilder: (context, index) {
+                    final product = viewModel.products[index];
+                    return ListTile(
+                      title: Text(product.name),
+                      subtitle: Text(product.description),
+                    );
+                  },
+                ),
+    );
+  }
+}
+```
+
+## Key Principles
+- ViewModels manage UI state and business logic communication
+- Clean separation between UI and logic
+- Consistent error handling with user-friendly messages
+- State changes trigger UI updates via ChangeNotifier
+

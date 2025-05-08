@@ -1,7 +1,7 @@
 part of '../models.dart';
 
 @freezed
-class UserOrder with _$UserOrder {
+abstract class UserOrder with _$UserOrder {
   const factory UserOrder({
     @Default(0) int id,
     @Default(OrderStatus()) OrderStatus status,
@@ -35,7 +35,7 @@ class UserOrder with _$UserOrder {
 }
 
 @freezed
-class OrderResultResponse with _$OrderResultResponse {
+abstract class OrderResultResponse with _$OrderResultResponse {
   const factory OrderResultResponse({
     @Default(0) int orderGroupId,
   }) = _OrderResultResponse;
@@ -44,7 +44,7 @@ class OrderResultResponse with _$OrderResultResponse {
 }
 
 @freezed
-class LiveOrderSocketData with _$LiveOrderSocketData {
+abstract class LiveOrderSocketData with _$LiveOrderSocketData {
   const factory LiveOrderSocketData({
     @Default('') String message,
     @Default(Live()) Live live,
@@ -54,4 +54,3 @@ class LiveOrderSocketData with _$LiveOrderSocketData {
 
   factory LiveOrderSocketData.fromJson(Map<String, dynamic> json) => _$LiveOrderSocketDataFromJson(json);
 }
-

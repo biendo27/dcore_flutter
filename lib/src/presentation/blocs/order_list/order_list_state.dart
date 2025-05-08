@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class OrderListState with _$OrderListState {
+abstract class OrderListState with _$OrderListState {
   const factory OrderListState({
     @Default(false) bool isLoading,
     @Default(BasePageBreak<UserOrder>()) BasePageBreak<UserOrder> userOrders,

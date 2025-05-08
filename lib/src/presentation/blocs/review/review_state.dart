@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class ReviewState with _$ReviewState {
+abstract class ReviewState with _$ReviewState {
   const factory ReviewState({
     @Default(false) bool isLoading,
     @Default(Product()) Product product,

@@ -51,7 +51,6 @@ export 'package:video_player/video_player.dart';
 export 'package:webview_flutter/webview_flutter.dart';
 
 
-// export 'package:cached_video_player_plus/cached_video_player_plus.dart';
 // export 'package:get/get.dart' hide Transition, MultipartFile, Response;
 // export 'package:flutter_datetime_picker/flutter_datetime_picker.dart' hide DatePickerTheme;
 // export 'package:google_mobile_ads/google_mobile_ads.dart';

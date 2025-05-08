@@ -1,0 +1,50 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+description: Configuration system in Flutter DCore
+---
+
+# Configuration System
+
+The [lib/config/](mdc:lib/config) directory contains various configuration modules that manage different aspects of the application.
+
+## Configuration Modules
+
+### Dependency Injection
+- Located in [lib/config/di/](mdc:lib/config/di)
+- Manages dependency injection throughout the application
+- Initializes and provides access to services and repositories
+
+### Localization
+- Located in [lib/config/l10n/](mdc:lib/config/l10n)
+- Handles internationalization and localization
+- Manages translation resources for multiple languages
+
+### Routing
+- Located in [lib/config/routes/](mdc:lib/config/routes)
+- Defines application routes and navigation system
+- Manages route generation and navigation helpers
+
+### Services
+- Located in [lib/config/services/](mdc:lib/config/services)
+- Configures external service integrations
+- Includes Firebase configuration for different environments
+
+### Themes
+- Located in [lib/config/themes/](mdc:lib/config/themes)
+- Defines application themes and styles
+- Contains color schemes, text styles, and theming utilities
+
+### Sharing
+- Located in [lib/config/share/](mdc:lib/config/share)
+- Handles content sharing functionality
+- Configures sharing options and providers
+
+## Main Export
+- [lib/config/config.dart](mdc:lib/config/config.dart) - Main export file for configuration modules
+
+## Usage
+Configuration modules are typically initialized at app startup and provide global access to configuration settings throughout the application.
+

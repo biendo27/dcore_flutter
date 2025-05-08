@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class PageState with _$PageState {
+abstract class PageState with _$PageState {
   const factory PageState({
     @Default(0) int currentIndex,
     @Default(false) bool stopAllMedia,

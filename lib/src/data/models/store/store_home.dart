@@ -1,11 +1,11 @@
 part of '../models.dart';
 
 @freezed
-class StoreHome with _$StoreHome {
+abstract class StoreHome with _$StoreHome {
   const factory StoreHome({
     @Default([]) List<StoreBanner> banners,
     @Default(StoreFlashSale()) StoreFlashSale flashSale,
-    @Default([]) List<StoreCategory> categories, 
+    @Default([]) List<StoreCategory> categories,
     @Default([]) List<Event> events,
     @Default([]) List<Product> products,
   }) = _StoreHome;

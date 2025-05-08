@@ -1,7 +1,7 @@
 part of '../blocs.dart';
 
 @freezed
-class WalletState with _$WalletState {
+abstract class WalletState with _$WalletState {
   const factory WalletState({
     @Default(false) bool isLoading,
     @Default(false) bool firstDeposit,
