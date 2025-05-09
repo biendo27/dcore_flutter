@@ -28,7 +28,7 @@
         <key>CFBundleTypeRole</key>
         <string>Editor</string>
         <key>CFBundleURLName</key>
-        <string>com.venus.venusshop</string>
+        <string>flutter.base.dcore</string>
         <key>CFBundleURLSchemes</key>
         <array>
           <string>dcore</string>

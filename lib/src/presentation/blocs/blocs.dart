@@ -33,11 +33,11 @@ import '../../../config/themes/themes.dart';
 import '../../../core/base/base.dart';
 import '../../../core/constants/constants.dart';
 import '../../../core/helpers/helpers.dart';
-import '../../../core/responses/responses.dart';
 import '../../../core/utils/utils.dart';
 import '../../data/datasources/sockets/sockets.dart';
 import '../../data/models/models.dart';
 import '../../domain/repositories/repositories.dart';
+import '../../domain/usecases/usecases.dart';
 
 //? Affiliate Bloc
 part 'affiliate/affiliate_cubit.dart';

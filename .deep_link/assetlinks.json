@@ -5,7 +5,7 @@
         ],
         "target": {
             "namespace": "android_app",
-            "package_name": "com.app.venuslive",
+            "package_name": "flutter.base.dcore",
             "sha256_cert_fingerprints": [
                 "4A:5D:8C:86:54:5E:9E:CD:DD:F9:68:4C:7C:BA:D5:E0:72:54:21:51:EA:F2:E8:D4:2D:59:30:99:55:83:A8:75",
                 "7B:DC:8C:28:1E:F9:2E:CA:70:16:FF:84:65:1B:16:67:F5:95:DB:38:FF:9D:29:AF:30:2D:EA:A7:AF:62:AF:3A",

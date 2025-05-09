@@ -52,7 +52,7 @@ import 'package:uuid/uuid.dart';
 //* Import all files here
 import '../../core/constants/constants.dart';
 import '../../core/helpers/helpers.dart';
-import '../../core/responses/responses.dart';
+import '../../core/base/base.dart';
 import '../../core/utils/utils.dart';
 import '../../src/data/models/models.dart';
 import '../../src/presentation/blocs/blocs.dart';

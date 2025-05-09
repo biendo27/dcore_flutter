@@ -17,7 +17,7 @@ import '../../../config/routes/routes.dart';
 import '../../../config/services/services.dart';
 import '../../../config/themes/themes.dart';
 import '../../../core/constants/constants.dart';
-import '../../../core/responses/responses.dart';
+import '../../../core/base/base.dart';
 import '../../../core/utils/utils.dart';
 import '../../presentation/blocs/blocs.dart';
 

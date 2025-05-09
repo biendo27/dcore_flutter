@@ -3,7 +3,7 @@ part of '../base.dart';
 @pragma('vm:entry-point')
 Future<BaseResponseList<T>> requestListIsolate<T>({
   required Future<BaseResponseList<T>> Function() apiCall,
-})  async {
+}) async {
   BaseResponseList<T> result = await apiCall();
   return result;
 }
@@ -17,18 +17,79 @@ Future<BaseResponse<T>> requestIsolate<T>({
 }
 
 mixin DataStateConvertible {
-  DataState<T> convertToDataState<T>(HttpResponse<T> httpRP) {
-    if (httpRP.response.statusCode == HttpStatus.ok || httpRP.response.statusCode == HttpStatus.created) {
-      return DataSuccess<T>(data: httpRP.data);
+  Future<Either<Failure, BaseResponse<T>>> callApi<T>({
+    required Future<BaseResponse<T>> Function() apiCall,
+    bool enableIsolate = false,
+    bool enableErrorMessages = true,
+  }) async {
+    try {
+      BaseResponse<T> response;
+      if (enableIsolate) {
+        response = await Isolate.run(apiCall);
+        return right(response);
+      }
+      response = await apiCall();
+      return right(response);
+    } on DioException catch (e) {
+      if (enableErrorMessages) {
+        DMessage.showMessage(
+          type: MessageType.error,
+          message: e.response?.data['message'],
+        );
+      }
+      if (kDebugMode) rethrow;
+      return left(Failure.fromDioException(e));
     }
-    return DataError<T>(
-      error: DioException(
-        error: httpRP.response.statusMessage,
-        response: httpRP.response,
-        type: DioExceptionType.badResponse,
-        requestOptions: httpRP.response.requestOptions,
-      ),
-    );
+  }
+
+  Future<Either<Failure, BaseResponseList<T>>> callApiList<T>({
+    required Future<BaseResponseList<T>> Function() apiCall,
+    bool enableIsolate = false,
+    bool enableErrorMessages = true,
+  }) async {
+    try {
+      BaseResponseList<T> response;
+      if (enableIsolate) {
+        response = await Isolate.run(apiCall);
+        return right(response);
+      }
+      response = await apiCall();
+      return right(response);
+    } on DioException catch (e) {
+      if (enableErrorMessages) {
+        DMessage.showMessage(
+          type: MessageType.error,
+          message: e.response?.data['message'],
+        );
+      }
+      if (kDebugMode) rethrow;
+      return left(Failure.fromDioException(e));
+    }
+  }
+
+  Future<Either<Failure, T>> callApiCustom<T>({
+    required Future<T> Function() apiCall,
+    bool enableIsolate = false,
+    bool enableErrorMessages = true,
+  }) async {
+    try {
+      T response;
+      if (enableIsolate) {
+        response = await Isolate.run(apiCall);
+        return right(response);
+      }
+      response = await apiCall();
+      return right(response);
+    } on DioException catch (e) {
+      if (enableErrorMessages) {
+        DMessage.showMessage(
+          type: MessageType.error,
+          message: e.response?.data['message'],
+        );
+      }
+      if (kDebugMode) rethrow;
+      return left(Failure.fromDioException(e));
+    }
   }
 
   Future<BaseResponse<T>> request<T>({

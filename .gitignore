@@ -57,8 +57,8 @@ logs/
 /lib/src/data/models/**.g.dart
 /lib/src/domain/entities/**.freezed.dart
 /lib/src/domain/entities/**.g.dart
-/lib/core/responses/**.freezed.dart
-/lib/core/responses/**.g.dart
+/lib/core/base/**.freezed.dart
+/lib/core/base/**.g.dart
 /lib/src/presentation/blocs/**.freezed.dart
 /lib/src/presentation/blocs/**.g.dart
 /lib/config/routes/**.g.dart

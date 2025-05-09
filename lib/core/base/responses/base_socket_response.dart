@@ -1,4 +1,4 @@
-part of 'responses.dart';
+part of '../base.dart';
 
 @Freezed(genericArgumentFactories: true)
 sealed class BaseSocketResponse<T> with _$BaseSocketResponse<T> {

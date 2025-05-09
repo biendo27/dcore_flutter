@@ -12,12 +12,12 @@ abstract class BaseInterceptor extends Interceptor {
 
   BaseInterceptor({
     this.prefix = '',
-    this.request = false,
-    this.requestHeader = false,
-    this.requestBody = false,
-    this.responseHeader = false,
-    this.responseBody = false,
-    this.error = false,
+    this.request = true,
+    this.requestHeader = true,
+    this.requestBody = true,
+    this.responseHeader = true,
+    this.responseBody = true,
+    this.error = true,
     this.maxRetries = 3,
   });
 

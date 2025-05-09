@@ -7,6 +7,7 @@ import 'dart:io';
 
 //* Import all dependencies here
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
 
 //* Import all the local files here
@@ -14,7 +15,6 @@ import 'package:injectable/injectable.dart';
 import '../../../config/services/services.dart';
 import '../../../core/base/base.dart';
 import '../../../core/constants/constants.dart';
-import '../../../core/responses/responses.dart';
 import '../../domain/repositories/repositories.dart';
 import '../../presentation/blocs/blocs.dart';
 import '../datasources/apis/apis.dart';

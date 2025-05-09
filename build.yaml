@@ -41,7 +41,7 @@ targets:
           include:
             - "lib/src/data/models/**.dart"
             - "lib/src/domain/entities/**.dart"
-            - "lib/core/responses/**.dart"
+            - "lib/core/base/**.dart"
             - "lib/src/presentation/blocs/**.dart"
 
       freezed|freezed:
@@ -61,7 +61,7 @@ targets:
           include:
             - "lib/src/data/models/**.dart"
             - "lib/src/domain/entities/**.dart"
-            - "lib/core/responses/**.dart"
+            - "lib/core/base/**.dart"
             - "lib/src/presentation/blocs/**.dart"
             - "**/**.f.dart"
 

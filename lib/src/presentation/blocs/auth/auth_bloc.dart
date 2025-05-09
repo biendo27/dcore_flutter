@@ -3,15 +3,32 @@
 part of '../blocs.dart';
 
 @lazySingleton
-class AuthBloc extends Bloc<AuthEvent, AuthState> with BlocActionMixin<AuthEvent, AuthState> {
-  final IAuthRepository _authRepository;
+class AuthBloc extends Bloc<AuthEvent, AuthState> with BlocUseCaseHandlerMixin<AuthEvent, AuthState> {
+  final LoginUsecase _loginUsecase;
+  final RegisterUsecase _registerUsecase;
+  final LogoutUsecase _logoutUsecase;
+  final ForgotPasswordUsecase _forgotPasswordUsecase;
+  final ResetPasswordUsecase _resetPasswordUsecase;
+  final ResendOtpUsecase _resendOtpUsecase;
+  final VerifyOtpUsecase _verifyOtpUsecase;
+  final UpdatePasswordUsecase _updatePasswordUsecase;
+  final DeletePermanentUserUsecase _deletePermanentUserUsecase;
 
   String? zaloRefreshToken;
   String zaloAccessToken = '';
 
-  AuthBloc(this._authRepository) : super(const AuthState()) {
+  AuthBloc(
+    this._loginUsecase,
+    this._registerUsecase,
+    this._logoutUsecase,
+    this._forgotPasswordUsecase,
+    this._resetPasswordUsecase,
+    this._resendOtpUsecase,
+    this._verifyOtpUsecase,
+    this._updatePasswordUsecase,
+    this._deletePermanentUserUsecase,
+  ) : super(const AuthState()) {
     on<LoginEvent>(_onLogin);
-    on<LoginZaloEvent>(loginWithZalo);
     on<RegisterEvent>(_onRegister);
     on<LogoutEvent>(_onLogout);
     on<ForgotPasswordEvent>(_onForgotPassword);
@@ -24,9 +41,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> with BlocActionMixin<AuthEvent
 
   Future<void> _onLogin(LoginEvent event, Emitter<AuthState> emit) async {
     emit(state.copyWith(phone: event.phone));
-    await _performAction(
-      emit,
-      () async => _authRepository.login({
+    await executeUseCase(
+      usecase: () async => _loginUsecase({
         'phone': event.phone,
         'password': event.password,
         'device_token': await DeviceInfoService.deviceToken,
@@ -47,101 +63,9 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> with BlocActionMixin<AuthEvent
     }
   }
 
-  void loginWithZalo(LoginZaloEvent event, Emitter<AuthState> emit) async {
-    try {
-      // Lấy refresh token từ Local Storage
-      String? zaloRefreshToken = await LocalStoreService.getString(key: LocalStoreKey.zaloRefreshToken);
-
-      // Gọi API đăng nhập của Zalo
-      // final Map<dynamic, dynamic>? loginData = await ZaloFlutter.login(refreshToken: zaloRefreshToken);
-      Map<dynamic, dynamic> loginData = {};
-
-      if (loginData == null || loginData['isSuccess'] != true) {
-        debugPrint("Zalo login failed: $loginData");
-        return;
-      }
-
-      debugPrint("Zalo login data: $loginData");
-
-      // Đọc dữ liệu từ phản hồi
-      final data = loginData['data'] as Map<dynamic, dynamic>?;
-
-      if (data == null) {
-        debugPrint("Missing 'data' field in login response");
-        return;
-      }
-
-      // Lấy accessToken và refreshToken từ phản hồi
-      String? accessToken = data['accessToken'] as String?;
-      String? refreshToken = data['refreshToken'] as String?;
-
-      if (accessToken == null || refreshToken == null) {
-        debugPrint("Missing tokens in Zalo login data");
-        return;
-      }
-
-      // Lưu refresh token vào Local Storage
-      await LocalStoreService.setString(key: LocalStoreKey.zaloRefreshToken, value: refreshToken);
-
-      // Gán access token để sử dụng
-      zaloAccessToken = accessToken;
-
-      // Lấy thông tin người dùng từ Zalo
-      // final Map<dynamic, dynamic>? getUser = await ZaloFlutter.getUserProfile(
-      //   accessToken: zaloAccessToken,
-      // );
-      Map<dynamic, dynamic> getUser = {};
-
-      if (getUser == null || getUser['data'] == null) {
-        debugPrint("Failed to get user profile: $getUser");
-        return;
-      }
-
-      debugPrint("Zalo user profile: $getUser");
-
-      // Trích xuất thông tin người dùng với fallback nếu null
-      final String zaloId = getUser["data"]?["id"]?.toString() ?? "222";
-      final String name = getUser["data"]?["name"] ?? "ZaloAccount";
-      final String phone = getUser["data"]["phone"] ?? "Unknown";
-      final String image = getUser["data"]?["picture"]?["data"]?["url"] ?? "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/124.jpg";
-
-      // Chuẩn bị payload gửi đến backend
-      final payload = {
-        'zalo_id': zaloId,
-        'name': name,
-        'image': image,
-        'phone': phone,
-        'device_token': await DeviceInfoService.deviceToken,
-        'firebase_token': AppGlobalValue.firebaseToken,
-      };
-
-      debugPrint("Payload sent to backend: $payload");
-
-      // Gọi hành động đăng nhập backend
-      await _performAction(
-        emit,
-        () async => _authRepository.loginZalo(payload),
-        onSuccess: (response) {
-          // Xử lý khi đăng nhập thành công
-          _handleSuccessfulAuth(response, emit);
-          event.onSuccess?.call();
-          debugPrint("Login successful");
-
-          // Điều hướng tới màn hình chính
-          Future.microtask(() => DNavigator.newRoutesNamed(RouteNamed.home));
-        },
-      );
-    } catch (e, stacktrace) {
-      // Bắt và log lỗi chi tiết
-      debugPrint("Error during Zalo login: $e");
-      debugPrint("Stacktrace: $stacktrace");
-    }
-  }
-
   Future<void> _onRegister(RegisterEvent event, Emitter<AuthState> emit) async {
-    await _performAction(
-      emit,
-      () async => _authRepository.register({
+    await executeUseCase(
+      usecase: () async => _registerUsecase({
         'phone': event.phone,
         'password': event.password,
         'password_confirmation': event.passwordConfirm,
@@ -160,8 +84,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> with BlocActionMixin<AuthEvent
   }
 
   Future<void> _onLogout(LogoutEvent event, Emitter<AuthState> emit) async {
-    await executeEmptyAction(
-      action: _authRepository.logout,
+    await executeEmptyUseCase(
+      usecase: _logoutUsecase.call,
       setLoadingState: (state, {required bool isLoading}) => state.copyWith(isLoading: isLoading),
       onSuccess: (response) {
         AppGlobalValue.accessToken = '';
@@ -176,9 +100,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> with BlocActionMixin<AuthEvent
   }
 
   Future<void> _onForgotPassword(ForgotPasswordEvent event, Emitter<AuthState> emit) async {
-    await _performAction(
-      emit,
-      () => _authRepository.forgotPassword({'phone': event.phone}),
+    await executeUseCase(
+      usecase: () async => _forgotPasswordUsecase({'phone': event.phone}),
       onSuccess: (response) {
         _handleSuccessfulAuth(response, emit);
         emit(state.copyWith(
@@ -191,9 +114,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> with BlocActionMixin<AuthEvent
   }
 
   Future<void> _onResetPassword(ResetPasswordEvent event, Emitter<AuthState> emit) async {
-    await executeEmptyAction(
-      setLoadingState: (state, {required bool isLoading}) => state.copyWith(isLoading: isLoading),
-      action: () => _authRepository.resetPassword({
+    await executeEmptyUseCase(
+      usecase: () async => _resetPasswordUsecase({
         'phone': state.phone,
         'password': event.password,
         'password_confirmation': event.passwordConfirm,
@@ -206,8 +128,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> with BlocActionMixin<AuthEvent
   }
 
   Future<void> _onResendOTP(ResendOTPEvent event, Emitter<AuthState> emit) async {
-    executeEmptyAction(
-      action: () => _authRepository.resendOTP(state.phone),
+    executeEmptyUseCase(
+      usecase: () async => _resendOtpUsecase(state.phone),
       onSuccess: (response) {
         DMessage.showMessage(message: response.message);
         _setUserPhone(emit);
@@ -217,8 +139,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> with BlocActionMixin<AuthEvent
   }
 
   void _onVerifyOTP(VerifyOTPEvent event, Emitter<AuthState> emit) async {
-    executeEmptyAction(
-      action: () => _authRepository.verifyOTP({
+    executeEmptyUseCase(
+      usecase: () async => _verifyOtpUsecase({
         'type': state.type.value,
         'phone': state.phone,
         'otp': event.otp,
@@ -233,28 +155,6 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> with BlocActionMixin<AuthEvent
         }
       },
     );
-  }
-
-  Future<void> _performAction<T>(
-    Emitter<AuthState> emit,
-    Future<BaseResponse<T>> Function() action, {
-    Function(BaseResponse<T>)? onSuccess,
-    Function()? onFailure,
-  }) async {
-    emit(state.copyWith(isLoading: true));
-    try {
-      final response = await action();
-      if (response.status && response.data != null) {
-        onSuccess?.call(response);
-      } else {
-        onFailure?.call();
-      }
-    } catch (e) {
-      LogDev.warning('Error: $e');
-      onFailure?.call();
-    } finally {
-      emit(state.copyWith(isLoading: false));
-    }
   }
 
   void _handleSuccessfulAuth(BaseResponse<Auth> response, Emitter<AuthState> emit) {
@@ -276,8 +176,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> with BlocActionMixin<AuthEvent
   }
 
   FutureOr<void> _onDeleteAccountPermanently(DeleteAccountPermanentlyEvent event, Emitter<AuthState> emit) async {
-    await executeEmptyAction(
-      action: () => _authRepository.deletePermanentUser(event.password),
+    await executeEmptyUseCase(
+      usecase: () async => _deletePermanentUserUsecase(event.password),
       onSuccess: (response) {
         DMessage.showMessage(message: response.message);
         AppGlobalValue.accessToken = '';
@@ -292,8 +192,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> with BlocActionMixin<AuthEvent
   }
 
   FutureOr<void> _onChangePassword(ChangePasswordEvent event, Emitter<AuthState> emit) async {
-    await executeEmptyAction(
-      action: () => _authRepository.updatePassword({
+    await executeEmptyUseCase(
+      usecase: () async => _updatePasswordUsecase({
         'current_password': event.oldPassword,
         'password': event.newPassword,
         'password_confirmation': event.confirmPassword,

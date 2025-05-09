@@ -1,4 +1,4 @@
-part of 'responses.dart';
+part of '../base.dart';
 
 @JsonSerializable(createFactory: false)
 @Freezed(genericArgumentFactories: true)

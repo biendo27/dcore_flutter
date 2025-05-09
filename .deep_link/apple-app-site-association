@@ -4,9 +4,9 @@
         "details": [
             {
                 "appIDs": [
-                    "4D83R6J486.com.venus.venusshop",
-                    "4D83R6J486.com.venus.venusshop.dev",
-                    "4D83R6J486.com.venus.venusshop.stg"
+                    "4D83R6J486.flutter.base.dcore",
+                    "4D83R6J486.flutter.base.dcore.dev",
+                    "4D83R6J486.flutter.base.dcore.stg"
                 ],
                 "paths": [
                     "*"
@@ -21,7 +21,7 @@
     },
     "webcredentials": {
         "apps": [
-            "4D83R6J486.com.venus.venusshop"
+            "4D83R6J486.flutter.base.dcore"
         ]
     }
 }

@@ -5,19 +5,22 @@ import 'dart:async';
 import 'dart:io';
 
 //* Import all dependencies here
+import 'package:fpdart/fpdart.dart';
 
 //* Import all local files here
-import '../../../core/responses/responses.dart';
+import '../../../core/base/base.dart';
 import '../../data/models/models.dart';
 
 //* Import all domain repositories here
 part 'i_activity_repository.dart';
+part 'i_affiliate_repository.dart';
 part 'i_auth_repository.dart';
 part 'i_billing_address_repository.dart';
 part 'i_config_repository.dart';
 part 'i_follow_repository.dart';
 part 'i_geographical_repository.dart';
 part 'i_gift_repository.dart';
+part 'i_gift_shop_repository.dart';
 part 'i_hashtag_repository.dart';
 part 'i_live_censor_repository.dart';
 part 'i_live_repository.dart';
@@ -41,5 +44,3 @@ part 'i_sound_repository.dart';
 part 'i_term_repository.dart';
 part 'i_upload_repository.dart';
 part 'i_wallet_repository.dart';
-part 'i_affiliate_repository.dart';
-part 'i_gift_shop_repository.dart';

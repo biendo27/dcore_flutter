@@ -11,7 +11,7 @@ import 'package:retrofit/retrofit.dart';
 //* Import all local files here
 import '../../../../config/services/services.dart';
 import '../../../../core/constants/constants.dart';
-import '../../../../core/responses/responses.dart';
+import '../../../../core/base/base.dart';
 import '../../models/models.dart';
 
 //* Import all api file here
