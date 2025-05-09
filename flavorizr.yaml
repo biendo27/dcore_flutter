@@ -8,10 +8,14 @@ instructions:
   - assets:extract
 
   # android
+  - android:flavorizrGradle
   - android:buildGradle
   - android:androidManifest
   - android:dummyAssets
   - android:icons
+
+  # huawei
+  # - huawei:agconnect
 
   # flutter
   # - flutter:flavors

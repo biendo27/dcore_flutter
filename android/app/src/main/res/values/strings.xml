@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DCore</string>
+    <!-- ZaloFlutter start -->
+    <string name="zalo_flutter_app_id">your_zalo_app_id_here</string>
+    <string name="zalo_flutter_app_id_protocol">zalo-your_zalo_app_id_here</string>
+    <!-- ZaloFlutter end -->
+</resources> 
