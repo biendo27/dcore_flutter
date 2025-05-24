@@ -1,0 +1,8 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_stg.dart
+ASSET_PREFIX=stg
+BUNDLE_NAME=DCore Staging
+BUNDLE_DISPLAY_NAME=DCore Staging
+API_BASE_URL=https://dev.venusshop.top/api/v1

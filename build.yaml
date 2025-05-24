@@ -1,0 +1,103 @@
+targets:
+  $default:
+    builders:
+      go_router_builder|go_router_builder:
+        enabled: true
+        generate_for:
+          include:
+            - "lib/config/routes/**.dart"
+        options:
+          type_safe_parameters: true
+          route_names: true
+
+      retrofit_generator|retrofit_generator:
+        enabled: true
+        generate_for:
+          include:
+            - "lib/src/data/datasources/apis/**.dart"
+            - "lib/src/data/datasources/sockets/**.dart"
+        options:
+          nullsafety: true
+          parser: "FlutterCompute"
+
+      json_serializable|json_serializable:
+        enabled: true
+        options:
+          any_map: false
+          checked: false
+          constructor: ""
+          create_factory: true
+          create_field_map: false
+          create_json_keys: false
+          create_per_field_to_json: false
+          create_to_json: true
+          disallow_unrecognized_keys: false
+          field_rename: snake
+          generic_argument_factories: true
+          ignore_unannotated: false
+          explicit_to_json: true
+          include_if_null: false
+        generate_for:
+          include:
+            - "lib/src/data/models/**.dart"
+            - "lib/src/domain/entities/**.dart"
+            - "lib/core/base/**.dart"
+            - "lib/src/presentation/blocs/**.dart"
+
+      freezed|freezed:
+        enabled: true
+        options:
+          makeCollectionsUnmodifiable: false
+          generic_argument_factories: true
+          format: false
+          copy_with: true
+          equal: true
+          map: true
+          when:
+            when: true
+            maybe_when: true
+            when_or_null: false
+        generate_for:
+          include:
+            - "lib/src/data/models/**.dart"
+            - "lib/src/domain/entities/**.dart"
+            - "lib/core/base/**.dart"
+            - "lib/src/presentation/blocs/**.dart"
+            - "**/**.f.dart"
+
+      injectable_generator:injectable_builder:
+        enabled: true
+        options:
+          auto_register: true
+        generate_for:
+          include:
+            - "lib/config/di/**.dart"
+            - "lib/config/services/**.dart"
+            - "lib/src/data/datasources/apis/**.dart"
+            - "lib/src/data/datasources/sockets/**.dart"
+            - "lib/src/data/repositories/**.dart"
+            - "lib/src/domain/repositories/**.dart"
+            - "lib/src/domain/usecases/**.dart"
+            - "lib/src/presentation/blocs/**.dart"
+
+      injectable_generator:injectable_config_builder:
+        enabled: true
+        generate_for:
+          include:
+            - "lib/config/di/**.dart"
+            - "lib/config/services/**.dart"
+            - "lib/src/data/datasources/apis/**.dart"
+            - "lib/src/data/datasources/sockets/**.dart"
+            - "lib/src/data/repositories/**.dart"
+            - "lib/src/domain/repositories/**.dart"
+            - "lib/src/domain/usecases/**.dart"
+            - "lib/src/presentation/blocs/**.dart"
+        options:
+          force_auto_register: true
+
+      flutter_gen_runner:
+        enabled: true
+        options:
+          output: lib/core/constants/gen/
+          line_length: 200
+

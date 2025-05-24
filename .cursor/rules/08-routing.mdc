@@ -1,0 +1,124 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+description: Routing system implementation in Flutter DCore
+---
+
+# Routing System
+
+Flutter DCore implements a structured routing system using Go Router with organized route definitions, transitions, and feature-based organization.
+
+## Core Components
+
+### Route Definitions
+- Located in [lib/config/routes/app_routes.dart](mdc:lib/config/routes/app_routes.dart)
+- Uses mixins to define route paths and names:
+  - `RoutePath` - Contains all route URL paths as constants
+  - `RouteNamed` - Contains human-readable names for each route
+- Routes are organized by feature areas (Home, Livestream, Shop, etc.)
+
+### Route Configuration
+- Located in [lib/config/routes/app_routes_config.dart](mdc:lib/config/routes/app_routes_config.dart)
+- Defines base route classes:
+  - `BaseRouteData` - Extends GoRouteData with standard configuration
+  - `BaseTransitionRouteData` - Adds custom transition animations
+
+### Routes Implementation
+- Located in [lib/config/routes/routes.dart](mdc:lib/config/routes/routes.dart)
+- Central library file that imports and exports all routing components
+- Uses code generation with [lib/config/routes/routes.g.dart](mdc:lib/config/routes/routes.g.dart)
+
+## Route Definition Example
+
+```dart
+// Route path constants
+mixin RoutePath {
+  //* Home
+  static const String home = '/home';
+  static const String videoAudio = 'video-audio';
+  static const String post = 'post';
+  static const String search = 'search';
+  
+  //* Profile
+  static const String profile = '/profile';
+  static const String editInfo = 'edit-info';
+  // ... other routes
+}
+
+// Human-readable route names
+mixin RouteNamed {
+  //* Home
+  static const String home = 'Home';
+  static const String videoAudio = 'Video Audio';
+  static const String post = 'Post';
+  static const String search = 'Search';
+  
+  //* Profile
+  static const String profile = 'Profile';
+  static const String editInfo = 'Edit Info';
+  // ... other routes
+}
+```
+
+## Route Implementation Example
+
+```dart
+// Custom route with transition
+class ProfileRoute extends BaseTransitionRouteData {
+  const ProfileRoute({this.id});
+  
+  final String? id;
+  
+  @override
+  Widget buildPageWidget(BuildContext context, GoRouterState state) {
+    return ProfilePage(userId: id);
+  }
+}
+
+// Route declaration with Go Router
+final router = GoRouter(
+  routes: [
+    GoRoute(
+      path: RoutePath.profile,
+      name: RouteNamed.profile,
+      builder: (context, state) => const ProfilePage(),
+      routes: [
+        GoRoute(
+          path: RoutePath.editInfo,
+          name: RouteNamed.editInfo,
+          builder: (context, state) => const EditInfoPage(),
+        ),
+      ],
+    ),
+  ],
+);
+```
+
+## Navigation Examples
+
+```dart
+// Navigate using named routes
+context.goNamed(RouteNamed.profile);
+
+// Navigate with parameters
+context.go('${RoutePath.profile}/${RoutePath.editInfo}');
+
+// Navigate with query parameters
+ProfileRoute(id: 'user123').go(context);
+```
+
+## Integration with State Management
+- Routes can access state through provider or BLoC
+- Route guards can be implemented using Go Router redirect functions
+- Deep linking is supported with URL parameters and query parameters
+
+## Related Components
+- [Route Observer Service](mdc:lib/config/services/app/route_observer_service.dart) - Tracks navigation events
+- [Dependency Injection](mdc:lib/config/di/route_observer_di.dart) - Registers routing components
+
+## Related Rules
+- [05-configuration.mdc](mdc:.cursor/rules/05-configuration.mdc) - Overall configuration system
+- [07-state-management.mdc](mdc:.cursor/rules/07-state-management.mdc) - State management integration
+

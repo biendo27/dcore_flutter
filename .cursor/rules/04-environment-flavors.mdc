@@ -1,0 +1,53 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+description: Environment Flavors implementation in Flutter DCore
+---
+
+# Environment Flavors
+
+Flutter DCore implements a flavor system to support different environments (development, staging, production) with environment-specific configurations.
+
+## Flavor Implementation
+
+### Core Definition
+- [lib/flavors.dart](mdc:lib/flavors.dart) - Defines the flavor enum and configuration
+- Provides environment-specific constants and settings
+
+### Entry Points
+- [lib/main_dev.dart](mdc:lib/main_dev.dart) - Development environment entry point
+- [lib/main_stg.dart](mdc:lib/main_stg.dart) - Staging environment entry point
+- [lib/main_prod.dart](mdc:lib/main_prod.dart) - Production environment entry point
+
+### Configuration
+- [flavorizr.yaml](mdc:flavorizr.yaml) - Flutter Flavorizr tool configuration
+- Defines app icons, bundle IDs, and other environment-specific settings
+
+### Firebase Configuration
+- Each flavor has its own Firebase configuration
+- Located in the config/services/firebase directory
+
+## Usage
+
+### Accessing Current Flavor
+```dart
+import 'package:flutter_dcore/flavors.dart';
+
+// Check current flavor
+if (F.appFlavor == Flavor.dev) {
+  // Development-specific code
+}
+
+// Get flavor name
+String flavorName = F.name;
+
+// Get app title based on flavor
+String appTitle = F.title;
+```
+
+### Environment-Specific Resources
+- Each flavor can have its own app icons via [flutter_launcher_icons-dev.yaml](mdc:flutter_launcher_icons-dev.yaml), etc.
+- Environment-specific configurations are managed through the flavor system
+

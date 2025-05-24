@@ -1,0 +1,76 @@
+part of '../helpers.dart';
+
+class AppProviders extends StatelessWidget {
+  final Widget _child;
+  const AppProviders({super.key, required Widget child}) : _child = child;
+
+  @override
+  Widget build(BuildContext context) {
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<ThemeCubit>(create: (_) => AppDI.source.get<ThemeCubit>()),
+        BlocProvider<LocaleCubit>(create: (_) => AppDI.source.get<LocaleCubit>()),
+        BlocProvider<ThemeModeCubit>(create: (_) => AppDI.source.get<ThemeModeCubit>()),
+        BlocProvider<PageCubit>(create: (_) => AppDI.source.get<PageCubit>()),
+        BlocProvider<AuthBloc>(create: (_) => AppDI.source.get<AuthBloc>()),
+        BlocProvider<UserCubit>(create: (_) => AppDI.source.get<UserCubit>()),
+        BlocProvider<ProfileCubit>(create: (_) => AppDI.source.get<ProfileCubit>()),
+        BlocProvider<VideoCubit>(create: (_) => AppDI.source.get<VideoCubit>()),
+        BlocProvider<PostCubit>(create: (_) => AppDI.source.get<PostCubit>()),
+        BlocProvider<CameraCubit>(create: (_) => AppDI.source.get<CameraCubit>()),
+        BlocProvider<CreatePostCubit>(create: (_) => AppDI.source.get<CreatePostCubit>()),
+        BlocProvider<NotificationCubit>(create: (_) => AppDI.source.get<NotificationCubit>()),
+        BlocProvider<ConfigCubit>(create: (_) => AppDI.source.get<ConfigCubit>()),
+        BlocProvider<ProfilePreviewCubit>(create: (_) => AppDI.source.get<ProfilePreviewCubit>()),
+        BlocProvider<SoundCubit>(create: (_) => AppDI.source.get<SoundCubit>()),
+        BlocProvider<UserListCubit>(create: (_) => AppDI.source.get<UserListCubit>()),
+        BlocProvider<CommentCubit>(create: (_) => AppDI.source.get<CommentCubit>()),
+        BlocProvider<WalletCubit>(create: (_) => AppDI.source.get<WalletCubit>()),
+        BlocProvider<LiveCubit>(create: (_) => AppDI.source.get<LiveCubit>()),
+        BlocProvider<ReportCubit>(create: (_) => AppDI.source.get<ReportCubit>()),
+        BlocProvider<MessageCubit>(create: (_) => AppDI.source.get<MessageCubit>()),
+        BlocProvider<HashtagCubit>(create: (_) => AppDI.source.get<HashtagCubit>()),
+        BlocProvider<ModerationCubit>(create: (_) => AppDI.source.get<ModerationCubit>()),
+        BlocProvider<DownloadCubit>(create: (_) => AppDI.source.get<DownloadCubit>()),
+        BlocProvider<InAppCubit>(create: (_) => AppDI.source.get<InAppCubit>()),
+        BlocProvider<GiftCubit>(create: (_) => AppDI.source.get<GiftCubit>()),
+        BlocProvider<DeliveryAddressCubit>(create: (_) => AppDI.source.get<DeliveryAddressCubit>()),
+        BlocProvider<ProductCubit>(create: (_) => AppDI.source.get<ProductCubit>()),
+        BlocProvider<ProductSuggestCubit>(create: (_) => AppDI.source.get<ProductSuggestCubit>()),
+        BlocProvider<ReviewCubit>(create: (_) => AppDI.source.get<ReviewCubit>()),
+        BlocProvider<CartCubit>(create: (_) => AppDI.source.get<CartCubit>()),
+        BlocProvider<OrderCubit>(create: (_) => AppDI.source.get<OrderCubit>()),
+        BlocProvider<OrderActionCubit>(create: (_) => AppDI.source.get<OrderActionCubit>()),
+        BlocProvider<OrderPaymentMethodCubit>(create: (_) => AppDI.source.get<OrderPaymentMethodCubit>()),
+        BlocProvider<OrderListCubit>(create: (_) => AppDI.source.get<OrderListCubit>()),
+        BlocProvider<OrderReviewCubit>(create: (_) => AppDI.source.get<OrderReviewCubit>()),
+        BlocProvider<StoreHomeCubit>(create: (_) => AppDI.source.get<StoreHomeCubit>()),
+        BlocProvider<EventCubit>(create: (_) => AppDI.source.get<EventCubit>()),
+        BlocProvider<LiveCensorCubit>(create: (_) => AppDI.source.get<LiveCensorCubit>()),
+        BlocProvider<SearchCubit>(create: (_) => AppDI.source.get<SearchCubit>()),
+        BlocProvider<HomeSearchCubit>(create: (_) => AppDI.source.get<HomeSearchCubit>()),
+        BlocProvider<ProductFilterCubit>(create: (_) => AppDI.source.get<ProductFilterCubit>()),
+        BlocProvider<FlashSaleCubit>(create: (_) => AppDI.source.get<FlashSaleCubit>()),
+        BlocProvider<RefundBankingCubit>(create: (_) => AppDI.source.get<RefundBankingCubit>()),
+        BlocProvider<RankCubit>(create: (_) => AppDI.source.get<RankCubit>()),
+        BlocProvider<LiveSettingCubit>(create: (_) => AppDI.source.get<LiveSettingCubit>()),
+        BlocProvider<LiveSocketCubit>(create: (_) => AppDI.source.get<LiveSocketCubit>()),
+        BlocProvider<LiveCommentCubit>(create: (_) => AppDI.source.get<LiveCommentCubit>()),
+        BlocProvider<LiveGiftCubit>(create: (_) => AppDI.source.get<LiveGiftCubit>()),
+        BlocProvider<LiveRequestCubit>(create: (_) => AppDI.source.get<LiveRequestCubit>()),
+        BlocProvider<LiveHeartCubit>(create: (_) => AppDI.source.get<LiveHeartCubit>()),
+        BlocProvider<LiveViewerCubit>(create: (_) => AppDI.source.get<LiveViewerCubit>()),
+        BlocProvider<LiveMissionCubit>(create: (_) => AppDI.source.get<LiveMissionCubit>()),
+        BlocProvider<LiveEventCubit>(create: (_) => AppDI.source.get<LiveEventCubit>()),
+        BlocProvider<AffiliateCubit>(create: (_) => AppDI.source.get<AffiliateCubit>()),
+        BlocProvider<GiftShopCubit>(create: (_) => AppDI.source.get<GiftShopCubit>()),
+      ],
+      child: ScreenUtilInit(
+        designSize: AppGlobalValue.designSize,
+        minTextAdapt: true,
+        splitScreenMode: true,
+        child: _child,
+      ),
+    );
+  }
+}

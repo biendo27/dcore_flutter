@@ -1,0 +1,27 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appIDs": [
+                    "4D83R6J486.flutter.base.dcore",
+                    "4D83R6J486.flutter.base.dcore.dev",
+                    "4D83R6J486.flutter.base.dcore.stg"
+                ],
+                "paths": [
+                    "*"
+                ],
+                "components": [
+                    {
+                        "/": "/*"
+                    }
+                ]
+            }
+        ]
+    },
+    "webcredentials": {
+        "apps": [
+            "4D83R6J486.flutter.base.dcore"
+        ]
+    }
+}

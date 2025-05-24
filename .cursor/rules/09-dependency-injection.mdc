@@ -1,0 +1,189 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+description: Dependency Injection implementation in Flutter DCore
+---
+
+# Dependency Injection System
+
+Flutter DCore implements a structured dependency injection system using the GetIt service locator and Injectable package for automatic registration of dependencies.
+
+## Core Components
+
+### Main DI Configuration
+- Located in [lib/config/di/di.dart](mdc:lib/config/di/di.dart)
+- Uses Injectable for code generation
+- Centralizes all DI-related imports and configuration
+
+### Generated Configuration
+- [lib/config/di/di.config.dart](mdc:lib/config/di/di.config.dart) - Auto-generated file containing DI registrations
+- Created using the `@InjectableInit` annotation
+- Handles dependency registration order and lifecycle
+
+### Specialized DI Modules
+- [lib/config/di/network_di.dart](mdc:lib/config/di/network_di.dart) - Network-related dependencies (Dio, interceptors)
+- [lib/config/di/route_observer_di.dart](mdc:lib/config/di/route_observer_di.dart) - Navigation and routing dependencies
+- [lib/config/di/app_di_config.dart](mdc:lib/config/di/app_di_config.dart) - Application-specific configuration
+- [lib/config/di/tracking_di.dart](mdc:lib/config/di/tracking_di.dart) - Analytics and error tracking services
+
+## Implementation Example
+
+### DI Configuration
+```dart
+// Main GetIt instance
+final GetIt sl = GetIt.instance;
+
+// Injectable configuration setup
+@InjectableInit(
+  initializerName: 'init', // Name of the generated initializer
+  preferRelativeImports: true, // Use relative imports in the generated file
+  asExtension: true, // Add the init method as an extension on GetIt
+)
+Future<void> configureDependencies() async {
+  // Initialize injectable dependencies
+  await sl.init();
+  
+  // Register network dependencies
+  configureNetworkDependencies(sl);
+  
+  // Register route observer dependencies
+  configureRouteObserverDependencies(sl);
+  
+  // Register tracking dependencies
+  configureTrackingDependencies(sl);
+}
+```
+
+### Injectable Usage
+```dart
+// Register a singleton service using annotations
+@singleton
+class UserRepository implements IUserRepository {
+  final UserRemoteDataSource remoteDataSource;
+  
+  UserRepository(this.remoteDataSource);
+  
+  // Implementation...
+}
+
+// Register a factory (new instance each time)
+@injectable
+class HomeViewModel extends BaseViewModel {
+  final GetUserUseCase getUserUseCase;
+  
+  HomeViewModel(this.getUserUseCase);
+  
+  // Implementation...
+}
+
+// Register with different environment/flavor
+@Environment('dev')
+@injectable
+class DevApiClient extends ApiClient {
+  // Development-specific implementation
+}
+```
+
+### Module-based Registration
+```dart
+// Define a module for grouped registrations
+@module
+abstract class TrackingModule {
+  // Default tracking service implementation that combines Firebase and Sentry
+  @Named(DIKey.trackingService)
+  @lazySingleton
+  AppTrackingService get trackingService => CompositeTrackingService([
+        firebaseAnalyticsService,
+        sentryTrackingService,
+      ]);
+
+  // Firebase Analytics Service
+  @Named(DIKey.firebaseAnalyticsService)
+  @lazySingleton
+  AppTrackingService get firebaseAnalyticsService => FirebaseAnalyticsService();
+  
+  // Additional service registrations...
+}
+```
+
+### Dependency Resolution
+```dart
+// Access a dependency
+final userRepository = sl<UserRepository>();
+
+// Access a dependency with parameters
+final viewModel = sl<ProductViewModel>(param1: id);
+
+// Access a named dependency
+final trackingService = sl.get<AppTrackingService>(instanceName: DIKey.trackingService);
+
+// Register a dependency at runtime
+sl.registerSingleton<IAnalyticsService>(FirebaseAnalyticsService());
+```
+
+## Runtime Service Switching
+```dart
+// Switch tracking implementation at runtime
+void switchToNoOpTracking(GetIt sl) {
+  // Get the existing implementation
+  final current = sl.get<AppTrackingService>(instanceName: DIKey.trackingService);
+
+  // Only replace if it's not already a NoOpTrackingService
+  if (current is! NoOpTrackingService) {
+    // Unregister current implementation
+    sl.unregister<AppTrackingService>(instanceName: DIKey.trackingService);
+
+    // Register new implementation
+    sl.registerSingleton<AppTrackingService>(
+      sl.get<AppTrackingService>(instanceName: DIKey.noOpTrackingService),
+      instanceName: DIKey.trackingService,
+    );
+  }
+}
+```
+
+## Network DI Example
+```dart
+void configureNetworkDependencies(GetIt sl) {
+  // Configure base options
+  final baseOptions = BaseOptions(
+    baseUrl: AppConstants.baseUrl,
+    connectTimeout: const Duration(seconds: 30),
+    receiveTimeout: const Duration(seconds: 30),
+    headers: {'Content-Type': 'application/json'},
+  );
+
+  // Create and configure Dio
+  final dio = Dio(baseOptions);
+  
+  // Add interceptors
+  dio.interceptors.add(LogInterceptor(
+    request: true,
+    requestHeader: true,
+    requestBody: true,
+    responseHeader: true,
+    responseBody: true,
+  ));
+  
+  // Register in GetIt
+  sl.registerLazySingleton<Dio>(() => dio);
+}
+```
+
+## Integration with Clean Architecture
+- Repositories are registered as singletons
+- Use cases are registered as factories
+- ViewModels are registered as factories
+- Data sources are registered as singletons
+- Services are typically registered as lazy singletons
+
+## Related Components
+- [lib/config/di/di.config.dart](mdc:lib/config/di/di.config.dart) - Generated DI configuration
+- [lib/core/base/base_viewmodel.dart](mdc:lib/core/base/base_viewmodel.dart) - Base ViewModel with DI support
+
+## Related Rules
+- [02-clean-architecture.mdc](mdc:.cursor/rules/02-clean-architecture.mdc) - Architecture integration
+- [06-repository-pattern.mdc](mdc:.cursor/rules/06-repository-pattern.mdc) - Repository pattern using DI
+

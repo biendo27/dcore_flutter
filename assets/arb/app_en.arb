@@ -1,0 +1,2387 @@
+{
+  "@@locale": "en",
+  "@@author": "Noname Gogeto",
+  "@@context": "HomePage",
+  "@@last_modified": "2019-03-20T14:00:00.000Z",
+  "@@x-template": "lib/config/l10n/app_en.arb",
+  "accept": "OK",
+  "@accept": {
+    "description": "Default text for accept button"
+  },
+  "account": "Account",
+  "@account": {
+    "description": "Account"
+  },
+  "accountContentPermanentlyLocked": "Your account and content will be permanently locked.",
+  "@accountContentPermanentlyLocked": {
+    "description": "Warning message stating that the user's account and content will be permanently locked."
+  },
+  "accountInformation": "Account Information",
+  "@accountInformation": {
+    "description": "Account Information"
+  },
+  "action": "Action",
+  "@action": {
+    "description": "Action"
+  },
+  "activity": "Activity",
+  "@activity": {
+    "description": "Activity"
+  },
+  "add": "Add",
+  "@add": {
+    "description": "Add"
+  },
+  "addAddress": "Add Address",
+  "@addAddress": {
+    "description": "Add Address"
+  },
+  "addComment": "Add Comment",
+  "@addComment": {
+    "description": "Add Comment"
+  },
+  "additionalNotes": "Additional Notes",
+  "@additionalNotes": {
+    "description": "Additional Notes"
+  },
+  "addNewAddress": "Add new address",
+  "@addNewAddress": {
+    "description": "Add new address"
+  },
+  "addNews": "Add News",
+  "@addNews": {
+    "description": "Add News"
+  },
+  "addProduct": "Add Product",
+  "@addProduct": {
+    "description": "Add Product"
+  },
+  "address": "Address",
+  "@address": {
+    "description": "Address"
+  },
+  "addressInformation": "Address Information",
+  "@addressInformation": {
+    "description": "Address Information"
+  },
+  "addSound": "Add Sound",
+  "@addSound": {
+    "description": "Add Sound"
+  },
+  "addToCart": "Add to Cart",
+  "@addToCart": {
+    "description": "Add to Cart"
+  },
+  "affiliate": "Affiliate",
+  "@affiliate": {
+    "description": "Affiliate"
+  },
+  "affiliateProduct": "Affiliate product",
+  "@affiliateProduct": {
+    "description": "Label or message referring to a product associated with an affiliate program."
+  },
+  "affiliateProfile": "Affiliate Profile",
+  "@affiliateProfile": {
+    "description": "Affiliate Profile"
+  },
+  "affiliateRegister": "Affiliate Register",
+  "@affiliateRegister": {
+    "description": "Affiliate Register"
+  },
+  "agreeWithVirtualItemPolicy": "Agree with virtual item policy",
+  "@agreeWithVirtualItemPolicy": {
+    "description": "Agree with virtual item policy"
+  },
+  "all": "All",
+  "@all": {
+    "description": "All"
+  },
+  "allowComments": "Allow Comments",
+  "@allowComments": {
+    "description": "Allow Comments"
+  },
+  "allowVideoDownload": "Allow Video Download",
+  "@allowVideoDownload": {
+    "description": "Allow Video Download"
+  },
+  "alreadyHaveAccount": "Already have an account?",
+  "@alreadyHaveAccount": {
+    "description": "Already have an account?"
+  },
+  "amount": "Amount",
+  "@amount": {
+    "description": "Amount"
+  },
+  "appDefaultLanguagePrompt": "Choose your default app language",
+  "@appDefaultLanguagePrompt": {
+    "description": "Prompt asking user to choose their default app language"
+  },
+  "apply": "Apply",
+  "@apply": {
+    "description": "Apply"
+  },
+  "applyCommission": "Apply commission for orders over {price}",
+  "@applyCommission": {
+    "description": "Apply commission for orders over {price}",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "description": "Minimum order value for the commission"
+      }
+    }
+  },
+  "approved": "Approved",
+  "@approved": {
+    "description": "Approved"
+  },
+  "appTitle": "vns",
+  "@appTitle": {
+    "description": "Title of the application"
+  },
+  "awaitingDelivery": "Awaiting Delivery",
+  "@awaitingDelivery": {
+    "description": "Awaiting Delivery"
+  },
+  "award": "Award",
+  "@award": {
+    "description": "Award"
+  },
+  "backImage": "Back Image",
+  "@backImage": {
+    "description": "Back Image"
+  },
+  "backToHome": "Back to Home",
+  "@backToHome": {
+    "description": "Back to Home"
+  },
+  "bankAccountHolder": "Bank Account Holder",
+  "@bankAccountHolder": {
+    "description": "Bank Account Holder"
+  },
+  "bankAccountNumber": "Bank Account Number",
+  "@bankAccountNumber": {
+    "description": "Bank Account Number"
+  },
+  "bankAccountRefund": "Bank Account Refund",
+  "@bankAccountRefund": {
+    "description": "Bank Account Refund"
+  },
+  "bankName": "Bank Name",
+  "@bankName": {
+    "description": "Bank Name"
+  },
+  "bankUsed": "Bank Used",
+  "@bankUsed": {
+    "description": "Bank Used"
+  },
+  "bestSeller": "Best Seller",
+  "@bestSeller": {
+    "description": "Best Seller"
+  },
+  "bio": "Bio",
+  "@bio": {
+    "description": "Bio"
+  },
+  "birthDay": "Birth Day",
+  "@birthDay": {
+    "description": "Birth Day"
+  },
+  "birthdayRequired": "Birthday is required",
+  "@birthdayRequired": {
+    "description": "Birthday is required"
+  },
+  "booth": "Booth",
+  "@booth": {
+    "description": "Booth"
+  },
+  "buy": "Buy",
+  "@buy": {
+    "description": "Buy"
+  },
+  "buyAgain": "Buy Again",
+  "@buyAgain": {
+    "description": "Buy Again"
+  },
+  "buyNow": "Buy Now",
+  "@buyNow": {
+    "description": "Buy Now"
+  },
+  "by": "By",
+  "@by": {
+    "description": "By"
+  },
+  "byCategory": "By Category",
+  "@byCategory": {
+    "description": "By Category"
+  },
+  "byEvaluate": "By Evaluate",
+  "@byEvaluate": {
+    "description": "By Evaluate"
+  },
+  "callVnsShop": "Call VNS Shop",
+  "@callVnsShop": {
+    "description": "Call VNS Shop"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Default text for cancer button"
+  },
+  "cancelDate": "Cancel Date",
+  "@cancelDate": {
+    "description": "Cancel Date"
+  },
+  "canceled": "Canceled",
+  "@canceled": {
+    "description": "Canceled"
+  },
+  "cancelLive": "Confirm Cancel",
+  "@cancelLive": {
+    "description": "Confirm Cancel"
+  },
+  "cancelOrder": "Cancel Order",
+  "@cancelOrder": {
+    "description": "Cancel Order"
+  },
+  "cancelOrderStatus": "Cancel Order Status",
+  "@cancelOrderStatus": {
+    "description": "Cancel Order Status"
+  },
+  "cancelReason": "Cancel Reason",
+  "@cancelReason": {
+    "description": "Cancel Reason"
+  },
+  "cancelTitle": "Cancel",
+  "@cancelTitle": {
+    "description": "Default title for cancel"
+  },
+  "cancelWithin30Days": "You can cancel by reactivating your account within 30 days.",
+  "@cancelWithin30Days": {
+    "description": "Message informing users that they can cancel by reactivating their account within 30 days."
+  },
+  "careAbout": "Care about",
+  "@careAbout": {
+    "description": "Care about"
+  },
+  "cart": "Cart",
+  "@cart": {
+    "description": "Cart"
+  },
+  "catalog": "Catalog",
+  "@catalog": {
+    "description": "Catalog"
+  },
+  "category": "Category",
+  "@category": {
+    "description": "Category"
+  },
+  "chanceToReceiveGift": "You have a chance to receive {gift} when participating in this live session",
+  "@chanceToReceiveGift": {
+    "description": "Message indicating the opportunity to receive a gift during the live session.",
+    "placeholders": {
+      "gift": {
+        "type": "String",
+        "example": "a special reward"
+      }
+    }
+  },
+  "changePassword": "Change password",
+  "@changePassword": {
+    "description": "Change password"
+  },
+  "chooseBank": "Choose Bank",
+  "@chooseBank": {
+    "description": "Choose Bank"
+  },
+  "chooseImage": "Choose Image",
+  "@chooseImage": {
+    "description": "Choose Image"
+  },
+  "chose": "Chose",
+  "@chose": {
+    "description": "Chose"
+  },
+  "clear": "Clear",
+  "@clear": {
+    "description": "Clear"
+  },
+  "close": "Close",
+  "@close": {
+    "description": "Default text for close button"
+  },
+  "codeClaimed": "Code claimed",
+  "@codeClaimed": {
+    "description": "Message indicating that a code has been successfully claimed."
+  },
+  "coin": "Coin",
+  "@coin": {
+    "description": "Coin"
+  },
+  "coinNumber": "Coin Number",
+  "@coinNumber": {
+    "description": "Coin Number"
+  },
+  "coinPrice": "{coin} coins ({price})",
+  "@coinPrice": {
+    "description": "Coin price",
+    "placeholders": {
+      "coin": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "coinReward": "Coin Reward",
+  "@coinReward": {
+    "description": "Coin Reward"
+  },
+  "collapse": "Collapse",
+  "@collapse": {
+    "description": "Collapse"
+  },
+  "collectedAllShopVouchers": "You have collected all the shop vouchers",
+  "@collectedAllShopVouchers": {
+    "description": "Message displayed when the user has collected all vouchers from the shop."
+  },
+  "collection": "Collection",
+  "@collection": {
+    "description": "Collection"
+  },
+  "comment": "Comment",
+  "@comment": {
+    "description": "Comment"
+  },
+  "commission": "Commission",
+  "@commission": {
+    "description": "Commission"
+  },
+  "complete": "Complete",
+  "@complete": {
+    "description": "Complete"
+  },
+  "completed": "Completed",
+  "@completed": {
+    "description": "Completed"
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Default text for confirm button"
+  },
+  "confirmNewPassword": "Confirm new password",
+  "@confirmNewPassword": {
+    "description": "Confirm new password"
+  },
+  "confirmPassword": "Confirm password",
+  "@confirmPassword": {
+    "description": "Confirm password"
+  },
+  "confirmReceipt": "Confirm receipt",
+  "@confirmReceipt": {
+    "description": "Label or message prompting the user to confirm they have received the order."
+  },
+  "confirmWithdraw": "Confirm Withdraw",
+  "@confirmWithdraw": {
+    "description": "Confirm Withdraw"
+  },
+  "confirmWithdrawSuccess": "Confirm Withdraw Success",
+  "@confirmWithdrawSuccess": {
+    "description": "Confirm Withdraw Success"
+  },
+  "confirmWithdrawSuccessMessage": "Congratulations on your successful withdrawal",
+  "@confirmWithdrawSuccessMessage": {
+    "description": "Congratulations on your successful withdrawal"
+  },
+  "congratulationReceiveVoucher": "Congratulations! You have received the following vouchers",
+  "@congratulationReceiveVoucher": {
+    "description": "Congratulations! You have received the following vouchers"
+  },
+  "consultation": "Consultation",
+  "@consultation": {
+    "description": "Consultation"
+  },
+  "contact": "Contact",
+  "@contact": {
+    "description": "Contact"
+  },
+  "contactInformation": "Contact Information",
+  "@contactInformation": {
+    "description": "Contact Information"
+  },
+  "contentModeration": "Content moderation",
+  "@contentModeration": {
+    "description": "A label or message referring to content moderation."
+  },
+  "continueText": "Continue",
+  "@continueText": {
+    "description": "Continue"
+  },
+  "convertedAmount": "Converted Amount",
+  "@convertedAmount": {
+    "description": "Converted Amount"
+  },
+  "convertLimit": "Convert Limit",
+  "@convertLimit": {
+    "description": "Convert Limit"
+  },
+  "copper": "Copper",
+  "@copper": {
+    "description": "Copper"
+  },
+  "copy": "Copy",
+  "@copy": {
+    "description": "Copy"
+  },
+  "createPost": "Create Post",
+  "@createPost": {
+    "description": "Create Post"
+  },
+  "current": "Current",
+  "@current": {
+    "description": "Current"
+  },
+  "currentCoinNumber": "Current coin number",
+  "@currentCoinNumber": {
+    "description": "Current coin number"
+  },
+  "currentPassword": "Current password",
+  "@currentPassword": {
+    "description": "Current password"
+  },
+  "customerReview": "Customer review",
+  "@customerReview": {
+    "description": "Customer review"
+  },
+  "customerReviewHint": "Let us know your thoughts and feedback",
+  "@customerReviewHint": {
+    "description": "Customer review hint"
+  },
+  "dayLiveStream": "Livestream on {day}",
+  "@dayLiveStream": {
+    "description": "Livestream on {day}",
+    "placeholders": {
+      "day": {
+        "type": "String",
+        "example": "Monday"
+      }
+    }
+  },
+  "decrease": "Decrease",
+  "@decrease": {
+    "description": "Decrease"
+  },
+  "defaultText": "Default",
+  "@defaultText": {
+    "description": "Default"
+  },
+  "deleteAccountPermanently": "Delete Account Permanently",
+  "@deleteAccountPermanently": {
+    "description": "Delete Account Permanently"
+  },
+  "deleteAccountPermanentlyConfirmation": "Are you sure you want to delete your account permanently?",
+  "@deleteAccountPermanentlyConfirmation": {
+    "description": "Confirmation message asking the user if they are sure they want to delete their account permanently."
+  },
+  "deliveredSuccessfully": "Delivered Successfully",
+  "@deliveredSuccessfully": {
+    "description": "Delivered Successfully"
+  },
+  "delivering": "Delivering",
+  "@delivering": {
+    "description": "Label or message indicating an order is in the process of being delivered."
+  },
+  "delivery": "Delivery ({type})",
+  "@delivery": {
+    "description": "Delivery",
+    "placeholders": {
+      "type": {
+        "type": "String",
+        "description": "Example: Delivery  (J&T Express)"
+      }
+    }
+  },
+  "deliveryAddress": "Delivery Address",
+  "@deliveryAddress": {
+    "description": "Delivery Address"
+  },
+  "deliveryBy": "Delivery by",
+  "@deliveryBy": {
+    "description": "Delivery by"
+  },
+  "deliveryDate": "Delivery Date",
+  "@deliveryDate": {
+    "description": "Delivery Date"
+  },
+  "deliveryTime": "Delivery Time",
+  "@deliveryTime": {
+    "description": "Delivery Time"
+  },
+  "denyReason": "Deny Reason",
+  "@denyReason": {
+    "description": "Deny Reason"
+  },
+  "depositAmount": "Deposit Amount",
+  "@depositAmount": {
+    "description": "Deposit Amount"
+  },
+  "depositIntoWallet": "Deposit Into Wallet",
+  "@depositIntoWallet": {
+    "description": "Deposit Into Wallet"
+  },
+  "description": "Description",
+  "@description": {
+    "description": "Description"
+  },
+  "descriptionReason": "Description of the reason",
+  "@descriptionReason": {
+    "description": "Description of the reason"
+  },
+  "details": "Details",
+  "@details": {
+    "description": "Label or message referring to details or additional information."
+  },
+  "detailTransaction": "Detail Transaction",
+  "@detailTransaction": {
+    "description": "Detail Transaction"
+  },
+  "diamond": "Diamond",
+  "@diamond": {
+    "description": "Diamond"
+  },
+  "discountAvailable": "Discount Available",
+  "@discountAvailable": {
+    "description": "Discount Available"
+  },
+  "discountFromSeller": "Discount from seller",
+  "@discountFromSeller": {
+    "description": "Discount from seller"
+  },
+  "discountFromVnsLive": "Discount from VNS Live",
+  "@discountFromVnsLive": {
+    "description": "Discount from VNS Live"
+  },
+  "discountFromVnsShop": "Discount from VNS Shop",
+  "@discountFromVnsShop": {
+    "description": "Discount from VNS Shop"
+  },
+  "discountShippingFee": "Discount Shipping Fee",
+  "@discountShippingFee": {
+    "description": "Discount Shipping Fee"
+  },
+  "discountWithMaximum": "Discount {value}, up to {maximum}",
+  "@discountWithMaximum": {
+    "description": "Message indicating a discount with a maximum limit.",
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "10%"
+      },
+      "maximum": {
+        "type": "String",
+        "example": "$50"
+      }
+    }
+  },
+  "doNotHaveAccount": "Don't have an account?",
+  "@doNotHaveAccount": {
+    "description": "Don't have an account?"
+  },
+  "downloadFailed": "Download failed",
+  "@downloadFailed": {
+    "description": "Download failed"
+  },
+  "downloadSuccess": "Download success",
+  "@downloadSuccess": {
+    "description": "Download success"
+  },
+  "duration": "Duration",
+  "@duration": {
+    "description": "Duration"
+  },
+  "duty": "Duty",
+  "@duty": {
+    "description": "Duty"
+  },
+  "earnPoints": "Earn points from purchases",
+  "@earnPoints": {
+    "description": "Earn points from purchases"
+  },
+  "easyCancelOrder": "Easy Cancel Order",
+  "@easyCancelOrder": {
+    "description": "Easy Cancel Order"
+  },
+  "easyOrderCancellation": "Easy order cancellation",
+  "@easyOrderCancellation": {
+    "description": "Label or message indicating the process of order cancellation is simple."
+  },
+  "easyPayment": "Easy Payment",
+  "@easyPayment": {
+    "description": "Easy Payment"
+  },
+  "edit": "Edit",
+  "@edit": {
+    "description": "Edit"
+  },
+  "editAddress": "Edit Address",
+  "@editAddress": {
+    "description": "Edit Address"
+  },
+  "editProfilePage": "Edit Profile Page",
+  "@editProfilePage": {
+    "description": "Edit Profile Page"
+  },
+  "effect": "Effect",
+  "@effect": {
+    "description": "Effect"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email address"
+  },
+  "emptyList": "No data available",
+  "@emptyList": {
+    "description": "No data available"
+  },
+  "endlive": "Exit Livestream",
+  "@endlive": {
+    "description": "Exit Livestream"
+  },
+  "endTime": "End Time",
+  "@endTime": {
+    "description": "End Time"
+  },
+  "enterDiscountCode": "Enter discount code",
+  "@enterDiscountCode": {
+    "description": "Enter discount code"
+  },
+  "enterNote": "Enter Note",
+  "@enterNote": {
+    "description": "Enter Note"
+  },
+  "enterPhoneNumber": "Please enter the phone number registered with your account",
+  "@enterPhoneNumber": {
+    "description": "Please enter the phone number registered with your account"
+  },
+  "errorAccessingGallery": "Error accessing gallery",
+  "@errorAccessingGallery": {
+    "description": "Message indicating there was an issue accessing the gallery."
+  },
+  "errorLoadingVideo": "Error loading video",
+  "@errorLoadingVideo": {
+    "description": "Message indicating there was an issue loading the video."
+  },
+  "errorOccurred": "An error occurred",
+  "@errorOccurred": {
+    "description": "Message indicating that an error has occurred."
+  },
+  "errorTitle": "Error",
+  "@errorTitle": {
+    "description": "Default title for error"
+  },
+  "evaluate": "Evaluate",
+  "@evaluate": {
+    "description": "Evaluate"
+  },
+  "expected": "Expected",
+  "@expected": {
+    "description": "Expected"
+  },
+  "expirationAfter": "Expiration after {value}",
+  "@expirationAfter": {
+    "description": "Expiration after",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "expirationDate": "Expiration Date",
+  "@expirationDate": {
+    "description": "Expiration Date"
+  },
+  "faq": "Frequence Asked Questions",
+  "@faq": {
+    "description": "Frequence Asked Questions"
+  },
+  "favorite": "Favorite",
+  "@favorite": {
+    "description": "Favorite"
+  },
+  "favorited": "Favorited",
+  "@favorited": {
+    "description": "Favorited"
+  },
+  "featureInDevelopment": "Feature in development",
+  "@featureInDevelopment": {
+    "description": "Feature in development"
+  },
+  "filterSearch": "Filter Search",
+  "@filterSearch": {
+    "description": "Filter Search"
+  },
+  "firstDepositOffer": "First Deposit Offer",
+  "@firstDepositOffer": {
+    "description": "First Deposit Offer"
+  },
+  "firstName": "First name",
+  "@firstName": {
+    "description": "First name"
+  },
+  "follow": "Follow",
+  "@follow": {
+    "description": "Follow"
+  },
+  "followBack": "Follow back",
+  "@followBack": {
+    "description": "Follow back"
+  },
+  "followed": "Followed",
+  "@followed": {
+    "description": "Followed"
+  },
+  "follower": "Follower",
+  "@follower": {
+    "description": "Follower"
+  },
+  "following": "Following",
+  "@following": {
+    "description": "Following"
+  },
+  "followOrder": "Follow Order",
+  "@followOrder": {
+    "description": "Follow Order"
+  },
+  "forgotPassword": "Forgot password",
+  "@forgotPassword": {
+    "description": "Forgot password link"
+  },
+  "fpsCheck": "Resolution",
+  "@fpsCheck": {
+    "description": "Resolution"
+  },
+  "free": "Free",
+  "@free": {
+    "description": "Free"
+  },
+  "friday": "Friday",
+  "@friday": {
+    "description": "Friday"
+  },
+  "friend": "Friend",
+  "@friend": {
+    "description": "Friend"
+  },
+  "from": "From",
+  "@from": {
+    "description": "From"
+  },
+  "fromDay": "From Day",
+  "@fromDay": {
+    "description": "From Day"
+  },
+  "fromVnsShop": "from VNS Shop",
+  "@fromVnsShop": {
+    "description": "from VNS Shop"
+  },
+  "frontImage": "Front Image",
+  "@frontImage": {
+    "description": "Front Image"
+  },
+  "fullName": "Full Name",
+  "@fullName": {
+    "description": "Full Name"
+  },
+  "getVoucher": "Get Voucher",
+  "@getVoucher": {
+    "description": "Get Voucher"
+  },
+  "gift": "Gift",
+  "@gift": {
+    "description": "Gift"
+  },
+  "giftCoins": "Gift coins",
+  "@giftCoins": {
+    "description": "Label or message referring to coins given as a gift."
+  },
+  "giftReceived": "Gift received",
+  "@giftReceived": {
+    "description": "Message indicating that the user has successfully received a gift."
+  },
+  "giftSender": "Gift Sender",
+  "@giftSender": {
+    "description": "Gift Sender"
+  },
+  "goBack": "Go back",
+  "@goBack": {
+    "description": "Label or button text indicating to go back to the previous screen."
+  },
+  "gold": "Gold",
+  "@gold": {
+    "description": "Gold"
+  },
+  "happyLive": "CONGRATULATIONS",
+  "@happyLive": {
+    "description": "CONGRATULATIONS"
+  },
+  "happyLiveCap": "Special gift for you!",
+  "@happyLiveCap": {
+    "description": "Special gift for you!"
+  },
+  "happySunday": "Happy Sunday",
+  "@happySunday": {
+    "description": "Happy Sunday"
+  },
+  "headquarters": "Headquarters",
+  "@headquarters": {
+    "description": "Headquarters"
+  },
+  "helloAndWelcome": "Welcome {firstName} von {lastName}!",
+  "@helloAndWelcome": {
+    "description": "Initial welcome message",
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "lastName": {
+        "type": "String"
+      }
+    }
+  },
+  "history": "History",
+  "@history": {
+    "description": "History"
+  },
+  "historyTransaction": "History Transaction",
+  "@historyTransaction": {
+    "description": "History Transaction"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home"
+  },
+  "hoursAgo": "hours ago",
+  "@hoursAgo": {
+    "description": "hours ago"
+  },
+  "imagePickFailed": "Failed to pick image",
+  "@imagePickFailed": {
+    "description": "Failed to pick image"
+  },
+  "infoTitle": "Info",
+  "@infoTitle": {
+    "description": "Default title for info"
+  },
+  "inProgress": "In Progress",
+  "@inProgress": {
+    "description": "In Progress"
+  },
+  "input": "Input...",
+  "@input": {
+    "description": "Input..."
+  },
+  "inputConfirmNewPassword": "Input confirm new password",
+  "@inputConfirmNewPassword": {
+    "description": "Input confirm new password placeholder"
+  },
+  "inputConfirmPassword": "Input confirm password",
+  "@inputConfirmPassword": {
+    "description": "Input confirm password placeholder"
+  },
+  "inputCurrentPassword": "Input current password",
+  "@inputCurrentPassword": {
+    "description": "Input current password placeholder"
+  },
+  "inputEmail": "Input email",
+  "@inputEmail": {
+    "description": "Input email placeholder"
+  },
+  "inputFirstName": "Input first name",
+  "@inputFirstName": {
+    "description": "Input first name placeholder"
+  },
+  "inputLastName": "Input last name",
+  "@inputLastName": {
+    "description": "Input last name placeholder"
+  },
+  "inputNewPassword": "Input new password",
+  "@inputNewPassword": {
+    "description": "Input new password placeholder"
+  },
+  "inputOtpSendToNumber": "Enter the OTP sent to phone number",
+  "@inputOtpSendToNumber": {
+    "description": "Enter the OTP code sent to phone number"
+  },
+  "inputPassword": "Input password",
+  "@inputPassword": {
+    "description": "Input password placeholder"
+  },
+  "inputUsername": "Input username",
+  "@inputUsername": {
+    "description": "Input username placeholder"
+  },
+  "inStock": "In Stock",
+  "@inStock": {
+    "description": "In Stock"
+  },
+  "inStockLabel": "In Stock",
+  "@inStockLabel": {
+    "description": "In Stock"
+  },
+  "invalidQRCode": "Invalid QR code",
+  "@invalidQRCode": {
+    "description": "Invalid QR code"
+  },
+  "inventory": "Inventory",
+  "@inventory": {
+    "description": "Inventory"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language"
+  },
+  "lastName": "Last name",
+  "@lastName": {
+    "description": "Last name"
+  },
+  "learnMore": "Learn More",
+  "@learnMore": {
+    "description": "Learn More"
+  },
+  "like": "Like",
+  "@like": {
+    "description": "Like"
+  },
+  "likes": "Likes",
+  "@likes": {
+    "description": "Likes"
+  },
+  "limit": "Limit",
+  "@limit": {
+    "description": "Limit"
+  },
+  "linkCopied": "Link copied",
+  "@linkCopied": {
+    "description": "Link copied"
+  },
+  "listFavorite": "List Favorite",
+  "@listFavorite": {
+    "description": "List Favorite"
+  },
+  "listProduct": "List Product",
+  "@listProduct": {
+    "description": "List Product"
+  },
+  "liveBreakDetail": "Live Break Detail",
+  "@liveBreakDetail": {
+    "description": "Live Break Detail"
+  },
+  "liveEndedMessage": "The live session has ended",
+  "@liveEndedMessage": {
+    "description": "The live session has ended"
+  },
+  "liveEvent": "Live event",
+  "@liveEvent": {
+    "description": "Label or message referring to a live event."
+  },
+  "liveGoalOf": "Live goal of",
+  "@liveGoalOf": {
+    "description": "Live goal of"
+  },
+  "liveLeaveList": "Live registration list",
+  "@liveLeaveList": {
+    "description": "Live registration list"
+  },
+  "livePlatform": "Live platform",
+  "@livePlatform": {
+    "description": "Label or message referring to the platform used for live streaming."
+  },
+  "liveScheduleDetail": "Live Schedule Detail",
+  "@liveScheduleDetail": {
+    "description": "Live Schedule Detail"
+  },
+  "liveScheduleList": "Live Schedule List",
+  "@liveScheduleList": {
+    "description": "Live Schedule List"
+  },
+  "liveSessionCompleted": "Live Session Completed",
+  "@liveSessionCompleted": {
+    "description": "Live Session Completed"
+  },
+  "liveSessionCompletionMessage": "Congratulations to {name} on completing the live session! Thank you for bringing engaging content, and thanks to everyone who joined. See you in the next live sessions!",
+  "@liveSessionCompletionMessage": {
+    "description": "Message to congratulate the user on completing a live session",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "description": "The name of the person completing the live session"
+      }
+    }
+  },
+  "liveSessionUnavailable": "Live session unavailable",
+  "@liveSessionUnavailable": {
+    "description": "Message indicating that the live session is not available."
+  },
+  "livestream": "Livestream",
+  "@livestream": {
+    "description": "Livestream"
+  },
+  "living": "Living",
+  "@living": {
+    "description": "Living"
+  },
+  "login": "Login",
+  "@login": {
+    "description": "Login to the application"
+  },
+  "loginIntro": "Please log in to use the service.",
+  "@loginIntro": {
+    "description": "Login introduction text"
+  },
+  "loginMessage": "You need to log in to your account to experience our services",
+  "@loginMessage": {
+    "description": "Login message"
+  },
+  "loginRegister": "Login/Register",
+  "@loginRegister": {
+    "description": "Login/Register"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Logout from the application"
+  },
+  "logoutConfirmation": "Are you sure you want to log out?",
+  "@logoutConfirmation": {
+    "description": "Confirmation message asking the user if they are sure they want to log out."
+  },
+  "luckySpinWheel": "Lucky spin wheel",
+  "@luckySpinWheel": {
+    "description": "Label or message referring to a lucky spin wheel, typically used in promotions or games."
+  },
+  "maximum": "Maximum",
+  "@maximum": {
+    "description": "Maximum"
+  },
+  "maximumScore": "Maximum score",
+  "@maximumScore": {
+    "description": "A label or message indicating the maximum possible score."
+  },
+  "maxVoucherRedemption": "You can redeem up to {count} vouchers",
+  "@maxVoucherRedemption": {
+    "description": "Displays the maximum number of vouchers that can be redeemed",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "description": "The maximum number of vouchers that can be redeemed"
+      }
+    }
+  },
+  "memberRankHistory": "Member Rank History",
+  "@memberRankHistory": {
+    "description": "Member Rank History"
+  },
+  "membershipLevel": "Member Rank",
+  "@membershipLevel": {
+    "description": "Member Rank"
+  },
+  "message": "Message",
+  "@message": {
+    "description": "Message"
+  },
+  "messageSupport": "Message Support",
+  "@messageSupport": {
+    "description": "Message Support"
+  },
+  "minimum": "Minimum",
+  "@minimum": {
+    "description": "Minimum"
+  },
+  "minimumOrderCondition": "Minimum order condition {price}",
+  "@minimumOrderCondition": {
+    "description": "The condition for the minimum order.",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "description": "The minimum order price"
+      }
+    }
+  },
+  "minimumSpending": "{value, plural, =0 {No minimum spending amount} other {Minimum {displayValue}}}",
+  "@minimumSpending": {
+    "description": "Displays the minimum spending amount based on the input value",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "description": "Numeric value for pluralization"
+      },
+      "displayValue": {
+        "type": "String",
+        "description": "The minimum spending value to display"
+      }
+    }
+  },
+  "minute": "{time} minute",
+  "@minute": {
+    "description": "minute",
+    "placeholders": {
+      "time": {
+        "type": "int"
+      }
+    }
+  },
+  "mirror": "Map your video",
+  "@mirror": {
+    "description": "Map your video"
+  },
+  "moderation": "Moderation",
+  "@moderation": {
+    "description": "A label or message referring to the moderation process."
+  },
+  "moderationSuccess": "Kiểm duyệt thành công",
+  "moderationSuccessMessage": "Congratulations {name} for successfully moderating. The result has been sent to the system.",
+  "@moderationSuccessMessage": {
+    "description": "Message displayed to congratulate a user for successful moderation.",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John"
+      }
+    }
+  },
+  "moderationTime": "Moderation time",
+  "@moderationTime": {
+    "description": "Label referring to the time required for moderation."
+  },
+  "monday": "Monday",
+  "@monday": {
+    "description": "Monday"
+  },
+  "moreSee": "See more",
+  "@moreSee": {
+    "description": "See more"
+  },
+  "muteMicro": "Mute microphone",
+  "@muteMicro": {
+    "description": "Mute microphone"
+  },
+  "myQR": "My QR",
+  "@myQR": {
+    "description": "My QR"
+  },
+  "myReview": "My review",
+  "@myReview": {
+    "description": "Label or message referring to the user's own review."
+  },
+  "myWallet": "My Wallet",
+  "@myWallet": {
+    "description": "My Wallet"
+  },
+  "na": "Not Available",
+  "@na": {
+    "description": "Not Available"
+  },
+  "nearest": "Nearest",
+  "@nearest": {
+    "description": "Nearest"
+  },
+  "newAddress": "New Address",
+  "@newAddress": {
+    "description": "New Address"
+  },
+  "newest": "Newest",
+  "@newest": {
+    "description": "Newest"
+  },
+  "newFollower": "New Follower",
+  "@newFollower": {
+    "description": "New Follower"
+  },
+  "newPassword": "New password",
+  "@newPassword": {
+    "description": "New password"
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Next"
+  },
+  "noComment": "The comment feature of this article has been locked.",
+  "@noComment": {
+    "description": "The comment feature of this article has been locked."
+  },
+  "noNewAnnouncementYet": "No new announcement yet",
+  "@noNewAnnouncementYet": {
+    "description": "No new announcement yet"
+  },
+  "noOrderData": "No order data",
+  "@noOrderData": {
+    "description": "Message indicating that there is no order data available."
+  },
+  "noProductInCart": "No product in cart",
+  "@noProductInCart": {
+    "description": "No product in cart"
+  },
+  "noQRCodeFound": "No QR code found in the image",
+  "@noQRCodeFound": {
+    "description": "No QR code found in the image"
+  },
+  "note": "Note",
+  "@note": {
+    "description": "Note"
+  },
+  "notEligibleForGift": "You are not eligible to receive the gift",
+  "@notEligibleForGift": {
+    "description": "Message indicating that the user does not meet the criteria to receive a gift."
+  },
+  "notification": "Notification",
+  "@notification": {
+    "description": "Notification"
+  },
+  "notificationTitle": "Notification",
+  "@notificationTitle": {
+    "description": "Default title for notification"
+  },
+  "notReviewed": "Not reviewed",
+  "@notReviewed": {
+    "description": "Label or message indicating that the item has not been reviewed yet."
+  },
+  "notStarted": "Not started",
+  "@notStarted": {
+    "description": "Not started"
+  },
+  "noUseVoucher": "No use voucher",
+  "@noUseVoucher": {
+    "description": "No use voucher"
+  },
+  "noVideoRecorded": "No video recorded",
+  "@noVideoRecorded": {
+    "description": "Message indicating that no video has been recorded."
+  },
+  "numberOfCoinsReceived": "Number of Coins Received",
+  "@numberOfCoinsReceived": {
+    "description": "Number of Coins Received"
+  },
+  "numberOfVideos": "Number of Videos",
+  "@numberOfVideos": {
+    "description": "Number of Videos"
+  },
+  "offersAndEvents": "Offers and Events",
+  "@offersAndEvents": {
+    "description": "Offers and Events"
+  },
+  "or": "Or",
+  "@or": {
+    "description": "Or"
+  },
+  "order": "Order",
+  "@order": {
+    "description": "Order"
+  },
+  "orderAgreement": "By placing an order, you agree to the VNS Shop's Terms of Use and Sale and our Privacy Policy",
+  "@orderAgreement": {
+    "description": "By placing an order, you agree to the VNS Shop's Terms of Use and Sale and our Privacy Policy"
+  },
+  "orderCancellationGuide": "Order cancellation guide",
+  "@orderCancellationGuide": {
+    "description": "Label or message referring to a guide for canceling orders."
+  },
+  "orderCode": "Order Code",
+  "@orderCode": {
+    "description": "Order Code"
+  },
+  "orderDate": "Order Date",
+  "@orderDate": {
+    "description": "Order Date"
+  },
+  "orderDetail": "Order Detail",
+  "@orderDetail": {
+    "description": "Order Detail"
+  },
+  "orderDiscountCondition": "For orders over {price}, get a maximum discount of {discountMax}",
+  "@orderDiscountCondition": {
+    "description": "Displays the discount condition based on the order value and maximum discount",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "description": "Minimum order value for the discount"
+      },
+      "discountMax": {
+        "type": "String",
+        "description": "Maximum discount amount"
+      }
+    }
+  },
+  "orderPlaced": "Order Placed",
+  "@orderPlaced": {
+    "description": "Order Placed"
+  },
+  "orderStatus": "Order Status",
+  "@orderStatus": {
+    "description": "Order Status"
+  },
+  "orderSuccess": "Order Success",
+  "@orderSuccess": {
+    "description": "Order Success"
+  },
+  "orderSummary": "Order Summary",
+  "@orderSummary": {
+    "description": "Order Summary"
+  },
+  "originalAudio": "Original Audio",
+  "@originalAudio": {
+    "description": "Original Audio"
+  },
+  "otherProduct": "Other Product",
+  "@otherProduct": {
+    "description": "Other Product"
+  },
+  "otherProducts": "Other Products",
+  "@otherProducts": {
+    "description": "Other Products"
+  },
+  "otherVoucher": "Other Voucher",
+  "@otherVoucher": {
+    "description": "Other Voucher"
+  },
+  "ourPrivacyPolicy": "our Privacy Policy",
+  "@ourPrivacyPolicy": {
+    "description": "our Privacy Policy"
+  },
+  "outOfStock": "Out of Stock",
+  "@outOfStock": {
+    "description": "Out of Stock"
+  },
+  "package": "Package",
+  "@package": {
+    "description": "Package"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Password"
+  },
+  "payByCoin": "Pay by Coin",
+  "@payByCoin": {
+    "description": "Pay by Coin"
+  },
+  "payment": "Payment",
+  "@payment": {
+    "description": "Payment"
+  },
+  "paymentDate": "Payment Date",
+  "@paymentDate": {
+    "description": "Payment Date"
+  },
+  "paymentFailed": "Payment failed",
+  "@paymentFailed": {
+    "description": "Message indicating that the payment process was unsuccessful."
+  },
+  "paymentMethod": "Payment Method",
+  "@paymentMethod": {
+    "description": "Payment Method"
+  },
+  "paymentSuccess": "Your order has been successfully paid",
+  "@paymentSuccess": {
+    "description": "Your order has been successfully paid"
+  },
+  "paymentSuccessMessage": "Thank you for shopping with VNS Shop. Please come back and continue shopping!",
+  "@paymentSuccessMessage": {
+    "description": "Thank you message after a successful order"
+  },
+  "payNow": "Order",
+  "@payNow": {
+    "description": "Order"
+  },
+  "pending": "Pending",
+  "@pending": {
+    "description": "Pending"
+  },
+  "pendingTitle": "Pending",
+  "@pendingTitle": {
+    "description": "Default title for pending"
+  },
+  "perform": "Perform",
+  "@perform": {
+    "description": "Perform"
+  },
+  "phone": "Phone Number",
+  "@phone": {
+    "description": "Phone Number"
+  },
+  "pictureSavedTo": "Picture saved to",
+  "@pictureSavedTo": {
+    "description": "Message indicating that a picture has been saved."
+  },
+  "pin": "Pin",
+  "@pin": {
+    "description": "Pin"
+  },
+  "pinComment": "Pin Comment",
+  "@pinComment": {
+    "description": "Pin Comment"
+  },
+  "pining": "Pining",
+  "@pining": {
+    "description": "Pining"
+  },
+  "pinProduct": "Pin Product",
+  "@pinProduct": {
+    "description": "Pin Product"
+  },
+  "platinum": "Platinum",
+  "@platinum": {
+    "description": "Platinum"
+  },
+  "pleaseEnterOTP": "Please enter OTP",
+  "@pleaseEnterOTP": {
+    "description": "Please enter OTP"
+  },
+  "pleaseFillAllFields": "Please fill all fields",
+  "@pleaseFillAllFields": {
+    "description": "Please fill all fields"
+  },
+  "pleaseWaitAdminConfirmation": "Please wait for the admin to confirm your request.",
+  "@pleaseWaitAdminConfirmation": {
+    "description": "Please wait for the admin to confirm your request."
+  },
+  "pointsToWithdraw": "Points to Withdraw",
+  "@pointsToWithdraw": {
+    "description": "Points to Withdraw"
+  },
+  "policy": "Policy and terms",
+  "@policy": {
+    "description": "Policy and terms"
+  },
+  "policyAndTerms": "Login and agree to\nour Terms of Service",
+  "@policyAndTerms": {
+    "description": "Login and agree to\nour Terms of Service"
+  },
+  "policyTitle": "Policy",
+  "@policyTitle": {
+    "description": "Default title for policy"
+  },
+  "post": "Post",
+  "@post": {
+    "description": "Post"
+  },
+  "postCount": "{count, plural, =0{No posts} one{1 post} other{{count} posts}}",
+  "@postCount": {
+    "description": "Displays the number of posts based on the count variable",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "postNoun": "Post",
+  "@postNoun": {
+    "description": "Post"
+  },
+  "postTitle": "Post Title",
+  "@postTitle": {
+    "description": "Post Title"
+  },
+  "price": "Price",
+  "@price": {
+    "description": "Price"
+  },
+  "privacy": "Privacy",
+  "@privacy": {
+    "description": "Privacy"
+  },
+  "processed": "Processed",
+  "@processed": {
+    "description": "Processed"
+  },
+  "processing": "Processing",
+  "@processing": {
+    "description": "Processing"
+  },
+  "processingVideo": "The system is processing the video, please wait",
+  "@processingVideo": {
+    "description": "Message indicating that the system is currently processing the video and the user should wait."
+  },
+  "product": "Product",
+  "@product": {
+    "description": "Product"
+  },
+  "productDescription": "Product Description",
+  "@productDescription": {
+    "description": "Product Description"
+  },
+  "productDetail": "Product Detail",
+  "@productDetail": {
+    "description": "Product Detail"
+  },
+  "productReview": "Product Review",
+  "@productReview": {
+    "description": "Product Review"
+  },
+  "productToday": "Product Today",
+  "@productToday": {
+    "description": "Product Today"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Profile"
+  },
+  "progress": "Progress",
+  "@progress": {
+    "description": "Progress"
+  },
+  "purchareHistory": "Purchase History",
+  "@purchareHistory": {
+    "description": "Purchase History"
+  },
+  "pushNotifications": "Push notifications",
+  "@pushNotifications": {
+    "description": "Push notifications"
+  },
+  "qrScanFailed": "Failed to scan QR code",
+  "@qrScanFailed": {
+    "description": "Failed to scan QR code"
+  },
+  "quantity": "Quantity",
+  "@quantity": {
+    "description": "Quantity"
+  },
+  "quantityTotal": "Quantity ({quantity}), total ({total})",
+  "@quantityTotal": {
+    "description": "Quantity Total",
+    "placeholders": {
+      "quantity": {
+        "type": "int",
+        "description": "Quantity"
+      },
+      "total": {
+        "type": "String",
+        "description": "Total"
+      }
+    }
+  },
+  "questionTitle": "Question",
+  "@questionTitle": {
+    "description": "Default title for question"
+  },
+  "rangePrice": "Range Price",
+  "@rangePrice": {
+    "description": "Range Price"
+  },
+  "rank": "Rank",
+  "@rank": {
+    "description": "Rank"
+  },
+  "ratingPoints": "Rating points",
+  "@ratingPoints": {
+    "description": "A label referring to the points or score of a rating."
+  },
+  "ratingScore": "Rating score",
+  "@ratingScore": {
+    "description": "A label or message referring to the score of a rating or review."
+  },
+  "readLess": "Read Less",
+  "@readLess": {
+    "description": "Read Less"
+  },
+  "readMore": "Read More",
+  "@readMore": {
+    "description": "Read More"
+  },
+  "reasonCancel": "Reason Cancel",
+  "@reasonCancel": {
+    "description": "Reason Cancel"
+  },
+  "reasonReturn": "Reason Return",
+  "@reasonReturn": {
+    "description": "Reason Return"
+  },
+  "reasonReturnDetail": "Describe the reason for the product error issue, the package clearly shows the bill of lading and the shipping status",
+  "@reasonReturnDetail": {
+    "description": "Describe the reason for the product error issue, the package clearly shows the bill of lading and the shipping status"
+  },
+  "receive": "Receive",
+  "@receive": {
+    "description": "Receive"
+  },
+  "receiveCoin": "Receive Coin",
+  "@receiveCoin": {
+    "description": "Receive Coin"
+  },
+  "received": "Received",
+  "@received": {
+    "description": "Message indicating that an item or something has been received."
+  },
+  "receiveExtraCoin": "Receive Extra Coin",
+  "@receiveExtraCoin": {
+    "description": "Receive Extra Coin"
+  },
+  "rechargeForm": "Recharge Form",
+  "@rechargeForm": {
+    "description": "Recharge Form"
+  },
+  "refundDetail": "Refund Detail",
+  "@refundDetail": {
+    "description": "Refund Detail"
+  },
+  "refundProduct": "Refund Product",
+  "@refundProduct": {
+    "description": "Refund Product"
+  },
+  "refundPurchase": "Refund Purchase",
+  "@refundPurchase": {
+    "description": "Refund Purchase"
+  },
+  "refundShippingFee": "Refund Shipping Fee",
+  "@refundShippingFee": {
+    "description": "Refund Shipping Fee"
+  },
+  "region": "Region",
+  "@region": {
+    "description": "Label or message referring to a specific geographical area or region."
+  },
+  "register": "Register",
+  "@register": {
+    "description": "Register account to access the application"
+  },
+  "registered": "Registered",
+  "@registered": {
+    "description": "Message indicating that the user has successfully registered."
+  },
+  "registerIntro": "Please register to use the service.",
+  "@registerIntro": {
+    "description": "Register introduction text"
+  },
+  "rejected": "Rejected",
+  "@rejected": {
+    "description": "Rejected"
+  },
+  "related": "Related",
+  "@related": {
+    "description": "Related"
+  },
+  "reply": "Reply",
+  "@reply": {
+    "description": "Reply"
+  },
+  "report": "Report",
+  "@report": {
+    "description": "Report"
+  },
+  "reportSuccess": "Report sent successfully, you will not see this post after we process it",
+  "@reportSuccess": {
+    "description": "Report sent successfully, you will not see this post after we process it"
+  },
+  "request": "Request",
+  "@request": {
+    "description": "Request"
+  },
+  "requestCancelOrder": "Request Cancel Order",
+  "@requestCancelOrder": {
+    "description": "Request Cancel Order"
+  },
+  "requestLiveLeave": "Request Live Leave",
+  "@requestLiveLeave": {
+    "description": "Request Live Leave"
+  },
+  "requestRefund": "Request Refund",
+  "@requestRefund": {
+    "description": "Request Refund"
+  },
+  "requestWithdrawals": "Request Withdrawals",
+  "@requestWithdrawals": {
+    "description": "Request Withdrawals"
+  },
+  "resendCode": "Resend code",
+  "@resendCode": {
+    "description": "Resend code"
+  },
+  "reset": "Reset",
+  "@reset": {
+    "description": "Reset"
+  },
+  "resetPassword": "Reset password",
+  "@resetPassword": {
+    "description": "Reset password"
+  },
+  "resetPasswordAccount": "Reset password account",
+  "@resetPasswordAccount": {
+    "description": "Reset password account"
+  },
+  "resetPasswordLink": "Reset password link",
+  "@resetPasswordLink": {
+    "description": "Reset password link"
+  },
+  "returnOrder": "Return Order",
+  "@returnOrder": {
+    "description": "Return Order"
+  },
+  "review": "Review",
+  "@review": {
+    "description": "Label or message referring to a review or comment."
+  },
+  "reviewed": "Reviewed",
+  "@reviewed": {
+    "description": "Label or message indicating that the item has been reviewed."
+  },
+  "rotateCamera": "Switch camera",
+  "@rotateCamera": {
+    "description": "Switch camera"
+  },
+  "sale": "Sale",
+  "@sale": {
+    "description": "Sale"
+  },
+  "saturday": "Saturday",
+  "@saturday": {
+    "description": "Saturday"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Save"
+  },
+  "saveAndAgreeWithPrivacyPolicy": "Save and agree with our Privacy Policy",
+  "@saveAndAgreeWithPrivacyPolicy": {
+    "description": "Save and agree with our Privacy Policy"
+  },
+  "saved": "Saved",
+  "@saved": {
+    "description": "Saved"
+  },
+  "savedImage": "Saved Image",
+  "@savedImage": {
+    "description": "Saved Image"
+  },
+  "savedImageFailed": "Failed to save image",
+  "@savedImageFailed": {
+    "description": "Failed to save image"
+  },
+  "savedImageSuccess": "Saved image successfully",
+  "@savedImageSuccess": {
+    "description": "Saved image successfully"
+  },
+  "saveEdit": "Save Edit",
+  "@saveEdit": {
+    "description": "Save Edit"
+  },
+  "saveForLater": "Save For Later",
+  "@saveForLater": {
+    "description": "Save For Later"
+  },
+  "saveMoney": "Save Money",
+  "@saveMoney": {
+    "description": "Save Money"
+  },
+  "scanQR": "Scan QR",
+  "@scanQR": {
+    "description": "Scan QR"
+  },
+  "scheduleList": "Schedule list",
+  "@scheduleList": {
+    "description": "Label or message referring to a list of scheduled events or live broadcasts."
+  },
+  "scheduleLive": "Schedule live",
+  "@scheduleLive": {
+    "description": "Label or message referring to scheduling a live broadcast."
+  },
+  "search": "Search",
+  "@search": {
+    "description": "Search"
+  },
+  "searchSound": "Search Sound",
+  "@searchSound": {
+    "description": "Search Sound"
+  },
+  "seeMore": "See more",
+  "@seeMore": {
+    "description": "See more"
+  },
+  "selectAll": "All",
+  "@selectAll": {
+    "description": "All"
+  },
+  "selected": "Selected",
+  "@selected": {
+    "description": "Selected"
+  },
+  "selectLanguage": "Select Language",
+  "@selectLanguage": {
+    "description": "Select Language"
+  },
+  "selectOne": "-- Select one --",
+  "@selectOne": {
+    "description": "Select one"
+  },
+  "selectReason": "Select a reason",
+  "@selectReason": {
+    "description": "Select a reason"
+  },
+  "selectSound": "Select Sound",
+  "@selectSound": {
+    "description": "Select Sound"
+  },
+  "selectThumbnail": "Select Thumbnail",
+  "@selectThumbnail": {
+    "description": "Select Thumbnail"
+  },
+  "selectVideoLanguage": "Select Video Language",
+  "@selectVideoLanguage": {
+    "description": "Select Video Language"
+  },
+  "send": "Send",
+  "@send": {
+    "description": "Send"
+  },
+  "sendEmail": "Send Email",
+  "@sendEmail": {
+    "description": "Send Email"
+  },
+  "sendEmailMessage": "By enabling this option, you agree to receive order information via the email linked with us. The email address is: {email}",
+  "@sendEmailMessage": {
+    "description": "By enabling this option, you agree to receive order information via the email linked with us. The email address is: {email}",
+    "placeholders": {
+      "email": {
+        "type": "String",
+        "description": "The email address"
+      }
+    }
+  },
+  "sendGift": "Send Gift",
+  "@sendGift": {
+    "description": "Send Gift"
+  },
+  "sendOTPFailed": "Send OTP failed",
+  "@sendOTPFailed": {
+    "description": "Send OTP failed"
+  },
+  "sendRequestSuccess": "Send request success",
+  "@sendRequestSuccess": {
+    "description": "Send request success"
+  },
+  "service": "Service",
+  "@service": {
+    "description": "Service"
+  },
+  "serviceAndPromotion": "Service & Promotion",
+  "@serviceAndPromotion": {
+    "description": "Service & Promotion"
+  },
+  "setDefaultAddress": "Set Default Address",
+  "@setDefaultAddress": {
+    "description": "Set Default Address"
+  },
+  "setTimePin": "Choose the time ghim",
+  "@setTimePin": {
+    "description": "Choose the time ghim"
+  },
+  "setting": "Setting",
+  "@setting": {
+    "description": "Setting"
+  },
+  "share": "Share",
+  "@share": {
+    "description": "Share"
+  },
+  "shareFailed": "Failed to share",
+  "@shareFailed": {
+    "description": "Failed to share"
+  },
+  "shareWithYou": "Share with you",
+  "@shareWithYou": {
+    "description": "Share with you"
+  },
+  "shipping": "Shipping",
+  "@shipping": {
+    "description": "Shipping"
+  },
+  "shippingAddress": "Shipping Address",
+  "@shippingAddress": {
+    "description": "Shipping Address"
+  },
+  "shippingCode": "Shipping Code",
+  "@shippingCode": {
+    "description": "Shipping Code"
+  },
+  "shippingFee": "Shipping Fee",
+  "@shippingFee": {
+    "description": "Shipping Fee"
+  },
+  "shippingStatus": "Shipping Status",
+  "@shippingStatus": {
+    "description": "Shipping Status"
+  },
+  "shippingVoucher": "Shipping Voucher",
+  "@shippingVoucher": {
+    "description": "Shipping Voucher"
+  },
+  "shop": "Shop",
+  "@shop": {
+    "description": "Shop"
+  },
+  "shopping": "Shopping",
+  "@shopping": {
+    "description": "Shopping"
+  },
+  "shoppingSpree": "Shopping Spree",
+  "@shoppingSpree": {
+    "description": "Shopping Spree"
+  },
+  "silver": "Silver",
+  "@silver": {
+    "description": "Silver"
+  },
+  "skip": "Skip",
+  "@skip": {
+    "description": "Skip"
+  },
+  "socialNetwork": "Social Network",
+  "@socialNetwork": {
+    "description": "Social Network"
+  },
+  "sold": "Sold",
+  "@sold": {
+    "description": "Sold"
+  },
+  "soldItems": "Sold {count} items",
+  "@soldItems": {
+    "description": "Indicates the number of items sold",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "description": "The number of items sold"
+      }
+    }
+  },
+  "somethingNotAvailableYet": "{name} not available yet",
+  "@somethingNotAvailableYet": {
+    "description": "{name} not available yet",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "sort": "Sort",
+  "@sort": {
+    "description": "Sort"
+  },
+  "sound": "Sound",
+  "@sound": {
+    "description": "Sound"
+  },
+  "special": "Special",
+  "@special": {
+    "description": "Special"
+  },
+  "specificAddress": "Specific Address",
+  "@specificAddress": {
+    "description": "Specific Address"
+  },
+  "spinWheel": "Spin wheel",
+  "@spinWheel": {
+    "description": "Label or message referring to a spin wheel, typically used in games or promotions."
+  },
+  "startLive": "Start live",
+  "@startLive": {
+    "description": "Label or button text indicating the action to start a live stream."
+  },
+  "startLivestream": "Start Livestream",
+  "@startLivestream": {
+    "description": "Start Livestream"
+  },
+  "startTime": "Start Time",
+  "@startTime": {
+    "description": "Start Time"
+  },
+  "status": "Status",
+  "@status": {
+    "description": "Status"
+  },
+  "successTitle": "Success",
+  "@successTitle": {
+    "description": "Default title for success"
+  },
+  "suggest": "Suggest",
+  "@suggest": {
+    "description": "Suggest"
+  },
+  "suggestAccount": "Suggest Account",
+  "@suggestAccount": {
+    "description": "Suggest Account"
+  },
+  "suggested": "Suggested",
+  "@suggested": {
+    "description": "Suggested"
+  },
+  "suggestedProducts": "Suggested Products",
+  "@suggestedProducts": {
+    "description": "Suggested Products"
+  },
+  "summary": "Summary",
+  "@summary": {
+    "description": "Label or message referring to a summary or aggregation of information."
+  },
+  "sunday": "Sunday",
+  "@sunday": {
+    "description": "Sunday"
+  },
+  "sundayPromotion": "Sunday Promotion",
+  "@sundayPromotion": {
+    "description": "Sunday Promotion"
+  },
+  "support": "Support",
+  "@support": {
+    "description": "Support"
+  },
+  "support24_7": "Support 24/7",
+  "@support24_7": {
+    "description": "Support 24/7"
+  },
+  "supportTeam": "Support Team",
+  "@supportTeam": {
+    "description": "Support Team"
+  },
+  "systemNotification": "System Notification",
+  "@systemNotification": {
+    "description": "System Notification"
+  },
+  "tagProducts": "Tag Products",
+  "@tagProducts": {
+    "description": "Tag Products"
+  },
+  "targetNoti": "Help me reach the goal to receive attractive gifts from my live session",
+  "@targetNoti": {
+    "description": "Help me reach the goal to receive attractive gifts from my live session"
+  },
+  "taxCode": "Tax Code",
+  "@taxCode": {
+    "description": "Tax Code"
+  },
+  "termsAndApply": "Terms and Apply",
+  "@termsAndApply": {
+    "description": "Terms and Apply"
+  },
+  "termsAndConditions": "Terms and Conditions",
+  "@termsAndConditions": {
+    "description": "Terms and Conditions"
+  },
+  "termsOfPurchaseSalePolicy": "Terms of Purchase and Sale Policy",
+  "@termsOfPurchaseSalePolicy": {
+    "description": "Terms of Purchase and Sale Policy"
+  },
+  "termsOfUse": "Terms Of Use",
+  "@termsOfUse": {
+    "description": "Terms Of Use"
+  },
+  "thursday": "Thursday",
+  "@thursday": {
+    "description": "Thursday"
+  },
+  "time": "Time",
+  "@time": {
+    "description": "Time"
+  },
+  "timeLeft": "Time left",
+  "@timeLeft": {
+    "description": "Time Left"
+  },
+  "title": "Title",
+  "@title": {
+    "description": "Title"
+  },
+  "to": "To",
+  "@to": {
+    "description": "To"
+  },
+  "today": "Today",
+  "@today": {
+    "description": "Today"
+  },
+  "toDay": "To Day",
+  "@toDay": {
+    "description": "To Day"
+  },
+  "tomorrow": "Tomorrow",
+  "@tomorrow": {
+    "description": "Tomorrow"
+  },
+  "topUpCoin": "Top Up",
+  "@topUpCoin": {
+    "description": "Top Up"
+  },
+  "topUpWallet": "Top Up Wallet",
+  "@topUpWallet": {
+    "description": "Top Up Wallet"
+  },
+  "topViewers": "Top viewers",
+  "@topViewers": {
+    "description": "Label or message referring to the top viewers of a live broadcast or content."
+  },
+  "total": "Total",
+  "@total": {
+    "description": "Total"
+  },
+  "totalAmount": "Total Amount",
+  "@totalAmount": {
+    "description": "Total Amount"
+  },
+  "totalLikes": "Total likes",
+  "@totalLikes": {
+    "description": "Label or message referring to the total number of likes received."
+  },
+  "totalPayment": "Total Payment",
+  "@totalPayment": {
+    "description": "Total Payment"
+  },
+  "totalProductPrice": "Total Product Price",
+  "@totalProductPrice": {
+    "description": "Total Product Price"
+  },
+  "totalQuantity": "Total Quantity",
+  "@totalQuantity": {
+    "description": "Total Quantity"
+  },
+  "totalRevenue": "Total revenue",
+  "@totalRevenue": {
+    "description": "Label or message referring to the total revenue generated."
+  },
+  "trancastionCode": "Transaction Code",
+  "@trancastionCode": {
+    "description": "Transaction Code"
+  },
+  "transactionImage": "Transaction Image",
+  "@transactionImage": {
+    "description": "Transaction Image"
+  },
+  "transactionType": "Transaction Type",
+  "@transactionType": {
+    "description": "Transaction Type"
+  },
+  "tuesday": "Tuesday",
+  "@tuesday": {
+    "description": "Tuesday"
+  },
+  "unit": "Unit",
+  "@unit": {
+    "description": "Unit"
+  },
+  "unPinComment": "Unpin Comment",
+  "@unPinComment": {
+    "description": "Unpin Comment"
+  },
+  "unselected": "Unselected",
+  "@unselected": {
+    "description": "Unselected"
+  },
+  "updateCart": "Update Cart",
+  "@updateCart": {
+    "description": "Update Cart"
+  },
+  "updateInformation": "Update Information",
+  "@updateInformation": {
+    "description": "Update Information"
+  },
+  "upload": "Upload",
+  "@upload": {
+    "description": "Label or button text indicating an action to upload content."
+  },
+  "uploadImage": "Upload Image",
+  "@uploadImage": {
+    "description": "Upload Image"
+  },
+  "usageLimit": "Usage Limit",
+  "@usageLimit": {
+    "description": "Usage Limit"
+  },
+  "use": "Use",
+  "@use": {
+    "description": "Use"
+  },
+  "useCoinToBuy": "Use coin to buy virtual items like gifts",
+  "@useCoinToBuy": {
+    "description": "Use coin to buy virtual items like gifts"
+  },
+  "usedVideo": "Video used {count}",
+  "@usedVideo": {
+    "description": "Video used",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "usePoints": "Use Points",
+  "@usePoints": {
+    "description": "Use Points"
+  },
+  "username": "Username",
+  "@username": {
+    "description": "Username"
+  },
+  "userRank": "Your rank",
+  "@userRank": {
+    "description": "Your rank"
+  },
+  "userRequest": "My Request",
+  "@userRequest": {
+    "description": "My Request"
+  },
+  "useThisSound": "Use this sound",
+  "@useThisSound": {
+    "description": "Use this sound"
+  },
+  "useVoucher": "Use Voucher",
+  "@useVoucher": {
+    "description": "Use Voucher"
+  },
+  "validityPeriod": "Validity Period",
+  "@validityPeriod": {
+    "description": "Validity Period"
+  },
+  "validUntil": "Valid until {time}",
+  "@validUntil": {
+    "description": "Displays the expiration time of a voucher or program",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "description": "Expiration time (e.g., 31/12/2024)"
+      }
+    }
+  },
+  "verify": "Verify",
+  "@verify": {
+    "description": "Verify"
+  },
+  "verifyAccount": "Verify Account",
+  "@verifyAccount": {
+    "description": "Verify Account"
+  },
+  "video": "Video",
+  "@video": {
+    "description": "Video"
+  },
+  "videoAudio": "Video Audio",
+  "@videoAudio": {
+    "description": "Video Audio"
+  },
+  "videoContentModerationError": "The video content violates certain copyrights during moderation. Please try again.",
+  "@videoContentModerationError": {
+    "description": "The video content violates certain copyrights during moderation. Please try again."
+  },
+  "videoDescription": "Video Description",
+  "@videoDescription": {
+    "description": "Video Description"
+  },
+  "videoError": "Video Error",
+  "@videoError": {
+    "description": "Video Error"
+  },
+  "videoProduct": "Video Product",
+  "@videoProduct": {
+    "description": "Video Product"
+  },
+  "viewAll": "View all",
+  "@viewAll": {
+    "description": "View all"
+  },
+  "viewDetail": "View Detail",
+  "@viewDetail": {
+    "description": "View Detail"
+  },
+  "viewer": "Viewer",
+  "@viewer": {
+    "description": "Viewer"
+  },
+  "viewMyWallet": "View My Wallet",
+  "@viewMyWallet": {
+    "description": "View My Wallet"
+  },
+  "viewProduct": "View product",
+  "@viewProduct": {
+    "description": "Label or button text indicating the action to view a product's details."
+  },
+  "viewProfile": "View Profile",
+  "@viewProfile": {
+    "description": "View Profile"
+  },
+  "viewReply": "{count, plural, =0{No replies} one{1 reply} other{{count} replies}}",
+  "@viewReply": {
+    "description": "View Reply",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "virtualItemPolicy": "Virtual Item Policy",
+  "@virtualItemPolicy": {
+    "description": "Virtual Item Policy"
+  },
+  "vnpayPayment": "VNPay Payment",
+  "@vnpayPayment": {
+    "description": "Label or message referring to payment via VNPay."
+  },
+  "vnsShop": "VNS Shop",
+  "@vnsShop": {
+    "description": "VNS Shop"
+  },
+  "voucher": "Voucher",
+  "@voucher": {
+    "description": "Voucher"
+  },
+  "voucherAndPromotion": "Voucher & Promotion",
+  "@voucherAndPromotion": {
+    "description": "Voucher & Promotion"
+  },
+  "voucherCode": "Voucher code",
+  "@voucherCode": {
+    "description": "Label or message referring to a voucher code."
+  },
+  "voucherDetails": "Voucher Details",
+  "@voucherDetails": {
+    "description": "Voucher Details"
+  },
+  "warningTitle": "Warning",
+  "@warningTitle": {
+    "description": "Default title for warning"
+  },
+  "wednesday": "Wednesday",
+  "@wednesday": {
+    "description": "Wednesday"
+  },
+  "whatDoYouWantToAsk": "What do you want to ask?",
+  "@whatDoYouWantToAsk": {
+    "description": "What do you want to ask?"
+  },
+  "withdrawalRequest": "Withdrawals",
+  "@withdrawalRequest": {
+    "description": "withdrawals"
+  },
+  "withdrawnCoins": "Withdrawn Coins",
+  "@withdrawnCoins": {
+    "description": "Withdrawn Coins"
+  },
+  "withdrawToEwallet": "Withdraw to E-wallet",
+  "@withdrawToEwallet": {
+    "description": "Withdraw to E-wallet"
+  },
+  "withdrawToWallet": "Withdraw to Wallet",
+  "@withdrawToWallet": {
+    "description": "Withdraw to Wallet"
+  },
+  "writeMessage": "Write a message",
+  "@writeMessage": {
+    "description": "Write a message"
+  },
+  "writeReview": "Write a review",
+  "@writeReview": {
+    "description": "Write a review"
+  },
+  "yes": "Yes",
+  "@yes": {
+    "description": "Yes"
+  },
+  "yesterday": "Yesterday",
+  "@yesterday": {
+    "description": "Yesterday"
+  },
+  "listGift": "List of gifts",
+  "totalAll": "Total order",
+  "happyGift": "Congratulations on receiving"
+}

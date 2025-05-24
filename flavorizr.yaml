@@ -1,0 +1,174 @@
+# build flavor for android and ios command
+# dart run flutter_flavorizr
+ide: idea
+
+instructions:
+  # assets
+  - assets:download
+  - assets:extract
+
+  # android
+  - android:flavorizrGradle
+  - android:buildGradle
+  - android:androidManifest
+  - android:dummyAssets
+  - android:icons
+
+  # huawei
+  # - huawei:agconnect
+
+  # flutter
+  # - flutter:flavors
+  # - flutter:app
+  # - flutter:pages
+  # - flutter:main
+  # - flutter:targets
+
+  # google
+  # - google:firebase
+
+  # ios
+  # - ios:podfile
+  # - ios:xcconfig
+  # - ios:buildTargets
+  # - ios:schema
+  # - ios:dummyAssets
+  # - ios:icons
+  # - ios:plist
+  # - ios:launchScreen
+
+  # assets
+  - assets:clean
+
+  # ide
+  # - ide:config
+
+app:
+  android:
+    flavorDimensions: "flavor-type"
+    buildConfigFields:
+      APP_ENVIRONMENT:
+        type: "String"
+        value: "${flavor}"
+  
+  ios:
+    flavorDimensions: "flavor-type"
+    schema: true
+
+flavors:
+  dev:
+    app:
+      name: "DCore Dev"
+      icon: "assets/images/main_icon.png"
+
+    android:
+      applicationId: "flutter.base.dcore.dev"
+      firebase:
+        config: "android/app/src/dev/google-services.json"
+      resValues:
+        app_name:
+          type: string
+          value: "DCore Dev"
+        environment:
+          type: string
+          value: "development"
+      buildConfigFields:
+        APP_ENVIRONMENT: 
+          type: "String"
+          value: "dev"
+        API_BASE_URL: 
+          type: "String"
+          value: "https://dev.venusshop.top/api/v1"
+        IS_DEBUG:
+          type: "boolean"
+          value: "true"
+
+    ios:
+      bundleId: "flutter.base.dcore.dev"
+      buildSettings:
+        PRODUCT_BUNDLE_IDENTIFIER: "flutter.base.dcore.dev"
+        # DEVELOPMENT_TEAM: S84XV86MSV 
+        # PROVISIONING_PROFILE_SPECIFIER: "Dev-ProvisioningProfile"
+      firebase:
+        config: "ios/flavors/dev/GoogleService-Info.plist"
+      variables:
+        API_BASE_URL:
+          value: "https://dev.venusshop.top/api/v1"
+
+  stg:
+    app:
+      name: "DCore Staging"
+      icon: "assets/images/main_icon.png"
+
+    android:
+      applicationId: "flutter.base.dcore.stg"
+      firebase:
+        config: "android/app/src/stg/google-services.json"
+      resValues:
+        app_name:
+          type: string
+          value: "DCore Staging"
+        environment:
+          type: string
+          value: "staging"
+      buildConfigFields:
+        APP_ENVIRONMENT: 
+          type: "String"
+          value: "stg"
+        API_BASE_URL: 
+          type: "String"
+          value: "https://dev.venusshop.top/api/v1"
+        IS_DEBUG:
+          type: "boolean"
+          value: "true"
+
+    ios:
+      bundleId: "flutter.base.dcore.stg"
+      buildSettings:
+        PRODUCT_BUNDLE_IDENTIFIER: "flutter.base.dcore.stg"
+        # DEVELOPMENT_TEAM: S84XV86MSV
+        # PROVISIONING_PROFILE_SPECIFIER: "Staging-ProvisioningProfile"
+      firebase:
+        config: "ios/flavors/stg/GoogleService-Info.plist"
+      variables:
+        API_BASE_URL:
+          value: "https://dev.venusshop.top/api/v1"
+
+  prod:
+    app:
+      name: "DCore"
+      icon: "assets/images/main_icon.png"
+
+    android:
+      applicationId: "flutter.base.dcore"
+      firebase:
+        config: "android/app/src/prod/google-services.json"
+      resValues:
+        app_name:
+          type: string
+          value: "DCore"
+        environment:
+          type: string
+          value: "production"
+      buildConfigFields:
+        APP_ENVIRONMENT: 
+          type: "String"
+          value: "prod"
+        API_BASE_URL: 
+          type: "String"
+          value: "https://venusshop.top/api/v1"
+        IS_DEBUG:
+          type: "boolean"
+          value: "false"
+
+    ios:
+      bundleId: "flutter.base.dcore"
+      buildSettings:
+        PRODUCT_BUNDLE_IDENTIFIER: "flutter.base.dcore"
+        # DEVELOPMENT_TEAM: S84XV86MSV
+        # PROVISIONING_PROFILE_SPECIFIER: "Production-ProvisioningProfile"
+      firebase:
+        config: "ios/flavors/prod/GoogleService-Info.plist"
+      variables:
+        API_BASE_URL:
+          value: "https://venusshop.top/api/v1"

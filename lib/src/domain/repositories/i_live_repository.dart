@@ -1,0 +1,40 @@
+part of 'repositories.dart';
+
+abstract interface class ILiveRepository {
+  Future<BaseResponse<BasePageBreak<Live>>> getLiveList(int page, String search);
+  Future<BaseResponse<Live>> getLiveDetail(int id);
+  Future<BaseResponse<Live>> createLive(Map<String, dynamic> body);
+  Future<BaseResponse<Live>> startLive(Map<String, dynamic> body);
+  Future<BaseResponse> cancelLive(Map<String, dynamic> body);
+  Future<BaseResponse<Live>> endLive(int liveId);
+  Future<BaseResponse<BreakSchedule>> createLeaveRequest(Map<String, dynamic> body);
+  Future<BaseResponse<BasePageBreak<BreakSchedule>>> getLeaveRequest(int page);
+  Future<BaseResponse<BreakSchedule>> getLeaveRequestDetail(int id);
+  Future<BaseResponse> deleteLeaveRequest(Map<String, dynamic> body);
+  Future<BaseResponse<LiveRequest>> createLiveRequest(Map<String, dynamic> body);
+  Future<BaseResponse<BasePageBreak<LiveRequest>>> getLiveRequest(int page);
+  Future<BaseResponse<LiveRequest>> getLiveRequestDetail(int id);
+  Future<BaseResponse> deleteLiveRequest(Map<String, dynamic> body);
+  Future<BaseResponseList<LivePlatform>> getLivePlatforms();
+  Future<BaseResponseList<LiveArea>> getLiveAreas();
+  Future<BaseResponse<BasePageBreak<LiveSchedule>>> getMySchedule(int page);
+  Future<BaseResponse<Live>> getMyNearestLive();
+  Future<BaseResponse<Live>> getMyScheduleDetail(int id);
+  Future<BaseResponse<Live>> updatePinProductToLive(Map<String, dynamic> body);
+  Future<BaseResponse<Comment>> updatePinCommentToLive(int liveId, int commentId);
+  Future<BaseResponse<LiveBooth>> getLiveBooth(int id);
+  Future<BaseResponse> markAsRead(int id, String deviceToken);
+  Future<BaseResponse<BasePageBreak<Comment>>> getListComment(int liveId, int page);
+  Future<BaseResponseList<Comment>> loadOldComment(int commentId);
+  Future<BaseResponse> createComment(Map<String, dynamic> body);
+  Future<BaseResponse> liveLike(int liveId);
+  Future<BaseResponse> leaveLive(int liveId);
+  Future<BaseResponse<BasePageBreak<Product>>> getLiveProductOther(int liveId, int page);
+  Future<BaseResponse<BasePageBreak<LiveMission>>> getLiveMission(int liveId, int page);
+  Future<BaseResponse> receiveLiveMission(int missionLiveId);
+  Future<BaseResponse<LiveExtraInfo>> getLiveExtraInfo(int liveId);
+  Future<BaseResponse<AppUser>> getLiveRandom(int liveId);
+  Future<BaseResponse<BasePageBreak<Live>>> getLiveEventList(int page);
+  Future<BaseResponse<Live>> liveEventSubscribe(int liveId);
+  Future<BaseResponse<String>> generateAgoraToken(String roomId);
+}

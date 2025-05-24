@@ -1,0 +1,65 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+# .idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+# .vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Logs and other generated files
+logs/
+
+# Generated files
+/lib/config/l10n/app_*.dart
+/lib/core/constants/gen/
+/lib/src/data/datasources/apis/**.g.dart
+/lib/src/data/datasources/sockets/**.g.dart
+/lib/src/data/models/**.freezed.dart
+/lib/src/data/models/**.g.dart
+/lib/src/domain/entities/**.freezed.dart
+/lib/src/domain/entities/**.g.dart
+/lib/core/base/**.freezed.dart
+/lib/core/base/**.g.dart
+/lib/src/presentation/blocs/**.freezed.dart
+/lib/src/presentation/blocs/**.g.dart
+/lib/config/routes/**.g.dart
+/lib/config/di/**.config.dart

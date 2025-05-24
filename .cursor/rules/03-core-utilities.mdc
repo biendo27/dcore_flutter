@@ -1,0 +1,49 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+description: Overview of Core Utilities in Flutter DCore
+---
+
+# Core Utilities
+
+The [lib/core/](mdc:lib/core) directory contains reusable components, utilities, and base classes that support the entire application.
+
+## Main Components
+
+### Base Classes
+- Located in [lib/core/base/](mdc:lib/core/base)
+- Contains abstract base classes and interfaces
+- Provides foundation for implementing Clean Architecture components
+
+### Helpers
+- Located in [lib/core/helpers/](mdc:lib/core/helpers)
+- Utility classes that provide common functionality
+- Simplifies repetitive tasks throughout the application
+
+### Responses
+- Located in [lib/core/responses/](mdc:lib/core/responses)
+- Standard response models and wrappers
+- Provides consistent error handling and data wrapping
+
+### Constants
+- Located in [lib/core/constants/](mdc:lib/core/constants)
+- Application-wide constant values
+- Includes theme constants, API endpoints, feature flags, etc.
+
+### Utilities
+- Located in [lib/core/utils/](mdc:lib/core/utils)
+- Contains specialized utility functions organized by category:
+  - UI components ([lib/core/utils/ui/](mdc:lib/core/utils/ui))
+  - Animation utilities ([lib/core/utils/animation/](mdc:lib/core/utils/animation))
+  - Layout helpers ([lib/core/utils/layouts/](mdc:lib/core/utils/layouts))
+  - Button components ([lib/core/utils/button/](mdc:lib/core/utils/button))
+  - Form input utilities ([lib/core/utils/input/](mdc:lib/core/utils/input))
+  - Text processing ([lib/core/utils/text/](mdc:lib/core/utils/text))
+  - Image handling ([lib/core/utils/images/](mdc:lib/core/utils/images))
+  - And more specialized components
+
+## Entry Point
+- [lib/core/core.dart](mdc:lib/core/core.dart) - Main export file for core components
+
